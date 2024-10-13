@@ -1,0 +1,141 @@
+.rbc-toolbar{
+    padding-top: 1.1rem;
+}
+
+    .rbc-toolbar button{
+        color: #443779;
+        border-color: #443779;
+    }
+
+    .rbc-toolbar button:hover{
+        background-color: rgba(69, 56, 121, 0.5);
+        color: #dbeafe;
+        border-color: #443779;
+    }
+
+    .rbc-toolbar button:active{
+        background-color: rgba(69, 56, 121, 0.4);
+        box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
+        border-color: #443779;
+    }
+
+    .rbc-toolbar button:focus{
+        background-color: rgba(69, 56, 121, 0.4);
+        box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
+        border-color: #443779;
+    }
+
+    .rbc-toolbar button:active:hover{
+        background-color: rgba(69, 56, 121, 0.6);
+        box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
+        border-color: #443779;
+    }
+
+    .rbc-toolbar button:active:focus{
+        background-color: rgba(69, 56, 121, 0.6);
+        box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
+        border-color: #443779;
+    }
+
+    .rbc-toolbar button.rbc-active {
+        background-color: rgba(69, 56, 121, 0.4);
+        box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
+        border-color: #443779;
+        color: #443779;
+    }
+
+    .rbc-toolbar button.rbc-active:focus{
+        background-color: rgba(69, 56, 121, 0.4);
+        box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
+        border-color: #443779;
+        color: #443779;
+    }
+
+.rbc-toolbar-label{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #443779;
+    letter-spacing: 0.02em;
+}
+
+
+.rbc-header{
+    background: linear-gradient(180deg, #DADAF3 9.27%, rgba(245, 238, 253, 0.00) 109.27%);
+    color:black;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow: hidden;
+    border-color: #443779;
+    border-width: 0.09rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-width: 0px;
+}
+
+.rbc-header + .rbc-header {
+    border-left: 0.08rem solid #443779;
+    overflow: hidden;
+    border-spacing: 0;
+}
+
+.rbc-month-view{
+    border-width: 0px;
+}
+
+.rbc-month-row{
+    border-color: #443779;
+    border-bottom-width: 0.09rem;
+}
+
+.rbc-day-bg{
+    border-color: #443779;
+    border-left-width: 0.09rem;
+    border-right-width: 0.09rem;
+}
+
+.rbc-off-range-bg {
+    background-color: #dbeafe;
+    filter: brightness(90%);
+}
+
+.rbc-event{
+    color: #443779;
+    border-color: #443779;
+    border-width: 0.02rem;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
+    background-color: #DADAF3;
+}
+
+.rbc-event, .rbc-day-slot .rbc-background-event {
+    background-color: #DADAF3;
+}
+
+.rbc-event:focus, .rbc-day-slot .rbc-background-event:focus {
+    outline: 0.1rem auto #443779;
+}
+
+.rbc-agenda-table{
+    border-width: 0;
+}
+
+.rbc-agenda-view table.rbc-agenda-table {
+    width: 100%;
+    border-spacing: 0;
+    border-width: 0;
+}
+
+.rbc-agenda-date-cell, .rbc-agenda-time-cell, .rbc-agenda-event-cell {
+    border: 0.1rem solid #4437797d;
+}
+
+.rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+    padding: 3px 10px;
+    text-align: left;
+    border-width: 0;
+    
+}
