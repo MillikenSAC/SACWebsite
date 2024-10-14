@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import '../styles/Navbar.css'; // Import the CSS for fade-in effect
+import '../styles/Navbar.css'; 
 
 function Navbar() {
     let Links = [
