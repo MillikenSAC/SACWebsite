@@ -1,14 +1,23 @@
-export default function ClubCard({name, desc, imgSrc, link}){ 
-
-    return (
-      <div onClick={() => window.open(link, '_blank')} class="relative max-w-xs cursor-pointer overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out">
-          <img src={imgSrc} alt="" class=""/>
-          <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent">
-            <div class="p-4 text-white font-['Inter']">
-              <div class="text-xl font-bold mb-2 font-['Inter']">{name}</div>
-              <div>{desc}</div>
-            </div>
+export default function ClubCard({ name, desc, imgSrc, link }) {
+  return (
+      <div
+          onClick={() => window.open(link, '_blank')}
+          className="relative cursor-pointer overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 h-80 w-96" // Increased height to h-80 and width to w-96
+      >
+          <div className="flex items-start h-full">
+              <img
+                  src={imgSrc}
+                  alt={name}
+                  className="w-20 h-20 rounded-full border-2 border-indigo-900 mr-4" // Increased size of the circular image
+              />
+              <div className="flex-1">
+                  <div className="text-xl font-bold text-sky-950">{name}</div>
+                  <div className="h-1 bg-indigo-900 my-2"></div>
+                  <div className="text-gray-700 h-40 overflow-hidden overflow-ellipsis"> {/* Increased height for description */}
+                      {desc}
+                  </div>
+              </div>
           </div>
       </div>
-    )
-  }
+  );
+}
