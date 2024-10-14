@@ -12,30 +12,30 @@
 }
 
 .gradient2 {
-    transform: rotate(-109.926deg) translateY(-45%) translateX(-60%);
+    transform: rotate(-109.926deg) translateY(-20%) translateX(80%);
     background-image: radial-gradient(27.16% 21.82% at 67.28% 53.71%, rgba(0, 26, 255, 0.20) 0%, rgba(88, 105, 255, 0.20) 0.01%, rgba(5, 0, 255, 0.00) 100%), radial-gradient(35.98% 33.58% at 39.67% 51.2%, rgba(255, 0, 199, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(39.33% 30.55% at 50.8% 38.07%, rgba(133, 139, 198, 0.60) 0%, rgba(255, 255, 255, 0.00) 100%);
     background-size: cover;
     opacity: 0.9;
-    position: absolute;
+    position: fixed;
     z-index: 11;
     width: 78rem;
     height: 159rem;
     left: 0;
-    bottom: 0;
+    top: 200px
 
 }
 
 .gradient3 {
-    transform: rotate(-54.161deg) translateY(50%) translateX(0%);
+    transform: rotate(-54.161deg) translateY(-0%) translateX(70%);
     background-image: radial-gradient(27.16% 21.82% at 67.28% 53.71%, rgba(0, 26, 255, 0.20) 0%, rgba(88, 105, 255, 0.20) 0.01%, rgba(5, 0, 255, 0.00) 100%), radial-gradient(35.98% 33.58% at 39.67% 51.2%, rgba(255, 0, 199, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(39.33% 30.55% at 50.8% 38.07%, rgba(133, 139, 198, 0.60) 0%, rgba(255, 255, 255, 0.00) 100%);
     background-size: cover;
     opacity: 0.8;
-    position: absolute;
+    position: fixed;
     z-index: 11;
     width: 118rem;
     height: 128rem;
     /* width: 20rem;
     height: 21.5rem; */
     right: 0;
-    bottom: 0;
+    top: 500px
 }
