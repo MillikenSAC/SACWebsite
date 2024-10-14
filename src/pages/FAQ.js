@@ -18,10 +18,10 @@ function FAQ() {
         <Question question="Where do we meet?" answer="We meet in room 314 every Tuesday after school. Drop by if you have any questions! "/>
         <Question question="How do I start a club?" answer="Yay! We are so excited that you’re interested in starting a club. Firstly you’ll need to grab a teacher advisor who has agreed to work with you. You will then need to go around the school and gather some student interest. Compile a list of people who may be interested in joining your club! Then fill out this form with detailed information, to be submitted to the principal for approval. Once you have been approved, your final step will be pitching your club to SAC at one of our meetings afterschool. If you get our approval as well, congratulations! You have just started a new club at Milliken. "/>
         <Question question="How do I start an event?" answer="Creating an event is similar to club process, you’ll need to submit an application through this form. Once the principal approves your event, you will then need to pitch to SAC in order to run the event. We suggest proposing events one month in advance due to backlogs with admin. "/>
-        <Question question="How do grants work? (tentative)" answer="Fayez Mohammed"/>
+        <Question question="How do grants work? (tentative)" answer="something here"/>
         <Question question="What is the SE fee? " answer="The SE fee is an optional fee that goes towards funding student activities. Students who have paid the SE fee will be eligible for discounted tickets, merch and other events throughout the year. "/>        
-        <Question question="Who are your teacher advisors?" answer="Fayez Mohammed"/>
-        <Question question="I have more questions who do I ask!?" answer="Feel free to email Emily: 341085132@gapps.yrdsb.ca or Steven: 349903153@gapps.yrdsb.ca Or drop by one of our bimonthly Town Halls 
+        <Question question="Who are your teacher advisors?" answer="Ms Virk and Mr Birch"/>
+        <Question question="I have more questions who do I ask!?" answer="Feel free to email Emily: 341085132@gapps.yrdsb.ca or Steven: 349903153@gapps.yrdsb.ca or drop by one of our bimonthly Town Halls! 
 "/>
       </div>
     </div>

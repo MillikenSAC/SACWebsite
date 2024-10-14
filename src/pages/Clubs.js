@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/Clubs.css';
 import ClubCard from '../components/ClubCard.js';
-
-import clubData from '../components/ClubData.js';
+import clubData from '../Data/ClubData.js';
 
 
 function Clubs() {

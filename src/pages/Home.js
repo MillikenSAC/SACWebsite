@@ -37,7 +37,8 @@ function Home() {
 
               </div>
               <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-              <img src="" alt="Robotics Logo" />
+              
+              {/**<img src="" alt="Robotics Logo" /> */}
 
               </div>
             </div>
@@ -55,7 +56,7 @@ function Home() {
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-              <img src="" alt="Robotics Logo" />
+              {/**<img src="" alt="Robotics Logo" /> */}
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
@@ -70,7 +71,7 @@ function Home() {
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-              <img src="" alt="Robotics Logo" />
+              {/**<img src="" alt="Robotics Logo" /> */}
 
               </div>
             </div>
@@ -88,7 +89,7 @@ function Home() {
               </p>
 
               </div>
-              <img src="" alt="Robotics Logo" />
+              {/**<img src="" alt="Robotics Logo" /> */}
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
           </div>
