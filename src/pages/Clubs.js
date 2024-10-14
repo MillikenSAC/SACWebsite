@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/Clubs.css';
 import ClubCard from '../components/ClubCard.js';
-import logo from '../assets/logo.png';
-import robotics from '../assets/robotics.png';
+
 import clubData from '../components/ClubData.js';
 
 
@@ -17,7 +16,8 @@ function Clubs() {
         clubs
       </div>
 
-      <div className="grid w-5/6 max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 place-items-center place-self-center mb-10 mt-5">
+      <div className="grid w-6/7 max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
+
         {sortedClubs.map((club, index) => (
           <ClubCard 
             key={index} 

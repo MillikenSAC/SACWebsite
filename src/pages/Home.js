@@ -6,20 +6,22 @@ import logo from '../assets/robotics.png';
 function Home() {
   return (
     <div class="flex w-screen flex-col max-w-full overflow-x-hidden">
+      <img class="bg-gray-50 w-full h-screen max-w-full z-[-1] absolute" src={sacbg} alt="Background"/>
+
     {/* top slide of home page  */}
-        <div class="w-screen h-screen bg-blue-100 overflow-hidden relative flex flex-col place-items-center place-content-center">
+        <div class="w-screen h-screen overflow-hidden relative flex flex-col place-items-center place-content-center">
             <div class="z-20 text-indigo-900 2xl:text[14rem] xl:text-[12rem] lg:text-[10rem] md:text-[7rem] text-[3.5rem] flex font-semibold italic font-['Newsreader']">Milliken SAC</div>
             <div class="z-20  w-4/6 md:flex pb-10 hidden text-neutral-800 text-center text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
+        </div>
             <div className="gradient1"></div>
             <div className="gradient2"></div>
             <div className="gradient3"></div>
-        </div>
 
         <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-center text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+        <h2 className="text-center text-base/7 font-semibold text-indigo-600">Tomorrow Today</h2>
         <p className="mx-auto mt-2 max-w-lg text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Everything you need to deploy your app.
+          HOME OF THE KNIGHTS 
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">

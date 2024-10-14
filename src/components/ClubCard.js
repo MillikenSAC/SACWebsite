@@ -7,7 +7,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
         // Prevent clicking the card to open the link
         e.stopPropagation();
       }}
-      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80" // Increased height to h-80
+      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80" // Added vertical margin my-4 for spacing
     >
       <div className="flex items-start">
         {/* Logo in its own div */}
@@ -34,7 +34,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
       </div>
       
       {/* Bottom section for description, adjusted for height */}
-      <div className="text-gray-700 py-5 h-24 overflow-hidden overflow-ellipsis mt-3 text-left"> {/* Adjusted margin to mt-3 */}
+      <div className="text-gray-700 py-5 h-24 overflow-hidden overflow-ellipsis mt-3 text-left">
         {desc}
       </div>
     </div>
