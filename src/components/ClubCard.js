@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaInstagram } from 'react-icons/fa'; // Importing Instagram icon from react-icons
 
 export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, googleClassroomCode }) {
   return (
@@ -7,20 +8,29 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
         // Prevent clicking the card to open the link
         e.stopPropagation();
       }}
-      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80" // Added vertical margin my-4 for spacing
+      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80"
     >
-      <div className="flex items-start">
+      <div className="flex items-start relative">
         {/* Logo in its own div */}
-        <div className="mr-4">
-          <a onClick={() => window.open(link, '_blank')}>
-            <img
-              src={imgSrc}
-              alt={name}
-              className="w-20 h-20 rounded-full border-2 border-indigo-900 hover:scale-110 duration-200 ease-in-out" // Added hover effect to the logo
-            />
+        <div className="mr-4 relative">
+          <a onClick={() => window.open(link, '_blank')} className="group relative block">
+            <div className="relative">
+              <img
+                src={imgSrc}
+                alt={name}
+                className="w-20 h-20 rounded-full border-2 border-indigo-900 group-hover:scale-110 duration-200 ease-in-out"
+              />
+              {/* Instagram icon on white circle */}
+              <div className="absolute bottom-0 right-0 m-0 w-6 h-6 bg-white rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
+                <FaInstagram
+                  className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
+                  size={20} // Adjust icon size
+                />
+              </div>
+            </div>
           </a>
         </div>
-        
+
         {/* Top section for name, bar, and data */}
         <div className="flex-1">
           <div className="text-xl font-bold text-sky-950">{name}</div>
@@ -33,7 +43,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
         </div>
       </div>
       
-      {/* Bottom section for description, adjusted for height */}
+      {/* Bottom section for description */}
       <div className="text-gray-700 py-5 h-24 overflow-hidden overflow-ellipsis mt-3 text-left">
         {desc}
       </div>
