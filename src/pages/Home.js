@@ -105,7 +105,7 @@ function Home() {
         <div class="w-screen h-screen flex max-w-full justify-center items-center">
             <div class="w-10/12 h-5/6 place-self-center grid grid-cols-2 grid-rows-2 gap-x-40 gap-y-5 bg-gradient-to-b from-indigo-50 to-indigo-100 rounded-[20px]">
                 <div class="w-[20rem] h-[18rem] flex flex-col justify-self-end self-end">
-                    <div class="pl-3 pt-6 text-black text-[2.1rem] italic font-semibold font-['Newsreader']">Section Description</div>
+                    <div class="pl-3 pt-6 text-black text-[2.1rem] italic font-semibold font-['Newsreader']">Need to fix this part</div>
                     <div class="px-3 mt-5 text-black text-[0.69rem] font-normal font-['Inter'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 </div>
                 <div class="w-[20rem] h-[18rem] flex shrink justify-self-start self-end bg-white rounded-[30px] shadow-xl"></div>
