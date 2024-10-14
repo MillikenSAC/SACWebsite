@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Milliken-SAC/static/css/main.f20a6217.css",
+    "main.js": "/Milliken-SAC/static/js/main.57a34c89.js",
+    "static/js/453.5d780a28.chunk.js": "/Milliken-SAC/static/js/453.5d780a28.chunk.js",
+    "static/media/sacbg.png": "/Milliken-SAC/static/media/sacbg.3474e92d38fd602f79c7.png",
+    "static/media/robotics.png": "/Milliken-SAC/static/media/robotics.0b399d3c056bb5922945.png",
+    "static/media/logo.png": "/Milliken-SAC/static/media/logo.fa3139aeed1d98030f62.png",
+    "index.html": "/Milliken-SAC/index.html",
+    "static/media/en-US.cjs": "/Milliken-SAC/static/media/en-US.c3a6319ea4f219498e6f.cjs",
+    "main.f20a6217.css.map": "/Milliken-SAC/static/css/main.f20a6217.css.map",
+    "main.57a34c89.js.map": "/Milliken-SAC/static/js/main.57a34c89.js.map",
+    "453.5d780a28.chunk.js.map": "/Milliken-SAC/static/js/453.5d780a28.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f20a6217.css",
+    "static/js/main.57a34c89.js"
+  ]
+}
