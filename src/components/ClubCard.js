@@ -28,7 +28,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
           <div className="text-gray-600 mt-1">
             <div>Room: {room}</div>
             <div>Meeting Day: {meetingDay}</div>
-            <div>Google Classroom Code: {googleClassroomCode}</div>
+            <div>Classroom Code: {googleClassroomCode}</div>
           </div>
         </div>
       </div>
