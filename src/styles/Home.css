@@ -9,7 +9,7 @@
     height: 108rem;
     top: 0;
     left: 0;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .gradient2 {
@@ -23,7 +23,7 @@
     height: 159rem;
     left: 0;
     top: 200px;
-    overflow: clip;
+    overflow: hidden;
 
 }
 
@@ -40,5 +40,5 @@
     height: 21.5rem; */
     right: 0;
     top: 500px;
-    overflow: clip;
+    overflow: hidden;
 }
