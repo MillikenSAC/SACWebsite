@@ -4,9 +4,9 @@ import Calendar from '../components/Calendar'
 
 function Event() {
   return (
-    <div class="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative bg-blue-100">
+    <div class="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative bg-gray-50">
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>   
-      <div class="flex w-fit h-fit place-self-center mt-20 text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
+      <div class="flex w-fit h-fit place-self-center mt-20 mb-5 text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
           SAC calendar
       </div>
 

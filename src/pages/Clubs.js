@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Clubs.css';
 import ClubCard from '../components/ClubCard.js';
 import clubData from '../Data/ClubData.js';
+import "../styles/Home.css"
 
 
 function Clubs() {
@@ -9,7 +10,7 @@ function Clubs() {
   const sortedClubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-blue-100">
+    <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
       <div class="flex w-fit h-fit place-self-center mt-20 text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
           Clubs

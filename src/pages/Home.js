@@ -10,7 +10,7 @@ function Home() {
      <img className="bg-gray-50 w-screen h-screen max-w-full z-[-1] absolute object-cover"
       src={sacbg}
       alt="Background"
-      />
+      /> 
 
     {/* top slide of home page  */}
         <div class="w-screen h-screen overflow-hidden relative flex flex-col place-items-center place-content-center">
@@ -42,7 +42,7 @@ function Home() {
                 there will a list of upcoming big school events and stuff 
               </p>
               </div>
-              <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+              <div className="relative min-h-[15rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
               {/**<img src="" alt="Robotics Logo" /> */}
               </div>
             </div>
@@ -56,20 +56,22 @@ function Home() {
                 <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
                   MEET SAC
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 mb- max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
                   maybe some cool graphic of sac 
                 </p>
               </div>
-              <div className="relative flex-1 ">
-                {/**<img
+              {/* Explicit min-height to ensure image visibility */}
+              <div className="relative min-h-[200px] sm:min-h-[300px] flex-1">
+                <img
                   src={saclogo}
                   alt="sacpeople"
                   className="absolute inset-0 w-full h-full object-cover"
-                /> */}
+                /> 
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
           </div>
+
 
 
 
@@ -82,7 +84,7 @@ function Home() {
                   Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.
                 </p>
               </div>
-              <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
+              <div className="relative min-h-[15rem] flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
               {/**<img src="" alt="Robotics Logo" /> */}
               </div>
             </div>
@@ -97,7 +99,7 @@ function Home() {
               <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center text-center">
                 CLUBS
               </p>
-              <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-center">
+              <p className="relative min-h-[15rem]mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-center">
                 there will be stuff inside here 
               </p>
 
@@ -109,7 +111,6 @@ function Home() {
         </div>
       </div>
     </div>
-  )
 
     {/* third slide of home page */}
         <div class="w-screen h-screen flex max-w-full justify-center items-center">
