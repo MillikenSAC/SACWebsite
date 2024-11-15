@@ -20,97 +20,86 @@ function SAC() {
   const currentData = tabMapping[selectedTab] || [];
 
   return (
-    <div className="flex flex-col w-screen max-w-full overflow-x-hidden relative min-h-screen px-6 md:px-12 lg:px-20">
-      {/* Font Links */}
-      <link
+    <div className="flex w-screen flex-col max-w-full overflow-x-hidden relative min-h-screen px-6">
+    {/* Font Links */}
+    <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Lobster&family=Prata&family=Sumana&family=Syne&display=swap"
         rel="stylesheet"
-      />
+    />
 
-      {/* Title */}
-      <div className="w-full mt-20 text-center">
-        <div className="text-sky-950 text-[6rem] md:text-[8rem] font-thin font-['Prata'] px-4">
-          <span className="font-normal">Meet the </span>
-          <span className="font-bold">Council</span>
+    {/* Title */}
+    <div className="w-full mt-20 text-center">
+        <div className="text-sky-950 text-[8rem] font-thin font-['Prata']">
+        <span className="font-normal">Meet the </span>
+        <span className="font-bold">Council</span>
         </div>
-      </div>
+    </div>
 
-      {/* Tab Buttons */}
-      <div className="flex justify-center space-x-4 mt-10 mb-6 z-10">
+    {/* Tab Buttons */}
+    <div className="flex flex-wrap justify-center gap-4 mt-10 mb-6 z-10">
         {Object.keys(tabMapping).map((tab) => (
-          <button
+        <button
             key={tab}
             onClick={() => setSelectedTab(tab)}
             className={`py-2 px-4 rounded-md font-semibold shadow-md transition-all duration-300 ${
-              selectedTab === tab
+            selectedTab === tab
                 ? 'bg-indigo-500 text-white hover:bg-indigo-600'
                 : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
             }`}
-          >
+        >
             {tab}
-          </button>
+        </button>
         ))}
-      </div>
+    </div>
 
-      {/* Year Selector */}
-      <div className="flex w-full justify-center my-6">
+    {/* Year Selector */}
+    <div className="flex w-full justify-center my-6">
         <button type="button" className="items-center pr-5 opacity-50">
-          {/* Left Arrow */}
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        {/* Left Arrow */}
+        <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M6.25 25L20.8333 10.4167V18.75H42.0833C42.6667 18.75 42.9584 18.75 43.1812 18.8636C43.3772 18.9634 43.5366 19.1228 43.6365 19.3188C43.75 19.5416 43.75 19.8333 43.75 20.4167V29.5834C43.75 30.1667 43.75 30.4584 43.6365 30.6813C43.5366 30.8773 43.3772 31.0366 43.1812 31.1365C42.9584 31.25 42.6667 31.25 42.0833 31.25H20.8333V39.5834L6.25 25Z"
-              stroke="#051747"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+            d="M6.25 25L20.8333 10.4167V18.75H42.0833C42.6667 18.75 42.9584 18.75 43.1812 18.8636C43.3772 18.9634 43.5366 19.1228 43.6365 19.3188C43.75 19.5416 43.75 19.8333 43.75 20.4167V29.5834C43.75 30.1667 43.75 30.4584 43.6365 30.6813C43.5366 30.8773 43.3772 31.0366 43.1812 31.1365C42.9584 31.25 42.6667 31.25 42.0833 31.25H20.8333V39.5834L6.25 25Z"
+            stroke="#051747"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             />
-          </svg>
+        </svg>
         </button>
 
-        <div className="w-[20rem] h-[4rem] bg-stone-50 rounded-[40px] shadow-inner border border-slate-500 flex place-content-center">
-          <div className="text-center place-self-center text-sky-950 text-opacity-50 text-4xl font-semibold font-['Coolvetica'] tracking-[2px]">
+        <div className="w-[20rem] h-[4rem] bg-stone-50 rounded-[40px] shadow-inner border border-slate-500 flex justify-center">
+        <div className="text-center self-center text-sky-950 text-opacity-50 text-4xl font-semibold font-['Coolvetica'] tracking-[2px]">
             2024-2025
-          </div>
+        </div>
         </div>
 
         <button type="button" className="items-center pl-5 opacity-50">
-          {/* Right Arrow */}
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        {/* Right Arrow */}
+        <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M43.75 25L29.1667 10.4167V18.75H7.91667C7.33328 18.75 7.04158 18.75 6.81876 18.8636C6.62276 18.9634 6.4634 19.1228 6.36353 19.3188C6.25 19.5416 6.25 19.8333 6.25 20.4167V29.5834C6.25 30.1667 6.25 30.4584 6.36353 30.6813C6.4634 30.8773 6.62276 31.0366 6.81876 31.1365C7.04158 31.25 7.33328 31.25 7.91667 31.25H29.1667V39.5834L43.75 25Z"
-              stroke="#051747"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+            d="M43.75 25L29.1667 10.4167V18.75H7.91667C7.33328 18.75 7.04158 18.75 6.81876 18.8636C6.62276 18.9634 6.4634 19.1228 6.36353 19.3188C6.25 19.5416 6.25 19.8333 6.25 20.4167V29.5834C6.25 30.1667 6.25 30.4584 6.36353 30.6813C6.4634 30.8773 6.62276 31.0366 6.81876 31.1365C7.04158 31.25 7.33328 31.25 7.91667 31.25H29.1667V39.5834L43.75 25Z"
+            stroke="#051747"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             />
-          </svg>
+        </svg>
         </button>
-      </div>
+    </div>
 
-      {/* SAC Cards */}
-      <div className="grid w-full max-w-5xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6 place-items-center">
+    {/* SAC Cards */}
+    <div className="grid w-full max-w-7xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center mb-10 mt-5">
         {currentData.map((member) => (
-          <SACCard
+        <SACCard
             key={member.id}
             imgSrc={member.img}
             name={member.name}
             position={member.title}
-          />
+        />
         ))}
-      </div>
     </div>
+    </div>
+
   );
 }
 
