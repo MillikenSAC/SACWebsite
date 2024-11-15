@@ -10,6 +10,7 @@ function Navbar() {
         { name: "Meet SAC!", link: "/SAC" },
         { name: "Clubs", link: "/Clubs" },
         { name: "Event Calendar", link: "/Event" },
+        { name: "Gallery", link: "/Gallery" },
         { name: "FAQ", link: "/FAQ" },
     ];
 

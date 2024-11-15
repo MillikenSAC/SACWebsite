@@ -1,5 +1,6 @@
 import './App.css';
 import Home from "./pages/Home";
+import SAC from "./pages/SAC";
 import Event from "./pages/Event";
 import Navbar from './components/Navbar';
 import Clubs from './pages/Clubs';
@@ -24,6 +25,19 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <Home />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/SAC"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <SAC />
             </motion.div>
           }
         />
