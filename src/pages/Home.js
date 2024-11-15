@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import sacbg from '../assets/sacbg.png'; 
-import saclogo from '../assets/logo.png';
+import saclogo from '../assets/SAC-All.JPG';
 
 function Home() {
   return (
@@ -49,30 +50,21 @@ function Home() {
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
           </div>
           
-          <div className="relative max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20">
-            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-              <div className="px-8 pt-8 sm:px-10 sm:pt-10 text-center">
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  MEET SAC
-                </p>
-                <p className="mt-2 mb- max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  maybe some cool graphic of sac 
-                </p>
+          <Link to="/SAC">
+              <div className="relative max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20">
+                <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+                <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                  <div className="relative min-h-[200px] sm:min-h-[300px] flex-1">
+                    <img
+                      src={saclogo}
+                      alt="sacpeople"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
               </div>
-              {/* Explicit min-height to ensure image visibility */}
-              <div className="relative min-h-[200px] sm:min-h-[300px] flex-1">
-                <img
-                  src={saclogo}
-                  alt="sacpeople"
-                  className="absolute inset-0 w-full h-full object-cover"
-                /> 
-              </div>
-            </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
-          </div>
-
-
+            </Link>
 
 
           <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
