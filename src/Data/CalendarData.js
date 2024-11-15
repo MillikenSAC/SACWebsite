@@ -45,6 +45,30 @@ const events = [
         start: new Date(2024, 10, 18, 11, 30), 
         end: new Date(2024, 10, 22, 14, 10),   
     },
+    { 
+        title: "STEMPower Web Dev Workshop",
+        allDay: false, 
+        start: new Date(2024, 9, 29, 3, 45), 
+        end: new Date(2024, 9, 29, 4, 45)
+    },
+    { 
+        title: "STEMPower Monthly Kahoots", 
+        allDay: false, 
+        start: new Date(2024, 9, 23, 11, 30), 
+        end: new Date(2024, 9, 23, 12, 15)
+    }, 
+    {
+        title: "YOSA Samosa Sale", 
+        allDay: false, 
+        start: new Date(2024, 10, 8, 15, 35), 
+        end: new Date(2024, 10, 8, 16, 35), 
+    }, 
+    { 
+        title: "Case Closed, A Red Cross Mystery",
+        allDay: false, 
+        start: new Date(2024, 9, 28, 15, 45),
+        end: new Date(2024, 9, 28, 17, 15)
+    },
     ...generateWeeklyEvents(
         "Robotics Meeting", 
         new Date(2024, 8, 13, 15, 30), // Starts on Sept 13, 2024, at 3:30 PM

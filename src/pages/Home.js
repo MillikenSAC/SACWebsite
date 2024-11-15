@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Home.css';
 import sacbg from '../assets/sacbg.png'; 
 import saclogo from '../assets/logo.png';
-import chaewon from '../assets/c.jpeg';
 
 function Home() {
   return (
@@ -11,17 +10,18 @@ function Home() {
       src={sacbg}
       alt="Background"
       /> 
-
           <div className="gradient1"></div>
           <div className="gradient2"></div>
           <div className="gradient3"></div>
+
+
     {/* top slide of home page  */}
       <div class="w-screen h-screen overflow-hidden relative flex flex-col place-items-center place-content-center">
           <div class="z-20 text-indigo-900 2xl:text[14rem] xl:text-[12rem] lg:text-[10rem] md:text-[7rem] text-[3.5rem] flex font-semibold italic font-['Newsreader']">Milliken SAC</div>
           <div class="z-20  w-4/6 md:flex pb-10 hidden text-neutral-800 text-center text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
-      
       </div>
-        {/* top slide of home page  */}
+
+        {/* second slide of home page  */}
 
         <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
