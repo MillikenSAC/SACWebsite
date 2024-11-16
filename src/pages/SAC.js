@@ -5,11 +5,12 @@ import SACCard from '../components/MeetSAC.js';
 import { data1, data2, data3, data4, data5, data6, data7 } from '../Data/MeetSACData.js';
 
 function SAC() {
-  const [selectedTab, setSelectedTab] = useState('All'); // Default tab
+
+  const [selectedTab, setSelectedTab] = useState('All');
 
   const location = useLocation(); 
   useEffect(() => { 
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, [location]);
 
   const tabMapping = {
@@ -25,9 +26,13 @@ function SAC() {
 
   const currentData = tabMapping[selectedTab] || [];
 
-  // Separate the presidents from the rest of the members
-  const presidents = currentData.filter((member) => member.title === "President" || member.title === "Vice-President");
-  const otherMembers = currentData.filter((member) => member.title !== "President" && member.title !== "Vice-President");
+ const filteredPresidents = currentData.filter((member) => 
+      member.title === "President" || member.title === "Vice-President"
+    );
+    
+    const filteredOtherMembers = currentData.filter((member) => 
+      member.title !== "President" && member.title !== "Vice-President"
+    );
 
   return (
     <div className="flex w-screen flex-col max-w-full overflow-x-hidden relative min-h-screen px-6">
@@ -103,7 +108,7 @@ function SAC() {
       {/* SAC Cards */}
       {/* Presidents Row */}
       <div className="flex flex-wrap justify-center gap-4 mb-8 mt-7">
-        {presidents.map((president) => (
+        {filteredPresidents.map((president) => (
           <SACCard
             key={president.id}
             imgSrc={president.img}
@@ -115,7 +120,7 @@ function SAC() {
 
       {/* Other Members Grid */}
       <div className="flex flex-wrap justify-center max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
-        {otherMembers.map((member) => (
+        {filteredOtherMembers.map((member) => (
           <SACCard
             key={member.id}
             imgSrc={member.img}
