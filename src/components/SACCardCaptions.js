@@ -10,7 +10,7 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
       <img src={imgSrc} alt={name} className="w-full h-[250px] object-cover" />
 
       {/* Social Icons */}
-      <div className="absolute top-3 right-3 flex flex-col space-y-2">
+      <div className="absolute top-64 right-3 flex flex-row space-x-2">
         <a
           href={instagram}
           target="_blank"

@@ -6,6 +6,8 @@ import SAC2025 from '../assets/SAC-All.JPG';
 import saclogo from '../assets/logo.png';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+import roboticsCandid from '../assets/RoboticsCandid.JPG'
+import roboticsCandid2 from '../assets/RoboticsCandid2.JPG'
 
 function Home() {
   return (
@@ -39,11 +41,11 @@ function Home() {
             <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
               <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-              <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center text-center">
+              <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center text-center">
                 UPCOMING EVENTS
               </p>
-              <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-center">
-                there will a list of upcoming big school events and stuff 
+              <p className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3">
+              Stay updated with our big events!
               </p>
               </div>
               <div className="relative min-h-[15rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
@@ -53,10 +55,10 @@ function Home() {
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
           </div>
           
-          <div className="relative max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20">
+          <div className="relative max-h-[350px] max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20">
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-              <div className="relative min-h-[300px] sm:min-h-[300px] flex-1">
+              <div className="relative min-h-[350px] sm:min-h-[350px] flex-1">
                 <Link to="/SAC" className="block w-full h-full">
                   <img
                     src={SAC2025}
@@ -70,13 +72,14 @@ function Home() {
           </div>
 
 
+
           <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
             <div className="absolute inset-px rounded-lg bg-white"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10 text-center">
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">Your Questions Answered</p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.
+                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">Your Questions Answered</p>
+                <p className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3">
+                Got questions? We've got answers
                 </p>
               </div>
               <div className="relative min-h-[15rem] flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
@@ -88,21 +91,44 @@ function Home() {
 
 
           <div className="relative lg:row-span-2">
-            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+          <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+          <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
             <div className="relative min-h-[300px] sm:min-h-[300px] flex-1">
-              <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center text-center pt-10 ">
+              <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center text-center pt-10">
                 CLUBS
               </p>
-              <p className="relative min-h-[15rem]mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-center">
-                there will be stuff inside here 
+
+              <p className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3">
+              Explore the clubs at Milliken!
               </p>
 
+              <div className="overflow-hidden m-8 mb-4 rounded-2xl">
+                <img src={roboticsCandid} alt="Robotics Logo" className="w-full h-auto" />
               </div>
-              {/**<img src="" alt="Robotics Logo" /> */}
+
+              <div className="overflow-hidden m-8 my-2 rounded-2xl">
+                <img src={roboticsCandid2} alt="Robotics Logo" className="w-full h-auto" />
+              </div>
+
+              <div className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3 mb-5">
+                Want to start your own club? <br />
+                Fill out the club proposal form <br />
+                <div className="flex justify-center">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdo76EgGc9E7Arg5z0gYkzdFLK1aXciCqdpLBJz8d2Rez-eWw/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
+                  >
+                    HERE
+                  </a>
+                </div>
+              </div>
+
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
           </div>
+          <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+        </div>
         </div>
       </div>
     </div>

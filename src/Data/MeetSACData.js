@@ -1,3 +1,5 @@
+import AlanL from '../assets/AlanLin.JPG';
+
 export const Executives = [
     {
       id: 1,
@@ -40,7 +42,7 @@ export const Executives = [
 export const Secretary = [
     {
       id: 6,
-      img: 'https://images.unsplash.com/photo-1566024287286-457247b70310?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      img: AlanL,
       name: 'Alan Lin',
       title: 'Secretary',
       caption: "What's up Knights 🔥, this is Alan, your one and only SAC secretary this year.  This is my first year on the council, and it has already taught me how to type 300WPM per minute 😵‍💫. Anyways,  I love to talk and network, so feel free to wave me in the halls or dm me at @alanctic. Let's make this year a total blast 😉"
