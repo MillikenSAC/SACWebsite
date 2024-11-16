@@ -40,7 +40,8 @@ function SAC() {
   const handleCardClick = (member) => {
     if (selectedTab !== 'All') {
       setSelectedMember(member);
-      return;
+    } else{ 
+      window.scrollTo(0,0)
     }
 
     const memberToTabMapping = {
@@ -161,6 +162,8 @@ function SAC() {
               name={president.name}
               position={president.title}
               caption={president.caption}
+              instagram={president.instagram}
+              email={president.email}
               onClick={() => handleCardClick(president)}
             />
           )
@@ -184,6 +187,8 @@ function SAC() {
               name={member.name}
               position={member.title}
               caption={member.caption}
+              instagram={member.instagram}
+              email={member.email}
               onClick={() => handleCardClick(member)}
             />
           )

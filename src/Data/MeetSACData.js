@@ -4,6 +4,7 @@ export const Executives = [
       img: 'https://images.unsplash.com/photo-1547005327-ef75a6961556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
       name: 'Emily Dong',
       title: 'President',
+      instagram: "https://www.instagram.com/emily.dddd/",
       caption: "hii milliken!! my name is emily, your 24-25 sac prez!! this is my third (and final) year on sac 😢 but i truly believe that it is going to be the best one yet 💯.  i like buying overpriced matcha lattes 🍵, my overpriced cat miso 🐈‍⬛, and collecting overpriced jellycats 🧸. we have such an awesome + hard working team this year and i can't wait to begin this new era of student council!! as always, my dms are open for any questions  (@emily.dddd) see u around knights 😛"
     },
     {
