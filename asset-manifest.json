@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Milliken-SAC/static/css/main.ccc13d85.css",
-    "main.js": "/Milliken-SAC/static/js/main.ffb95333.js",
+    "main.css": "/Milliken-SAC/static/css/main.846cfd5c.css",
+    "main.js": "/Milliken-SAC/static/js/main.fd598601.js",
     "static/js/453.5d780a28.chunk.js": "/Milliken-SAC/static/js/453.5d780a28.chunk.js",
     "static/media/SAC-All.JPG": "/Milliken-SAC/static/media/SAC-All.199fdb94a5f09c9c54dd.JPG",
     "static/media/sacbg.png": "/Milliken-SAC/static/media/sacbg.3474e92d38fd602f79c7.png",
@@ -9,12 +9,12 @@
     "static/media/logo.png": "/Milliken-SAC/static/media/logo.fa3139aeed1d98030f62.png",
     "index.html": "/Milliken-SAC/index.html",
     "static/media/en-US.cjs": "/Milliken-SAC/static/media/en-US.c3a6319ea4f219498e6f.cjs",
-    "main.ccc13d85.css.map": "/Milliken-SAC/static/css/main.ccc13d85.css.map",
-    "main.ffb95333.js.map": "/Milliken-SAC/static/js/main.ffb95333.js.map",
+    "main.846cfd5c.css.map": "/Milliken-SAC/static/css/main.846cfd5c.css.map",
+    "main.fd598601.js.map": "/Milliken-SAC/static/js/main.fd598601.js.map",
     "453.5d780a28.chunk.js.map": "/Milliken-SAC/static/js/453.5d780a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc13d85.css",
-    "static/js/main.ffb95333.js"
+    "static/css/main.846cfd5c.css",
+    "static/js/main.fd598601.js"
   ]
 }
