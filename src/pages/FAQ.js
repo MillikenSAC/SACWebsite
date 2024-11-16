@@ -4,7 +4,8 @@ import Question from '../components/Question'
 
 function FAQ() {
   return (
-    <div class="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative bg-gray-50">
+    <div class="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative">
+      <div className="bggradientfullFAQ"></div>
       <div class="h-fit w-fit py-1 mt-20 place-self-center px-2 text-sm font-semibold font-['Inter'] text-indigo-900 rounded-full inline-block bg-indigo-200 ">FREQUENTLY ASKED QUESTIONS</div>
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
       <div class="flex w-fit h-fit place-self-center relative text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
@@ -22,7 +23,10 @@ function FAQ() {
         <Question question="What is the SE fee? " answer="The SE fee is an optional fee that goes towards funding student activities. Students who have paid the SE fee will be eligible for discounted tickets, merch and other events throughout the year. "/>        
         <Question question="Who are your teacher advisors?" answer="Ms Virk and Mr Birch"/>
         <Question question="I have more questions who do I ask!?" answer="Feel free to email Emily: 341085132@gapps.yrdsb.ca or Steven: 349903153@gapps.yrdsb.ca or drop by one of our bimonthly Town Halls! 
+        
 "/>
+
+
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ import Event from "./pages/Event";
 import Navbar from './components/Navbar';
 import Clubs from './pages/Clubs';
 import FAQ from './pages/FAQ';
+import Gallery from './pages/Gallery';
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { motion } from 'framer-motion';
 
@@ -64,6 +65,19 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <Clubs />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/Gallery"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Gallery />
             </motion.div>
           }
         />
