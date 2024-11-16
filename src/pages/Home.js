@@ -5,6 +5,7 @@ import sacbg from '../assets/sacbg.png';
 import SAC2025 from '../assets/SAC-All.JPG';
 import saclogo from '../assets/logo.png';
 import { FaInstagram } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -108,14 +109,14 @@ function Home() {
 
     {/* Footer */}
     <footer className="bg-gray-50 text-black py-6 mt-auto">
-  <div className="container mx-auto px-80 flex flex-col md:flex-row items-center md:space-x-2 gap-2 md:gap-4">
+  <div className="container mx-auto px-44 flex flex-col md:flex-row items-center md:space-x-2 gap-2 md:gap-4">
     
     {/* Logo section (centered) */}
     <div className="flex-shrink-0 mb-4 md:mb-0 order-1 md:order-2 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
       <img
         src={saclogo}
         alt="School Logo"
-        className="h-12 w-auto mx-auto"
+        className="h-16 w-auto mx-auto"
       />
     </div>
 
@@ -129,16 +130,40 @@ function Home() {
     </div>
 
     {/* Social icons */}
-    <div className="flex space-x-1 justify-center md:justify-end md:flex-grow order-3">
-      <FaInstagram
-        className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-        size={30}
-      />
-      <FaInstagram
-        className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-        size={30}
-      />
+    <div className="flex space-x-4 justify-center md:justify-end md:flex-grow order-3">
+      {/* Instagram */}
+      <a
+        onClick={() => window.open("https://www.instagram.com/milliken_sac/", '_blank')}
+        className="group relative block"
+      >
+        <div className="relative">
+          {/* hover scaling */}
+          <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
+            <FaInstagram
+              className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
+              size={32} // Increased icon size
+            />
+          </div>
+        </div>
+      </a>
+
+      {/* Github */}
+      <a
+        onClick={() => window.open("https://github.com/MillikenSAC", '_blank')}
+        className="group relative block"
+      >
+        <div className="relative">
+          {/* hover scaling */}
+          <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
+            <FaGithub
+              className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
+              size={32} 
+            />
+          </div>
+        </div>
+      </a>
     </div>
+
   </div>
 </footer>
 
