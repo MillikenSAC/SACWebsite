@@ -133,65 +133,61 @@ function Home() {
       </div>
     </div>
 
-    {/* Footer */}
-    <footer className="bg-gray-50 text-black py-6 mt-auto">
-  <div className="container mx-auto px-44 flex flex-col md:flex-row items-center md:space-x-2 gap-2 md:gap-4">
     
-    {/* Logo section (centered) */}
-    <div className="flex-shrink-0 mb-4 md:mb-0 order-1 md:order-2 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
-      <img
-        src={saclogo}
-        alt="School Logo"
-        className="h-16 w-auto mx-auto"
-      />
-    </div>
 
-    {/* School info */}
-    <div className="md:flex-grow md:mr-2 text-center md:text-left text-sm leading-6 order-2 md:order-1 w-full md:w-auto">
-      <p className="font-bold">School Info</p> {/* Bold title */}
-      <p className="font-normal">Milliken Mills High School</p>
-      <p className="font-normal">7522 Kennedy Rd</p>
-      <p className="font-normal">Markham ON L3R 9S5</p>
-      <p className="font-normal">(123) 456-7890</p>
-    </div>
+    {/* Footer */}
+    <footer className="bg-gray-50 text-black py-6 mt-auto px-6">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div className="sm:flex sm:items-center sm:justify-between">
+        
+        {/* Logo section */}
+        <div className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+          <img
+            src={saclogo}
+            alt="School Logo"
+            className="h-16 w-auto"
+          />
+        </div>
 
-    {/* Social icons */}
-    <div className="flex space-x-4 justify-center md:justify-end md:flex-grow order-3">
-      {/* Instagram */}
-      <a
-        onClick={() => window.open("https://www.instagram.com/milliken_sac/", '_blank')}
-        className="group relative block"
-      >
-        <div className="relative">
-          {/* hover scaling */}
-          <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
-            <FaInstagram
-              className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-              size={32} // Increased icon size
-            />
+        {/* School info */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
+          <div className="text-center sm:text-left text-sm leading-6">
+            <p className="font-normal">7522 Kennedy Rd</p>
+            <p className="font-normal">Markham ON L3R 9S5</p>
+            <p className="font-normal">(905) 477-0072</p>
+          </div>
+
+          {/* Social icons */}
+          <div className="flex space-x-4 justify-center sm:justify-end sm:flex-grow mt-4 sm:mt-0">
+            <a
+              onClick={() => window.open("https://www.instagram.com/milliken_sac/", '_blank')}
+              className="group relative block"
+            >
+              <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
+                <FaInstagram
+                  className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
+                  size={32}
+                />
+              </div>
+            </a>
+            <a
+              onClick={() => window.open("https://github.com/MillikenSAC", '_blank')}
+              className="group relative block"
+            >
+              <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
+                <FaGithub
+                  className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
+                  size={32}
+                />
+              </div>
+            </a>
           </div>
         </div>
-      </a>
-
-      {/* Github */}
-      <a
-        onClick={() => window.open("https://github.com/MillikenSAC", '_blank')}
-        className="group relative block"
-      >
-        <div className="relative">
-          {/* hover scaling */}
-          <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
-            <FaGithub
-              className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-              size={32} 
-            />
-          </div>
-        </div>
-      </a>
+      </div>
+      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     </div>
+  </footer>
 
-  </div>
-</footer>
 
 
 
