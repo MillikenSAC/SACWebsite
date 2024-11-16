@@ -9,7 +9,8 @@ export const Executives = [
       id: 2,
       img: 'https://images.unsplash.com/photo-1480926965639-9b5f63a0817b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
       name: 'Steven Tang',
-      title: 'Vice-President'
+      title: 'Vice-President',
+      caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus vel purus sed malesuada. Cras eu erat purus. Duis rhoncus euismod odio.'
     },
     {
       id: 3,

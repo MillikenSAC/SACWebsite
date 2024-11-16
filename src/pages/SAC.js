@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
-import SACCard from '../components/MeetSAC.js';
-import MemberPopup from '../components/MemberPopup.js';
-import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech } from '../Data/MeetSACData.js';
+import SACCard from '../components/MeetSAC';
+import TabSpecificCard from '../components/SACCardWithBody';
+import MemberPopup from '../components/MemberPopup';
+import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech } from '../Data/MeetSACData';
 
 function SAC() {
-  const location = useLocation(); 
+  const location = useLocation();
 
-  useEffect(() => { 
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
 
@@ -17,7 +18,7 @@ function SAC() {
   const tabMapping = {
     All: [...Executives, ...Secretary, ...SocialAffairs, ...Treasurers, ...Publicity, ...Reps, ...Tech],
     Executives: Executives,
-    Secretary: Secretary, 
+    Secretary: Secretary,
     'Social Affairs': SocialAffairs,
     Treasurers: Treasurers,
     Publicity: Publicity,
@@ -28,15 +29,20 @@ function SAC() {
   const currentData = tabMapping[selectedTab] || [];
   const [selectedMember, setSelectedMember] = useState(null);
 
-  // Function to handle card click
+  const filteredPresidents = currentData.filter(
+    (member) => member.title === 'President' || member.title === 'Vice-President'
+  );
+
+  const filteredOtherMembers = currentData.filter(
+    (member) => member.title !== 'President' && member.title !== 'Vice-President'
+  );
+
   const handleCardClick = (member) => {
     if (selectedTab !== 'All') {
-      // Open popup for other tabs
       setSelectedMember(member);
       return;
     }
 
-    // Determine the member's tab and navigate to it
     const memberToTabMapping = {
       Executives: Executives,
       Secretary: Secretary,
@@ -47,7 +53,7 @@ function SAC() {
       Reps: Reps,
     };
 
-    const foundTab = Object.keys(memberToTabMapping).find((tab) => 
+    const foundTab = Object.keys(memberToTabMapping).find((tab) =>
       memberToTabMapping[tab].includes(member)
     );
 
@@ -67,7 +73,6 @@ function SAC() {
         rel="stylesheet"
       />
 
-      {/* Popup */}
       {selectedMember && (
         <MemberPopup
           member={selectedMember}
@@ -100,8 +105,8 @@ function SAC() {
         ))}
       </div>
 
-      {/* Year Selector */}
-      <div className="flex w-full justify-center my-6">
+       {/* Year Selector */}
+       <div className="flex w-full justify-center my-6">
         <button type="button" className="items-center pr-5 opacity-50">
           {/* Left Arrow */}
           <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,16 +141,50 @@ function SAC() {
       </div>
 
       {/* SAC Cards */}
-      <div className="flex flex-wrap justify-center max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
-        {currentData.map((member) => (
-          <SACCard
-            key={member.id}
-            imgSrc={member.img}
-            name={member.name}
-            position={member.title}
-            onClick={() => handleCardClick(member)}
-          />
-        ))}
+      <div className="flex flex-wrap justify-center gap-4 mb-8 mt-7">
+        {filteredPresidents.map((president) =>
+          selectedTab === 'All' ? (
+            <SACCard
+              key={president.id}
+              imgSrc={president.img}
+              name={president.name}
+              position={president.title}
+              onClick={() => handleCardClick(president)}
+            />
+          ) : (
+            <TabSpecificCard
+              key={president.id}
+              imgSrc={president.img}
+              name={president.name}
+              position={president.title}
+              caption={president.caption}
+              onClick={() => handleCardClick(president)}
+            />
+          )
+        )}
+      </div>
+
+      <div className="flex flex-wrap justify-center max-w-full gap-y-6 gap-x-6 mb-10 mt-5">
+        {filteredOtherMembers.map((member) =>
+          selectedTab === 'All' ? (
+            <SACCard
+              key={member.id}
+              imgSrc={member.img}
+              name={member.name}
+              position={member.title}
+              onClick={() => handleCardClick(member)}
+            />
+          ) : (
+            <TabSpecificCard
+              key={member.id}
+              imgSrc={member.img}
+              name={member.name}
+              position={member.title}
+              caption={member.caption}
+              onClick={() => handleCardClick(member)}
+            />
+          )
+        )}
       </div>
     </div>
   );
