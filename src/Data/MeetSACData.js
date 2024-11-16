@@ -38,33 +38,39 @@ export const data2 = [
       name: 'Alan Lin',
       title: 'Secretary'
     },
-    {
-      id: 2,
-      img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-      name: 'Sam Wang',
-      title: 'Treasurer'
-    },
-    {
-      id: 3,
-      img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-      name: 'Jenny Cai',
-      title: 'Treasurer'
-    },
-    {
-        id: 4,
-        img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-        name: 'Madison C. Mitran',
-        title: 'Internal Affairs'
-    },
-    {
-        id: 5,
-        img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-        name: 'Mahisa Thayananthan',
-        title: 'External Affairs'
-    },
+];
+
+export const data3 = [ 
+  {
+    id: 1,
+    img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    name: 'Madison C. Mitran',
+    title: 'Internal Affairs'
+},
+{
+    id: 2,
+    img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    name: 'Mahisa Thayananthan',
+    title: 'External Affairs'
+},
+]
+
+export const data4 = [
+  {
+    id: 1,
+    img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    name: 'Sam Wang',
+    title: 'Treasurer'
+  },
+  {
+    id: 2,
+    img:'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    name: 'Jenny Cai',
+    title: 'Treasurer'
+  },
   ];
 
-export const data3 = [
+export const data5 = [
     {
         id: 1,
         img: 'https://images.unsplash.com/photo-1551405780-03882d5a2ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
@@ -97,7 +103,7 @@ export const data3 = [
       },
   ];
 
-export const data4 = [
+export const data6 = [
     {
         id: 1,
         img: 'https://images.unsplash.com/photo-1478359844494-1092259d93e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
@@ -136,7 +142,7 @@ export const data4 = [
       },
 ];
 
-export const data5 = [
+export const data7 = [
     {
         id: 1,
         img: 'https://images.unsplash.com/photo-1509477887414-681937645173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
