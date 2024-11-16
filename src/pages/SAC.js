@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/MeetSAC.js';
@@ -6,8 +6,8 @@ import MemberPopup from '../components/MemberPopup.js';
 import { data1, data2, data3, data4, data5, data6, data7 } from '../Data/MeetSACData.js';
 
 function SAC() {
-
   const location = useLocation(); 
+
   useEffect(() => { 
     window.scrollTo(0, 0);
   }, [location]);
@@ -25,10 +25,36 @@ function SAC() {
     Tech: data7,
   };
 
+  const currentData = tabMapping[selectedTab] || [];
+  const [selectedMember, setSelectedMember] = useState(null);
 
-    const currentData = tabMapping[selectedTab] || [];
-    const [selectedMember, setSelectedMember] = useState(null);
+  // Function to handle card click
+  const handleCardClick = (member) => {
+    if (selectedTab !== 'All') {
+      // Open popup for other tabs
+      setSelectedMember(member);
+      return;
+    }
 
+    // Determine the member's tab and navigate to it
+    const memberToTabMapping = {
+      Executives: data1,
+      Secretary: data2,
+      'Social Affairs': data3,
+      Treasurers: data4,
+      Publicity: data5,
+      Reps: data6,
+      Tech: data7,
+    };
+
+    const foundTab = Object.keys(memberToTabMapping).find((tab) => 
+      memberToTabMapping[tab].includes(member)
+    );
+
+    if (foundTab) {
+      setSelectedTab(foundTab);
+    }
+  };
 
   return (
     <div className="flex w-screen flex-col max-w-full overflow-x-hidden relative min-h-screen px-6">
@@ -41,8 +67,8 @@ function SAC() {
         rel="stylesheet"
       />
 
-       {/* Popup */}
-       {selectedMember && (
+      {/* Popup */}
+      {selectedMember && (
         <MemberPopup
           member={selectedMember}
           onClose={() => setSelectedMember(null)}
@@ -51,7 +77,7 @@ function SAC() {
 
       {/* Title */}
       <div className="w-full mt-20 text-center">
-        <div className="text-sky-950 text-[8rem] font-thin font-['Prata']">
+        <div className="text-sky-950 text-[4rem] md:text-[6rem] lg:text-[8rem] font-thin font-['Prata']">
           <span className="font-normal">Meet the </span>
           <span className="font-bold">Council</span>
         </div>
@@ -110,8 +136,6 @@ function SAC() {
       </div>
 
       {/* SAC Cards */}
-
-      {/* Other Members Grid */}
       <div className="flex flex-wrap justify-center max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
         {currentData.map((member) => (
           <SACCard
@@ -119,7 +143,7 @@ function SAC() {
             imgSrc={member.img}
             name={member.name}
             position={member.title}
-            onClick={() => setSelectedMember(member)}
+            onClick={() => handleCardClick(member)}
           />
         ))}
       </div>

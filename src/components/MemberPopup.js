@@ -34,7 +34,7 @@ export default function MemberPopup({ member, onClose }) {
       }}
     >
       {/* Popup Container */}
-      <div className="absolute w-full max-w-2xl h-auto bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="relative w-full max-w-2xl h-auto bg-white rounded-lg shadow-lg overflow-hidden">
         {/* "X" Button */}
         <button
           onClick={onClose}
