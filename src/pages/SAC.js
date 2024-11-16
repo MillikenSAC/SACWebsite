@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/MeetSAC.js';
+import MemberPopup from '../components/MemberPopup.js';
 import { data1, data2, data3, data4, data5, data6, data7 } from '../Data/MeetSACData.js';
 
 function SAC() {
@@ -26,6 +27,7 @@ function SAC() {
 
 
     const currentData = tabMapping[selectedTab] || [];
+    const [selectedMember, setSelectedMember] = useState(null);
 
 
   return (
@@ -38,6 +40,14 @@ function SAC() {
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Lobster&family=Prata&family=Sumana&family=Syne&display=swap"
         rel="stylesheet"
       />
+
+       {/* Popup */}
+       {selectedMember && (
+        <MemberPopup
+          member={selectedMember}
+          onClose={() => setSelectedMember(null)}
+        />
+      )}
 
       {/* Title */}
       <div className="w-full mt-20 text-center">
@@ -109,6 +119,7 @@ function SAC() {
             imgSrc={member.img}
             name={member.name}
             position={member.title}
+            onClick={() => setSelectedMember(member)}
           />
         ))}
       </div>
