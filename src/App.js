@@ -99,10 +99,9 @@ function App() {
   );
 }
 
-// Wrap your App component in Router
 const AppWrapper = () => {
   return (
-    <Router basename="/Milliken-SAC">
+    <Router basename="/SACWebsite">
       <App />
     </Router>
   );

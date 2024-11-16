@@ -1,5 +1,5 @@
 {
-  "homepage": "https://airplane356.github.io/Milliken-SAC",
+  "homepage": "https://millikensac.github.io/SACWebsite/",
   "name": "sac-website",
   "version": "0.1.0",
   "private": true,
@@ -13,8 +13,8 @@
     "react-big-calendar": "^1.15.0",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
-    "react-router-dom": "^6.27.0",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.28.0",
+    "react-scripts": "^5.0.1",
     "tailwind-scrollbar-hide": "^1.1.7",
     "web-vitals": "^2.1.4"
   },
