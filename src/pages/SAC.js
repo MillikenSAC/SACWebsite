@@ -130,7 +130,9 @@ function SAC() {
 
       {/* Other Members Grid */}
       <div className="flex flex-wrap justify-center max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
-        {currentData.map((member) => (
+        {currentData
+        .filter(member => member.title !== 'President' || member.title !== 'Vice President') 
+        .map((member) => (
           <SACCard
             key={member.id}
             imgSrc={member.img}
