@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/MeetSAC.js';
 import MemberPopup from '../components/MemberPopup.js';
-import { data1, data2, data3, data4, data5, data6, data7 } from '../Data/MeetSACData.js';
+import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech } from '../Data/MeetSACData.js';
 
 function SAC() {
   const location = useLocation(); 
@@ -15,14 +15,14 @@ function SAC() {
   const [selectedTab, setSelectedTab] = useState('All');
 
   const tabMapping = {
-    All: [...data1, ...data2, ...data3, ...data4, ...data5, ...data6, ...data7],
-    Executives: data1,
-    Secretary: data2, 
-    'Social Affairs': data3,
-    Treasurers: data4,
-    Publicity: data5,
-    Reps: data6,
-    Tech: data7,
+    All: [...Executives, ...Secretary, ...SocialAffairs, ...Treasurers, ...Publicity, ...Reps, ...Tech],
+    Executives: Executives,
+    Secretary: Secretary, 
+    'Social Affairs': SocialAffairs,
+    Treasurers: Treasurers,
+    Publicity: Publicity,
+    Tech: Tech,
+    Reps: Reps,
   };
 
   const currentData = tabMapping[selectedTab] || [];
@@ -38,13 +38,13 @@ function SAC() {
 
     // Determine the member's tab and navigate to it
     const memberToTabMapping = {
-      Executives: data1,
-      Secretary: data2,
-      'Social Affairs': data3,
-      Treasurers: data4,
-      Publicity: data5,
-      Reps: data6,
-      Tech: data7,
+      Executives: Executives,
+      Secretary: Secretary,
+      'Social Affairs': SocialAffairs,
+      Treasurers: Treasurers,
+      Publicity: Publicity,
+      Tech: Tech,
+      Reps: Reps,
     };
 
     const foundTab = Object.keys(memberToTabMapping).find((tab) => 
