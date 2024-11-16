@@ -27,7 +27,7 @@ function Navbar() {
             <div className='md:flex items-center justify-between text-indigo-900 bg-transparent py-4 md:px-10 px-7'>
                 {/* Wrap logo with Link to navigate to home page */}
                 <Link to="/" className='flex items-center' onClick={handleLinkClick}>
-                    <img src={logo} alt="Milliken Logo" className='w-[3rem] font-bold cursor-pointer' />
+                    <img src={logo} alt="Milliken Logo" className='w-[5rem] font-bold cursor-pointer' />
                 </Link>
 
                 <ul>

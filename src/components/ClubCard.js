@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa'; // Importing Instagram icon from react-icons
+import { FaInstagram } from 'react-icons/fa';
 
 export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, googleClassroomCode }) {
   return (

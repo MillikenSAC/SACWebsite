@@ -6,7 +6,7 @@ function FAQ() {
   return (
     <div class="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative">
       <div className="bggradientfullFAQ"></div>
-      <div class="h-fit w-fit py-1 mt-20 place-self-center px-2 text-sm font-semibold font-['Inter'] text-indigo-900 rounded-full inline-block bg-indigo-200 ">FREQUENTLY ASKED QUESTIONS</div>
+      <div class="h-fit w-fit py-1 mt-32 place-self-center px-2 text-sm font-semibold font-['Inter'] text-indigo-900 rounded-full inline-block bg-indigo-200 ">FREQUENTLY ASKED QUESTIONS</div>
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
       <div class="flex w-fit h-fit place-self-center relative text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
         Your questions answered.
