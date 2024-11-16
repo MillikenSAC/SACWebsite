@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
-import SACCard from '../components/MeetSAC';
-import TabSpecificCard from '../components/SACCardWithBody';
-import MemberPopup from '../components/MemberPopup';
+import SACCard from '../components/SACCard';
+import TabSpecificCard from '../components/SACCardCaptions';
 import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech } from '../Data/MeetSACData';
+import { motion } from 'framer-motion';
 
 function SAC() {
   const location = useLocation();
@@ -73,13 +73,7 @@ function SAC() {
         rel="stylesheet"
       />
 
-      {selectedMember && (
-        <MemberPopup
-          member={selectedMember}
-          onClose={() => setSelectedMember(null)}
-        />
-      )}
-
+      
       {/* Title */}
       <div className="w-full mt-20 text-center">
         <div className="text-sky-950 text-[4rem] md:text-[6rem] lg:text-[8rem] font-thin font-['Prata']">
@@ -139,6 +133,15 @@ function SAC() {
           </svg>
         </button>
       </div>
+      
+      {/* Animated Content */}
+      <motion.div
+        key={selectedTab}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+      >
 
       {/* SAC Cards */}
       <div className="flex flex-wrap justify-center gap-4 mb-8 mt-7">
@@ -186,6 +189,7 @@ function SAC() {
           )
         )}
       </div>
+      </motion.div>
     </div>
   );
 }
