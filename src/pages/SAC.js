@@ -2,25 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/MeetSAC.js';
-import MemberPopup from '../components/MemberPopup.js';
 import { data1, data2, data3, data4, data5, data6, data7 } from '../Data/MeetSACData.js';
 
-
-{/* Font Links */}
-<link
-    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Lobster&family=Prata&family=Sumana&family=Syne&display=swap"
-    rel="stylesheet"
-/>
-
 function SAC() {
-
-  const [selectedTab, setSelectedTab] = useState('All');
-  const [selectedMember, setSelectedMember] = useState(null);
 
   const location = useLocation(); 
   useEffect(() => { 
     window.scrollTo(0, 0);
   }, [location]);
+
+  const [selectedTab, setSelectedTab] = useState('All');
 
   const tabMapping = {
     All: [...data1, ...data2, ...data3, ...data4, ...data5, ...data6, ...data7],
@@ -33,26 +24,20 @@ function SAC() {
     Tech: data7,
   };
 
-  const currentData = tabMapping[selectedTab] || [];
 
- const filteredPresidents = currentData.filter((member) => 
-      member.title === "President" || member.title === "Vice-President"
-    );
+    const currentData = tabMapping[selectedTab] || [];
+
 
   return (
     <div className="flex w-screen flex-col max-w-full overflow-x-hidden relative min-h-screen px-6">
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <div className="bggradientfull"></div>
 
-      {/* Popup */}
-      {selectedMember && (
-        <MemberPopup
-          member={selectedMember}
-          onClose={() => setSelectedMember(null)}
-        />
-      )}
-
-      {/* Main Content */}
+      {/* Font Links */}
+      <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Lobster&family=Prata&family=Sumana&family=Syne&display=swap"
+        rel="stylesheet"
+      />
 
       {/* Title */}
       <div className="w-full mt-20 text-center">
@@ -115,30 +100,15 @@ function SAC() {
       </div>
 
       {/* SAC Cards */}
-      {/* Presidents Row */}
-      <div className="flex flex-wrap justify-center gap-4 mb-8 mt-7">
-        {filteredPresidents.map((president) => (
-          <SACCard
-            key={president.id}
-            imgSrc={president.img}
-            name={president.name}
-            position={president.title}
-            onClick={() => setSelectedMember(president)}
-          />
-        ))}
-      </div>
 
       {/* Other Members Grid */}
       <div className="flex flex-wrap justify-center max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
-        {currentData
-        .filter(member => member.title !== 'President' || member.title !== 'Vice President') 
-        .map((member) => (
+        {currentData.map((member) => (
           <SACCard
             key={member.id}
             imgSrc={member.img}
             name={member.name}
             position={member.title}
-            onClick={() => setSelectedMember(member)}
           />
         ))}
       </div>
