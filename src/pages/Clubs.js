@@ -11,14 +11,7 @@ function Clubs() {
 
   return (
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">
-        <div className="clubgradient1"></div>
-        <div className="clubgradient2"></div>
-        <div className="clubgradient3"></div>
-        <div className="clubgradient4"></div>
-        <div className="clubgradient5"></div>
-        <div className="clubgradient6"></div>
-        <div className="clubgradient7"></div>
-        <div className="clubgradient8"></div>
+        <div className="bggradientfull"></div>
 
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
       <div class="flex w-fit h-fit place-self-center mt-20 text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">

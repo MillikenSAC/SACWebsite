@@ -1,0 +1,23 @@
+@media (min-width: 1000px) {
+    .clubCardSmall {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1400px) {
+    .clubCardLarge {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.bggradientfull {
+    transform: rotate(0deg) translateX(-20%);
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 26, 255, 0.2) 0%, rgba(255, 0, 199, 0.1) 100%);
+    opacity: 0.8;
+    position: absolute;
+    width: 150%;
+    height: 100%; /* Match the container height */
+    background-size: cover;
+    background-repeat: repeat-y;
+    z-index: 0;
+}
