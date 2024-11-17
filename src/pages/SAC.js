@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/SACCard';
 import TabSpecificCard from '../components/SACCardCaptions';
-import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech } from '../Data/MeetSACData';
+import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech, TeacherAdvisors} from '../Data/MeetSACData';
 import { motion } from 'framer-motion';
 
 function SAC() {
@@ -16,7 +16,7 @@ function SAC() {
   const [selectedTab, setSelectedTab] = useState('All');
 
   const tabMapping = {
-    All: [...Executives, ...Secretary, ...SocialAffairs, ...Treasurers, ...Publicity, ...Reps, ...Tech],
+    All: [...Executives, ...Secretary, ...SocialAffairs, ...Treasurers, ...Publicity, ...Reps, ...Tech, ...TeacherAdvisors],
     Executives: Executives,
     Secretary: Secretary,
     'Social Affairs': SocialAffairs,
@@ -24,6 +24,7 @@ function SAC() {
     Publicity: Publicity,
     Tech: Tech,
     Reps: Reps,
+    'Teacher Advisors': TeacherAdvisors
   };
 
   const currentData = tabMapping[selectedTab] || [];
@@ -34,7 +35,11 @@ function SAC() {
   );
 
   const filteredOtherMembers = currentData.filter(
-    (member) => member.title !== 'President' && member.title !== 'Vice-President'
+    (member) => member.title !== 'President' && member.title !== 'Vice-President' && member.title !=='Teacher Advisor'
+  );
+
+  const filteredTeacherAdvisors = currentData.filter(
+    (member) => member.title === 'Teacher Advisor' || member.title === 'Teacher Advisor'
   );
 
   const handleCardClick = (member) => {
@@ -52,6 +57,7 @@ function SAC() {
       Publicity: Publicity,
       Tech: Tech,
       Reps: Reps,
+      'Teacher Advisors': TeacherAdvisors
     };
 
     const foundTab = Object.keys(memberToTabMapping).find((tab) =>
@@ -193,6 +199,34 @@ function SAC() {
           )
         )}
       </div>
+
+      
+
+      <div className="flex flex-wrap justify-center max-w-full gap-y-6 gap-x-6 mb-10 mt-5">
+        {filteredTeacherAdvisors.map((member) =>
+          selectedTab === 'All' ? (
+            <SACCard
+              key={member.id}
+              imgSrc={member.img}
+              name={member.name}
+              position={member.title}
+              onClick={() => handleCardClick(member)}
+            />
+          ) : (
+            <TabSpecificCard
+              key={member.id}
+              imgSrc={member.img}
+              name={member.name}
+              position={member.title}
+              caption={member.caption}
+              instagram={member.instagram}
+              email={member.email}
+              onClick={() => handleCardClick(member)}
+            />
+          )
+        )}
+      </div>
+
       </motion.div>
     </div>
   );

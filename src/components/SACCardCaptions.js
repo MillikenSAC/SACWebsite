@@ -11,16 +11,18 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
 
       {/* Social Icons */}
       <div className="absolute top-64 right-3 flex flex-row space-x-2">
-        <a
-          href={instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative block"
-        >
-          <div className="relative w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
-            <FaInstagram className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out" size={24} />
-          </div>
-        </a>
+        {position !== "Teacher Advisor" && (
+          <a
+            href={instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block"
+          >
+            <div className="relative w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
+              <FaInstagram className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out" size={24} />
+            </div>
+          </a>
+        )}
         <a
           href={email}
           className="group relative block"

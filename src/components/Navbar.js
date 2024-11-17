@@ -23,11 +23,12 @@ function Navbar() {
     };
 
     return (
-        <div className='z-50 w-screen max-w-full fixed'> {/* Changed absolute to fixed */}
+        <div className='z-50 w-screen max-w-full absolute'> {/* Changed absolute to fixed */}
             <div className='md:flex items-center justify-between text-indigo-900 bg-transparent py-4 md:px-10 px-7'>
                 
                 {/* Logo - fixed position and size */}
-                <Link to="/" className='flex items-center'>
+                <Link to="/" className='flex items-center' onClick={() => window.scrollTo(0, 0)} >
+                
                     <img 
                         src={logo} 
                         alt="Milliken Logo" 
@@ -60,7 +61,7 @@ function Navbar() {
                                 <Link 
                                     to={link.link} 
                                     className='text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200'
-                                    onClick={handleLinkClick} // Close on link click
+                                    onClick={handleLinkClick} 
                                 >
                                     {link.name}
                                 </Link>

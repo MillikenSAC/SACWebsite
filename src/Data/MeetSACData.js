@@ -195,3 +195,20 @@ export const Tech = [
         caption: "Hi milliken, I'm Eric.s, and I'm in charge of audio/visual tech along with Sophie. This is my last year on SAC. I love boba (the store at dension remembers my order) and studying advance functions yippie!! You can find me at @yentah__ or in the drama room if im on my spare."
       },
 ];
+
+export const TeacherAdvisors = [
+  {
+      id: 23,
+      img: 'https://images.unsplash.com/photo-1509477887414-681937645173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      name: 'Ms. Virk',
+      title: 'Teacher Advisor',
+      caption: ""
+    },
+    {
+      id: 24,
+      img: 'https://images.unsplash.com/photo-1454783904586-9fa42a1e8442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      name: 'Mr. Birch',
+      title: 'Teacher Advisor',
+      caption: ""
+    }
+];
