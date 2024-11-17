@@ -64,8 +64,7 @@ function SAC() {
   };
 
   return (
-    <div className="flex w-screen flex-col max-w-full overflow-x-hidden overflow-y-hidden relative min-h-screen px-6">
-      <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+    <div className="flex w-screen flex-col max-w-full overflow-x-hidden overflow-y-hidden relative min-h-screen px-5">
       <div className="bggradientfull"></div>
 
       {/* Font Links */}
@@ -145,7 +144,7 @@ function SAC() {
       >
 
       {/* SAC Cards */}
-      <div className="flex flex-wrap justify-center gap-4 mb-8 mt-7">
+      <div className="flex flex-wrap justify-center gap-6 mb-8 mt-7">
         {filteredPresidents.map((president) =>
           selectedTab === 'All' ? (
             <SACCard

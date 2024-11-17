@@ -138,19 +138,19 @@ function Home() {
     {/* Footer */}
     <footer className="bg-gray-50 text-black py-6 mt-auto px-6">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div className="sm:flex sm:items-center sm:justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         
-        {/* Logo section */}
-        <div className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        {/* Logo section - centering adjustment */}
+        <div className="flex justify-center mb-4 sm:mb-0 sm:justify-start">
           <img
             src={saclogo}
             alt="School Logo"
-            className="h-16 w-auto"
+            className="h-16 w-auto mx-auto sm:mx-0"
           />
         </div>
 
         {/* School info */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 mt-4 sm:mt-0">
           <div className="text-center sm:text-left text-sm leading-6">
             <p className="font-normal">7522 Kennedy Rd</p>
             <p className="font-normal">Markham ON L3R 9S5</p>
@@ -187,6 +187,7 @@ function Home() {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     </div>
   </footer>
+
 
 
 

@@ -9,7 +9,7 @@ function Navbar() {
         { name: "Home", link: "/" },
         { name: "Council", link: "/SAC" },
         { name: "Clubs", link: "/Clubs" },
-        { name: "Event Calendar", link: "/Event" },
+        { name: "Calendar", link: "/Event" },
         { name: "Gallery", link: "/Gallery" },
         { name: "FAQ", link: "/FAQ" },
     ];
@@ -23,11 +23,16 @@ function Navbar() {
     };
 
     return (
-        <div className='z-50 w-screen max-w-full absolute'>
+        <div className='z-50 w-screen max-w-full fixed'> {/* Changed absolute to fixed */}
             <div className='md:flex items-center justify-between text-indigo-900 bg-transparent py-4 md:px-10 px-7'>
-                {/* Wrap logo with Link to navigate to home page */}
-                <Link to="/" className='flex items-center' onClick={handleLinkClick}>
-                    <img src={logo} alt="Milliken Logo" className='w-[4rem] font-bold cursor-pointer' />
+                
+                {/* Logo - fixed position and size */}
+                <Link to="/" className='flex items-center'>
+                    <img 
+                        src={logo} 
+                        alt="Milliken Logo" 
+                        className='w-16 h-auto fixed left-4 top-4' // Ensures logo stays fixed
+                    />
                 </Link>
 
                 <ul>
@@ -47,6 +52,7 @@ function Navbar() {
                     )}
                 </ul>
 
+                {/* Navigation Links */}
                 <ul className={`md:flex md:items-center md:pb-0 absolute md:static backdrop-blur md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in-out ${open ? 'top-14 fade-in' : 'top-[-490px]'}`}>
                     {
                         Links.map((link) => (
