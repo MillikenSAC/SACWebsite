@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/SACCard';
 import TabSpecificCard from '../components/SACCardCaptions';
-import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech, TeacherAdvisors} from '../Data/MeetSACData';
+import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech, TeacherAdvisors} from '../data/MeetSACData';
 import { motion } from 'framer-motion';
 
 function SAC() {

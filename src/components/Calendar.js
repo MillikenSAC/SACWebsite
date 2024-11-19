@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import '../styles/Calendar.css';
-import events from "../Data/CalendarData";
+import events from "../data/CalendarData";
 import Popup from './CalendarPopUp'; 
 
 const locales = {
