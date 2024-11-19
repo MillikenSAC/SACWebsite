@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SACWebsite/static/css/main.f246f52a.css",
-    "main.js": "/SACWebsite/static/js/main.7f9c8c02.js",
+    "main.css": "/SACWebsite/static/css/main.bbc4bb9b.css",
+    "main.js": "/SACWebsite/static/js/main.119459c1.js",
     "static/js/453.5d780a28.chunk.js": "/SACWebsite/static/js/453.5d780a28.chunk.js",
     "static/media/RoboticsCandid2.JPG": "/SACWebsite/static/media/RoboticsCandid2.01d7f638de4c9286b86e.JPG",
     "static/media/RoboticsCandid.JPG": "/SACWebsite/static/media/RoboticsCandid.fd193bdeed53954e4397.JPG",
@@ -12,12 +12,12 @@
     "static/media/logo.png": "/SACWebsite/static/media/logo.fa3139aeed1d98030f62.png",
     "index.html": "/SACWebsite/index.html",
     "static/media/en-US.cjs": "/SACWebsite/static/media/en-US.c3a6319ea4f219498e6f.cjs",
-    "main.f246f52a.css.map": "/SACWebsite/static/css/main.f246f52a.css.map",
-    "main.7f9c8c02.js.map": "/SACWebsite/static/js/main.7f9c8c02.js.map",
+    "main.bbc4bb9b.css.map": "/SACWebsite/static/css/main.bbc4bb9b.css.map",
+    "main.119459c1.js.map": "/SACWebsite/static/js/main.119459c1.js.map",
     "453.5d780a28.chunk.js.map": "/SACWebsite/static/js/453.5d780a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f246f52a.css",
-    "static/js/main.7f9c8c02.js"
+    "static/css/main.bbc4bb9b.css",
+    "static/js/main.119459c1.js"
   ]
 }
