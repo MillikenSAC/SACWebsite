@@ -2,36 +2,37 @@
     padding-top: 1.1rem;
 }
 
-.rbc-toolbar button{
+/* Toolbar Button Hover and Transition */
+.rbc-toolbar button {
     color: #443779;
     border-color: #443779;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
-.rbc-toolbar button:hover{
+.rbc-toolbar button:hover {
     background-color: rgba(69, 56, 121, 0.5);
-    color: #dbeafe;
     border-color: #443779;
 }
 
-.rbc-toolbar button:active{
+.rbc-toolbar button:active {
     background-color: rgba(69, 56, 121, 0.4);
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
     border-color: #443779;
 }
 
-.rbc-toolbar button:focus{
+.rbc-toolbar button:focus {
     background-color: rgba(69, 56, 121, 0.4);
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
     border-color: #443779;
 }
 
-.rbc-toolbar button:active:hover{
+.rbc-toolbar button:active:hover {
     background-color: rgba(69, 56, 121, 0.6);
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
     border-color: #443779;
 }
 
-.rbc-toolbar button:active:focus{
+.rbc-toolbar button:active:focus {
     background-color: rgba(69, 56, 121, 0.6);
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
     border-color: #443779;
@@ -42,22 +43,26 @@
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
     border-color: #443779;
     color: #443779;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-.rbc-toolbar button.rbc-active:focus{
+.rbc-toolbar button.rbc-active:focus {
     background-color: rgba(69, 56, 121, 0.4);
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.125);
     border-color: #443779;
     color: #443779;
 }
 
-.rbc-toolbar-label{
-    font-size: 1.25rem;
+
+/* Toolbar Label Transition */
+.rbc-toolbar-label {
+    font-size: 2.5rem;
     font-weight: 500;
     color: #443779;
     letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
-
 
 .rbc-header{
     background: linear-gradient(180deg, #DADAF3 9.27%, rgba(245, 238, 253, 0.00) 109.27%);
@@ -68,15 +73,7 @@
     overflow: hidden;
     border-color: #443779;
     border-width: 0.09rem;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-width: 0px;
-}
-
-.rbc-header + .rbc-header {
-    border-left: 0.08rem solid #443779;
-    overflow: hidden;
-    border-spacing: 0;
+    margin-top: 20px;
 }
 
 .rbc-month-view{
@@ -92,27 +89,36 @@
     border-color: #443779;
     border-left-width: 0.09rem;
     border-right-width: 0.09rem;
+    background: white;
 }
 
 .rbc-off-range-bg {
-    background-color: #dbeafe;
+    background-color: #ffffff;
     filter: brightness(90%);
 }
 
-.rbc-event{
+.rbc-event {
     color: #443779;
     border-color: #443779;
     border-width: 0.02rem;
     width: 96%;
     margin-left: 2%;
+    background-color: #f8f8fe;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.rbc-event:hover {
+    background-color: #e6e6f5; 
 }
 
 .rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
-    background-color: #DADAF3;
+    background-color: #e6e6f5;
 }
 
 .rbc-event, .rbc-day-slot .rbc-background-event {
-    background-color: #DADAF3;
+    background-color: #f8f8fe;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .rbc-event:focus, .rbc-day-slot .rbc-background-event:focus {
@@ -141,21 +147,33 @@
 }
 
 .custom-calendar {
-    height: 700px; /* Default height for larger screens */
-    margin: 60px;
+    height: 700px; 
+    max-width: 1200px; 
+    margin: 0 auto;
     font-family: "Inter";
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.custom-calendar-container {
+    height: calc(100vh - 6.5rem); 
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 768px) {
     .custom-calendar {
-        height: 90vh; /* Take up more vertical space on smaller screens */
-        margin: 20px; /* Adjust margin as needed */
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .custom-calendar {
-        height: 80vh; /* Further adjust for very small screens */
-        margin: 10px; /* Reduce margin */
+        height: auto;
+        width: 100%; 
+        margin: 5px;
+        padding: 10px;
     }
 }

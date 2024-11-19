@@ -8,10 +8,9 @@ function Event() {
       <div className="bggradientfull"></div>
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>   
       <div class="flex w-fit h-fit place-self-center mt-20 mb-5 text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
-          SACtivities 
       </div>
 
-      <div class="-translate-y-[3rem]">
+      <div class="-translate-y-[3rem] custom-calendar-container">
         <Calendar/>
       </div>
     </div>
