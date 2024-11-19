@@ -7,7 +7,7 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import '../styles/Calendar.css';
 import events from "../data/CalendarData";
-import Popup from './CalendarPopUp'; 
+import Popup from './CalendarPopUp';
 
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
@@ -33,19 +33,29 @@ function SACCalendar() {
         setSelectedEvent(null);
     };
 
+    const currentDate = new Date();
+
+    const dayPropGetter = (date) => {
+        const isToday = date.toDateString() === currentDate.toDateString();
+        return {
+            className: isToday ? "current-day" : "",
+        };
+    };
+
     return (
         <div className="calendar">
-            <Calendar 
-                localizer={localizer} 
-                events={allEvents} 
-                startAccessor="start" 
-                endAccessor="end" 
-                views={["month", "agenda"]} 
-                className="custom-calendar"  
+            <Calendar
+                localizer={localizer}
+                events={allEvents}
+                startAccessor="start"
+                endAccessor="end"
+                views={["month", "agenda"]}
+                className="custom-calendar"
                 onSelectEvent={handleEventClick}
-                eventPropGetter={(event) => ({
-                    title: `${event.title} - ${event.start.toLocaleDateString()}`
-                })}
+                dayPropGetter={dayPropGetter}
+                formats={{
+                    weekdayFormat: (date, culture, localizer) => format(date, "EEE"), // 3-letter day names (e.g., Mon, Tue)
+                }}
             />
             <Popup event={selectedEvent} onClose={handleClosePopup} />
         </div>

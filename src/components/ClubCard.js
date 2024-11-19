@@ -8,7 +8,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
         // Prevent clicking the card to open the link
         e.stopPropagation();
       }}
-      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80"
+      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-full max-w-md h-80 mx-auto sm:w-96"
     >
       <div className="flex items-start relative">
         {/* Logo in its own div */}
@@ -24,7 +24,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
               <div className="absolute bottom-0 right-0 m-0 w-6 h-6 bg-white rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
                 <FaInstagram
                   className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-                  size={20} // Adjust icon size
+                  size={20} 
                 />
               </div>
             </div>

@@ -11,7 +11,7 @@ function Gallery() {
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
 
       {/* Page Title */}
-      <div className="flex w-fit h-fit place-self-center mt-20 text-center text-sky-950 lg:text-[6rem] md:text-[4rem] text-[3rem] font-thin font-['Prata']">
+      <div className="flex w-fit h-fit place-self-center mt-20 text-center text-sky-950 lg:text-[5rem] text-[3rem] font-thin font-['Prata']">
         Gallery
       </div>
 

@@ -74,10 +74,28 @@
     border-color: #443779;
     border-width: 0.09rem;
     margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 5px;
 }
 
 .rbc-month-view{
     border-width: 0px;
+}
+
+.rbc-month-view .rbc-date-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.rbc-month-view .rbc-day-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .rbc-month-row{
@@ -102,10 +120,12 @@
     border-color: #443779;
     border-width: 0.02rem;
     width: 96%;
+    margin-top: 2px;
     margin-left: 2%;
     background-color: #f8f8fe;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease; 
+    
 }
 
 .rbc-event:hover {
@@ -161,18 +181,37 @@
     flex-direction: column;
 }
 
+/*
+.current-day {
+    position: relative;
+}
+
+.current-day::before {
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: 48.4%;
+    transform: translateX(-50%);
+    width: 25px; 
+    height: 25px; 
+    background-color: rgb(217, 98, 98);
+    border-radius: 50%;
+    z-index: 0;
+}
+*/
+
 @media (max-width: 768px) {
     .custom-calendar {
-        width: 100%;
+        width: 100;
         margin: 10px;
         padding: 15px;
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
     .custom-calendar {
-        height: auto;
-        width: 100%; 
+        width: 100; 
         margin: 5px;
         padding: 10px;
     }

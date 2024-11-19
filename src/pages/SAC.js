@@ -82,7 +82,7 @@ function SAC() {
       
       {/* Title */}
       <div className="w-full mt-20 text-center">
-        <div className="text-sky-950 text-[4rem] md:text-[6rem] lg:text-[8rem] font-thin font-['Prata']">
+        <div className="text-sky-950 text-[3rem] md:text-[4rem] lg:text-[5rem] font-thin font-['Prata']">
           <span className="font-normal">Meet the </span>
           <span className="font-bold">Council</span>
         </div>
