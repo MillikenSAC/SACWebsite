@@ -10,7 +10,7 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
       <img src={imgSrc} alt={name} className="w-full h-[300px] object-cover" />
 
       {/* Social Icons */}
-      <div className="absolute top-64 right-3 flex flex-row space-x-2">
+      <div className="absolute top-[19rem] right-3 flex flex-row space-x-2">
         {position !== "Teacher Advisor" && (
           <a
             href={instagram}
@@ -24,7 +24,7 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
           </a>
         )}
         <a
-          href={email}
+          href={'mailto:${email}'}
           className="group relative block"
         >
           <div className="relative w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
