@@ -24,7 +24,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
               <div className="absolute bottom-0 right-0 m-0 w-6 h-6 bg-white rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
                 <FaInstagram
                   className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-                  size={20} // Adjust icon size
+                  size={20} 
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
       </div>
       
       {/* Bottom section for description */}
-      <div className="text-gray-700 py-5 h-24 overflow-hidden overflow-ellipsis mt-3 text-left">
+      <div className="text-gray-700 py-5 h-24 overflow-ellipsis mt-3 text-left">
         {desc}
       </div>
     </div>

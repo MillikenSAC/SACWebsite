@@ -7,7 +7,7 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
       onClick={onClick}
       className="relative overflow-hidden max-w-2xl rounded-3xl shadow-lg border-indigo-900 border transition-transform hover:scale-105 hover:shadow-xl duration-200 ease-in-out bg-white w-[500px] h-auto cursor-pointer"
     >
-      <img src={imgSrc} alt={name} className="w-full h-[250px] object-cover" />
+      <img src={imgSrc} alt={name} className="w-full h-[300px] object-cover" />
 
       {/* Social Icons */}
       <div className="absolute top-64 right-3 flex flex-row space-x-2">
