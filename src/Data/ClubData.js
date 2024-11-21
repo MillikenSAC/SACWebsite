@@ -183,15 +183,6 @@ const clubData = [
         googleClassroomCode: "7j75ly3"
     },
     {
-        name: "Knightrogen",
-        desc: "Science Club for Milliken Mills.",
-        imgSrc: logo,
-        link: "https://www.instagram.com/mmhs_knightrogen/",
-        room: "Science Rooms",
-        meetingDay: "Friday",
-        googleClassroomCode: "ihow2n5"
-    },
-    {
         name: "MathSoc",
         desc: "A club at Milliken dedicated to all things math.",
         imgSrc: logo,
