@@ -8,6 +8,20 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import roboticsCandid from '../assets/RoboticsCandid.webp'
 import roboticsCandid2 from '../assets/RoboticsCandid2.webp'
+import calendarData from '../data/CalendarData'
+
+
+const today = new Date();
+
+const upcomingEvents = calendarData
+    .filter((event) => new Date(event.start) > today) // Only include future events
+    .sort((a, b) => new Date(a.start) - new Date(b.start)) // Sort events by start date
+    .slice(0, 3); // Get the top 3 events
+
+const formatDate = (date) => {
+    const options = {month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+    return date.toLocaleDateString(undefined, options);
+};
 
 function Home() {
   return (
@@ -37,23 +51,48 @@ function Home() {
         </p>
         
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          <div className="relative lg:row-span-2 z-20">
-            <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-              <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-              <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center text-center">
-                UPCOMING EVENTS
-              </p>
-              <p className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3">
-              Stay updated with our big events!
-              </p>
-              </div>
-              <div className="relative min-h-[15rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-              {/**<img src="" alt="Robotics Logo" /> */}
-              </div>
+            {/* Upcoming Events */}
+            <div className="relative lg:row-span-2 z-20">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                  <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center text-center">
+                    UPCOMING EVENTS
+                  </p>
+                  <p className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3">
+                    Stay updated with our big events!
+                  </p>
+                </div>
+                <div className="relative w-full max-lg:mx-auto">
+                  <ul className="space-y-4 px-6 pt-4">
+                  {upcomingEvents.map((event, index) => (
+                    <li
+                      key={index}
+                      className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-800">{event.title}</h3>
+                      <p className="text-sm text-gray-600">
+                        {formatDate(event.start)} - {formatDate(event.end)}
+                      </p>
+                      {event.description && (
+                        <p className="text-sm text-gray-600">{event.description}</p>
+                      )}
+                    </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex justify-center py-10">
+                <Link 
+                    to="/Event" 
+                    className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
+                >
+                    See Full Calendar
+                </Link>
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
-          </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
+            </div>
+
           
           <div className="relative max-h-[350px] max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20">
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>

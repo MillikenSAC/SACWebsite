@@ -89,20 +89,20 @@ function SAC() {
 
       {/* Tab Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-10 mb-6 z-10">
-        {Object.keys(tabMapping).map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setSelectedTab(tab)}
-            className={`py-2 px-4 rounded-md font-semibold shadow-md transition-all duration-300 ${
-              selectedTab === tab
-                ? 'bg-indigo-500 text-white hover:bg-indigo-600'
-                : 'bg-white text-gray-800 hover:bg-gray-300'
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
+      {Object.keys(tabMapping).map((tab) => (
+        <button
+          key={tab}
+          onClick={() => setSelectedTab(tab)}
+          className={`p-2 px-4 rounded-lg font-semibold transition duration-200 ${
+            selectedTab === tab
+              ? 'bg-indigo-900 text-blue-100'
+              : 'text-indigo-900 hover:text-blue-100 hover:bg-indigo-900'
+          }`}
+        >
+          {tab}
+        </button>
+      ))}
+    </div>
       
       {/* Animated Content */}
       <motion.div

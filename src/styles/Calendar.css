@@ -176,7 +176,7 @@
 }
 
 .custom-calendar-container {
-    height: calc(100vh - 6.5rem); 
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }

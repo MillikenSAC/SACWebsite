@@ -17,7 +17,7 @@ function Clubs() {
           Clubs
       </div>
 
-      <div className="grid w-6/7 max-w-full grid-cols-1 clubCardSmall clubCardLarge gap-y-6 gap-x-6 place-items-center place-self-center mb-10 mt-5">
+      <div className="flex flex-wrap justify-center gap-6 mx-5 mt-10 mb-20">
 
         {sortedClubs.map((club, index) => (
           <ClubCard 
