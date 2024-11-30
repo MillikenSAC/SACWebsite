@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 import '../styles/Navbar.css'; 
 
 function Navbar() {

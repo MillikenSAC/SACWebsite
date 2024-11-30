@@ -18,7 +18,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
               <img
                 src={imgSrc}
                 alt={name}
-                className="w-20 h-20 rounded-full border-2 border-indigo-900 group-hover:scale-110 duration-200 ease-in-out"
+                className="w-20 h-20 object-cover rounded-full border-2 border-indigo-900 group-hover:scale-110 duration-200 ease-in-out"
               />
               {/* Instagram icon on white circle */}
               <div className="absolute bottom-0 right-0 m-0 w-6 h-6 bg-white rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">

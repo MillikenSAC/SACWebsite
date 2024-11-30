@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import sacbg from '../assets/sacbg.png'; 
-import SAC2025 from '../assets/SAC-All.JPG';
-import saclogo from '../assets/logo.png';
+import sacbg from '../assets/sacbg.webp'; 
+import SAC2025 from '../assets/SAC-All.webp';
+import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import roboticsCandid from '../assets/RoboticsCandid.JPG'
-import roboticsCandid2 from '../assets/RoboticsCandid2.JPG'
+import roboticsCandid from '../assets/RoboticsCandid.webp'
+import roboticsCandid2 from '../assets/RoboticsCandid2.webp'
 
 function Home() {
   return (
