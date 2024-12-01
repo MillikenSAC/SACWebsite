@@ -5,9 +5,9 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
   return (
     <div
       onClick={onClick}
-      className="relative overflow-hidden max-w-2xl rounded-3xl shadow-lg border-indigo-900 border transition-transform hover:scale-105 hover:shadow-xl duration-200 ease-in-out bg-white w-[500px] h-auto cursor-pointer"
+      className="relative overflow-hidden max-w-2xl rounded-3xl shadow-lg border-indigo-900 border transition-transform hover:scale-105 hover:shadow-xl duration-200 ease-in-out bg-white w-[500px] h-auto"
     >
-      <img src={imgSrc} alt={name} className="w-full h-[300px] object-cover" />
+      <img src={imgSrc} alt={name} className="w-full h-[300px] object-cover" style={{ borderRadius: '24px 24px 0 0' }}/>
 
       {/* Social Icons */}
       <div className="absolute top-[19rem] pt-4 right-3 flex flex-row space-x-2">
@@ -24,7 +24,7 @@ export default function CouncilMemberCardWithCaption({ name, position, imgSrc, c
           </a>
         )}
         <a
-          href={'mailto:${email}'}
+          href={`mailto:${email}`}
           className="group relative block"
         >
           <div className="relative w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">

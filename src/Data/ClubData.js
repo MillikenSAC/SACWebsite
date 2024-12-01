@@ -264,7 +264,7 @@ const clubData = [
         link: "https://www.instagram.com/mmhschess/",
         room: "304",
         meetingDay: "Wednesday",
-        googleClassroom: "t3wntjz"
+        googleClassroomCode: "t3wntjz"
     },
     {
         name: "Dance Club",
@@ -273,7 +273,7 @@ const clubData = [
         link: "https://www.instagram.com/mmhs_danceclub/",
         room: "125",
         meetingDay: "Monday",
-        googleClassroom: "yjldpz4"
+        googleClassroomCode: "yjldpz4"
     },
     {
         name: "Fashion",
@@ -282,7 +282,7 @@ const clubData = [
         link: "https://www.instagram.com/millikenfashion/",
         room: "226",
         meetingDay: "Tuesday",
-        googleClassroom: "e2ohb64"
+        googleClassroomCode: "e2ohb64"
     },
     {
         name: "MMTS",
@@ -291,7 +291,7 @@ const clubData = [
         link: "https://www.instagram.com/mmts_club/",
         room: "315",
         meetingDay: "Friday",
-        googleClassroom: "jf5xuf3"
+        googleClassroomCode: "jf5xuf3"
     },
     {
         name: "Reach for The Top",
@@ -300,7 +300,7 @@ const clubData = [
         link: "https://www.instagram.com/milliken_reach/",
         room: "314",
         meetingDay: "Thursday",
-        googleClassroom: "bxa7dd7"
+        googleClassroomCode: "bxa7dd7"
     },
     {
         name: "Red Cross",
@@ -309,7 +309,7 @@ const clubData = [
         link: "https://www.instagram.com/redcrossmilliken/",
         room: "328",
         meetingDay: "Thursday",
-        googleClassroom: "3c2ffgo"
+        googleClassroomCode: "3c2ffgo"
     },
     {
         name: "Skibidi Mills 9569 FRC Team",
@@ -318,7 +318,7 @@ const clubData = [
         link: "https://www.instagram.com/mmhs.robotics/",
         room: "161",
         meetingDay: "Friday",
-        googleClassroom: "y56ms5q"
+        googleClassroomCode: "y56ms5q"
     },
     {
         name: "STEMPower",
@@ -327,7 +327,7 @@ const clubData = [
         link: "https://www.instagram.com/stempowerus/",
         room: "319",
         meetingDay: "Wednesday",
-        googleClassroom: "fnryqk7"
+        googleClassroomCode: "fnryqk7"
     },
     {
         name: "Vex Robotics Club",
@@ -336,7 +336,7 @@ const clubData = [
         link: "https://www.instagram.com/milliken.vex/",
         room: "161",
         meetingDay: "Wednesday",
-        googleClassroom: "e5f6t32"
+        googleClassroomCode: "e5f6t32"
     },
     {
         name: "YorkCan",
@@ -345,7 +345,7 @@ const clubData = [
         link: "https://www.instagram.com/yorkcanofficial/",
         room: "Online",
         meetingDay: "Monday",
-        googleClassroom: "636ynnc"
+        googleClassroomCode: "636ynnc"
     },
     {
         name: "YOSA (Youth of South Asia)",
@@ -354,7 +354,7 @@ const clubData = [
         link: "https://www.instagram.com/mmhs_yosa/",
         room: "161",
         meetingDay: "Tuesday",
-        googleClassroom: "posur77"
+        googleClassroomCode: "posur77"
     },
     {
         name: "Young Scientists Society (YSS)",
@@ -363,7 +363,7 @@ const clubData = [
         link: "https://www.instagram.com/mmhsyss/",
         room: "327",
         meetingDay: "Wednesday",
-        googleClassroom: "heishcg"
+        googleClassroomCode: "heishcg"
     }
     
 ];
