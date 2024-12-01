@@ -1,14 +1,24 @@
 {
   "files": {
-    "main.css": "/SACWebsite/static/css/main.b564a892.css",
-    "main.js": "/SACWebsite/static/js/main.cf18ae9a.js",
+    "main.css": "/SACWebsite/static/css/main.7ee327c7.css",
+    "main.js": "/SACWebsite/static/js/main.9833623c.js",
     "static/js/453.5d780a28.chunk.js": "/SACWebsite/static/js/453.5d780a28.chunk.js",
-    "static/media/SAC-All.webp": "/SACWebsite/static/media/SAC-All.07fc6122f19f9e7da384.webp",
+    "static/media/spc1.webp": "/SACWebsite/static/media/spc1.2c6b098b635ca3a850f3.webp",
+    "static/media/spc3.webp": "/SACWebsite/static/media/spc3.637dfc003bf3bab91e3f.webp",
+    "static/media/spc2.webp": "/SACWebsite/static/media/spc2.5eee43fc8567fffc386a.webp",
+    "static/media/steven.webp": "/SACWebsite/static/media/steven.d55b3e7301402db3740a.webp",
+    "static/media/spiritweek.webp": "/SACWebsite/static/media/spiritweek.7efcfbd3c2c39ff12d64.webp",
     "static/media/RoboticsCandid.webp": "/SACWebsite/static/media/RoboticsCandid.cef3891c5acc3698804e.webp",
     "static/media/RoboticsCandid2.webp": "/SACWebsite/static/media/RoboticsCandid2.b0f36c44f5311739d609.webp",
+    "static/media/semi1.webp": "/SACWebsite/static/media/semi1.f058f57e7274cac09118.webp",
+    "static/media/semi5.webp": "/SACWebsite/static/media/semi5.527d2bb44be689057113.webp",
+    "static/media/semi2.webp": "/SACWebsite/static/media/semi2.572e0060428637757273.webp",
     "static/media/sacbg.webp": "/SACWebsite/static/media/sacbg.3ba3007fc166c7ec176b.webp",
+    "static/media/semi4.webp": "/SACWebsite/static/media/semi4.4e35caad24ffce23560b.webp",
+    "static/media/semi3.webp": "/SACWebsite/static/media/semi3.901edc946c94f02a6a58.webp",
     "static/media/noel.webp": "/SACWebsite/static/media/noel.02d796c5646b7d4b73ca.webp",
     "static/media/andrew.webp": "/SACWebsite/static/media/andrew.104a70c2d10a66e7448b.webp",
+    "static/media/SAC-All.webp": "/SACWebsite/static/media/SAC-All.13b0f1fe682005fe4087.webp",
     "static/media/emily.webp": "/SACWebsite/static/media/emily.e0f78668bf56bdfe695e.webp",
     "static/media/jenny.webp": "/SACWebsite/static/media/jenny.e1cd22be53b36204ebcf.webp",
     "static/media/anita.webp": "/SACWebsite/static/media/anita.ffd1b21a83200e3e71b0.webp",
@@ -20,7 +30,6 @@
     "static/media/menglu.webp": "/SACWebsite/static/media/menglu.047af7c2b61d0d0ce44d.webp",
     "static/media/bhadra.webp": "/SACWebsite/static/media/bhadra.c9eb40db9cd389da82cc.webp",
     "static/media/shy.webp": "/SACWebsite/static/media/shy.14f2b8105b796778d6bb.webp",
-    "static/media/steven.webp": "/SACWebsite/static/media/steven.d55b3e7301402db3740a.webp",
     "static/media/madelyn.webp": "/SACWebsite/static/media/madelyn.da8900f914378b4cd5f1.webp",
     "static/media/tristin.webp": "/SACWebsite/static/media/tristin.18e1aa9f0acada21c201.webp",
     "static/media/eleanor.webp": "/SACWebsite/static/media/eleanor.1d8eb57f1173f524c906.webp",
@@ -48,6 +57,7 @@
     "static/media/Girls Fit.webp": "/SACWebsite/static/media/Girls Fit.5eafd5d40378390371eb.webp",
     "static/media/Yorkcan.webp": "/SACWebsite/static/media/Yorkcan.6c086d7091c1c078ea2b.webp",
     "static/media/equity.webp": "/SACWebsite/static/media/equity.f36aff1390fc02b10571.webp",
+    "static/media/semi6.webp": "/SACWebsite/static/media/semi6.b90caa2ba99240168075.webp",
     "static/media/InvisibleString.webp": "/SACWebsite/static/media/InvisibleString.522c94a3090f0fa4495a.webp",
     "static/media/MMTS.webp": "/SACWebsite/static/media/MMTS.6b1b67fc0b118c47e1a9.webp",
     "static/media/Red cross.webp": "/SACWebsite/static/media/Red cross.f998441d96b49ac6e9e3.webp",
@@ -72,12 +82,12 @@
     "static/media/History.webp": "/SACWebsite/static/media/History.d170985419c994a6e5ab.webp",
     "index.html": "/SACWebsite/index.html",
     "static/media/en-US.cjs": "/SACWebsite/static/media/en-US.c3a6319ea4f219498e6f.cjs",
-    "main.b564a892.css.map": "/SACWebsite/static/css/main.b564a892.css.map",
-    "main.cf18ae9a.js.map": "/SACWebsite/static/js/main.cf18ae9a.js.map",
+    "main.7ee327c7.css.map": "/SACWebsite/static/css/main.7ee327c7.css.map",
+    "main.9833623c.js.map": "/SACWebsite/static/js/main.9833623c.js.map",
     "453.5d780a28.chunk.js.map": "/SACWebsite/static/js/453.5d780a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b564a892.css",
-    "static/js/main.cf18ae9a.js"
+    "static/css/main.7ee327c7.css",
+    "static/js/main.9833623c.js"
   ]
 }
