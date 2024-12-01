@@ -1,0 +1,49 @@
+/* Gallery container */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* This ensures a maximum of 4 columns */
+    gap: 16px;  /* Adjust the spacing between the images */
+    padding: 16px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  
+  /* Each photo item */
+  .photo-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  /* Image styling */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* This ensures images maintain their aspect ratio */
+    border-radius: 8px;
+  }
+  
+  /* Media Queries to decrease the number of columns as the window shrinks */
+  
+  /* 3 columns for medium screens */
+  @media (max-width: 1200px) {
+    .photo-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* 2 columns for smaller screens */
+  @media (max-width: 900px) {
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* 1 column for very small screens */
+  @media (max-width: 600px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
