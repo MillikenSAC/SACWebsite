@@ -150,8 +150,8 @@ function Home() {
               </div>
 
               <div className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3 mb-5">
-                Want to start your own club? <br />
-                Fill out the club proposal form <br />
+                Want to start your own club or host a club event?<br />
+                Fill out the club/event proposal form <br />
                 <div className="flex justify-center">
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdo76EgGc9E7Arg5z0gYkzdFLK1aXciCqdpLBJz8d2Rez-eWw/viewform?usp=sf_link"
