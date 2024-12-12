@@ -12,3 +12,7 @@
         transform: translateY(0);
     }
 }
+
+ul li a:hover {
+    border-radius: 8px; /* Ensure rounded corners */
+}

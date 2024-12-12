@@ -16,8 +16,9 @@ function Navbar() {
 
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
-    // chjeck if user is scrolled down
+    // check if user is scrolled down
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 0);
@@ -44,6 +45,10 @@ function Navbar() {
 
     const toggleMenu = () => {
         setOpen(!open);
+    };
+
+    const handleDropdownToggle = () => {
+        setDropdownOpen(!dropdownOpen);
     };
 
     return (
@@ -79,9 +84,41 @@ function Navbar() {
                 <ul 
                     className={`md:flex md:items-center md:pb-0 md:static absolute backdrop-blur-lg bg-white/70 md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in-out ${open ? 'top-0 opacity-100' : 'top-[-490px] md:top-auto md:opacity-100 opacity-0'}`}
                 >
-                    {
-                        Links.map((link) => (
-                            <li key={link.name} className='md:ml-8 text-2xl md:my-0 my-7'>
+                    {Links.map((link) => (
+                        <li key={link.name} className='md:ml-8 text-2xl md:my-0 my-7'>
+                            {/* Clubs Dropdown */}
+                            {link.name === 'Clubs' ? (
+                                <div 
+                                    className='relative'
+                                    onMouseEnter={handleDropdownToggle}
+                                    onMouseLeave={handleDropdownToggle}
+                                >
+                                    <Link 
+                                        to={link.link} 
+                                        className='text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200'
+                                        onClick={handleLinkClick} 
+                                    >
+                                        {link.name}
+                                    </Link>
+                                    {dropdownOpen && (
+                                        <div className='absolute bg-white shadow-lg rounded-lg mt-2'>
+                                            <Link 
+                                                to='/clubs'
+                                                className='block text-indigo-900 p-2 hover:bg-indigo-900 hover:text-white'
+                                            >
+                                                List
+                                            </Link>
+                                            {/* anchor link for club resources */}
+                                            <Link 
+                                            to="/clubs#club-resources" 
+                                            className='block text-indigo-900 p-2 hover:bg-indigo-900 hover:text-white'
+                                        >
+                                            Resources
+                                        </Link>
+                                        </div>
+                                    )}
+                                </div>
+                            ) : (
                                 <Link 
                                     to={link.link} 
                                     className='text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200'
@@ -89,9 +126,9 @@ function Navbar() {
                                 >
                                     {link.name}
                                 </Link>
-                            </li>
-                        ))
-                    }
+                            )}
+                        </li>
+                    ))}
                 </ul>
             </div>
             <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'></link>

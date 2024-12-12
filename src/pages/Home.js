@@ -9,6 +9,7 @@ import { FaGithub } from 'react-icons/fa';
 import roboticsCandid from '../assets/RoboticsCandid.webp'
 import roboticsCandid2 from '../assets/RoboticsCandid2.webp'
 import calendarData from '../data/CalendarData'
+import sdf from '../assets/extLinkLogo.png'
 
 
 const today = new Date();

@@ -39,6 +39,28 @@ import YOSA from '../assets/club-logos/YOSA.webp';
 import YSS from '../assets/club-logos/YSS.webp';
 
 
+export const clubResources = [ 
+    { 
+        name: "Club Contact Form",
+        description: "sdf",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSeiJeEZ4pSrNqA58eE2bmOlelpqIowquP8LEHIErYRLaAOTsQ/viewform?usp=sf_link"
+    },
+    { 
+        name: "Club Grants",
+        description: "sdf",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSepbSQALTazi4agbmk-fP2EaO6cwz8kxb0U4B5K5vDEJp1nxQ/viewform?usp=sf_link"
+    },
+    { 
+        name: "Grant Success Criteria",
+        description: "sdf",
+        link:"https://docs.google.com/document/d/1JZ2KVYu4j0xglI_4MJyvIL0HfS58rinpue751IxDi4c/edit?usp=sharing"
+    },
+    { 
+        name: "Calendar Submission Form",
+        description: "sdf",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSeo3sYNOLxpucO-0-JJNmKqoNDtmLcUgaln94WJ410SCHpuqw/viewform?usp=sf_link"
+    }
+]
 const clubData = [
     {
         name: "1UP",
@@ -312,7 +334,7 @@ const clubData = [
         googleClassroomCode: "3c2ffgo"
     },
     {
-        name: "Skibidi Mills 9569 FRC Team",
+        name: "Silver Knights Robotics Team 9569",
         desc: "We build big sexy robots.",
         imgSrc: Robotics,
         link: "https://www.instagram.com/mmhs.robotics/",
