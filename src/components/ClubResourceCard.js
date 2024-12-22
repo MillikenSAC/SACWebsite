@@ -1,5 +1,5 @@
 import React from 'react';
-import extLinkLogo from '../assets/extLinkLogo.png';
+import extLinkLogo from '../assets/extLinkLogo.webp';
 
 export default function ClubResourceCard({ name, desc, link, logo }) {
   return (

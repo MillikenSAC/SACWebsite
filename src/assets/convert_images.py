@@ -25,8 +25,8 @@ def convert_resize_and_delete_recursive(directory):
             try:
                 with Image.open(file_path) as img:
                     # Reduce resolution by half
-                    new_width = img.width 
-                    new_height = img.height
+                    new_width = img.width // 2
+                    new_height = img.height // 2
                     img_resized = img.resize((new_width, new_height))
                     
                     # Save as WebP

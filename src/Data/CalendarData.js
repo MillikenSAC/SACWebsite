@@ -70,25 +70,25 @@ const events = [
         end: new Date(2024, 9, 28, 17, 15)
     },
     { 
-        title: "Sample Event 1",
+        title: "Winter Market ⛄ ❄️",
         allDay: false, 
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        start: new Date(2024, 11, 28, 15, 45),
-        end: new Date(2024, 11, 28, 17, 15)
+        start: new Date(2024, 11, 19, 14, 10),
+        end: new Date(2024, 11, 19, 15, 30)
     },
     { 
-        title: "Sample Event 2",
+        title: "Talent Show 🌟",
         allDay: false, 
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        start: new Date(2024, 11, 28, 15, 45),
-        end: new Date(2024, 11, 28, 17, 15)
+        start: new Date(2024, 11, 20, 10, 10),
+        end: new Date(2024, 11, 20, 11, 30)
     },
     { 
-        title: "Sample Event 3",
+        title: "SACentines ❤️ ",
         allDay: false, 
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        start: new Date(2024, 11, 28, 15, 45),
-        end: new Date(2024, 11, 28, 17, 15)
+        start: new Date(2025, 1, 14, 15, 45),
+        end: new Date(2025, 1, 14, 17, 15)
     },
     ...generateWeeklyEvents(
         "Robotics Meeting", 
