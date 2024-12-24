@@ -125,7 +125,7 @@ function FAQ() {
                             <li key={i} className="ml-4 list-disc">
                               {beforeLink.trim() + " "}
                               <a
-                                href="https://docs.google.com/forms/d/1cFlYx2cDtRkAh0fcG7gCGuk5kJJzsO3e8_UxXL1UYF0/edit?usp=drive_web"
+                                href="https://docs.google.com/document/d/1JZ2KVYu4j0xglI_4MJyvIL0HfS58rinpue751IxDi4c/edit?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-indigo-600 hover:underline"

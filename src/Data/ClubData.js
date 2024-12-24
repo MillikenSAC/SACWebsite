@@ -42,25 +42,31 @@ import YSS from '../assets/club-logos/YSS.webp';
 export const clubResources = [ 
     { 
         name: "Club Contact Form",
-        description: "sdf",
+        description: "Fill out the Club Contact Form to help us keep track of all clubs at Milliken!",
         link:"https://docs.google.com/forms/d/e/1FAIpQLSeiJeEZ4pSrNqA58eE2bmOlelpqIowquP8LEHIErYRLaAOTsQ/viewform?usp=sf_link"
     },
     { 
         name: "Club Grants",
-        description: "sdf",
+        description: "Need funding for your club's activities? Apply through the Club Grants form to receive financial support!",
         link:"https://docs.google.com/forms/d/e/1FAIpQLSepbSQALTazi4agbmk-fP2EaO6cwz8kxb0U4B5K5vDEJp1nxQ/viewform?usp=sf_link"
     },
     { 
         name: "Grant Success Criteria",
-        description: "sdf",
+        description: "Wondering what makes a strong grant application? Review the Grant Success Criteria to ensure your application meets all the necessary requirements.",
         link:"https://docs.google.com/document/d/1JZ2KVYu4j0xglI_4MJyvIL0HfS58rinpue751IxDi4c/edit?usp=sharing"
     },
     { 
         name: "Calendar Submission Form",
-        description: "sdf",
+        description: "Want to add your event to the SAC calendar on this website? Fill out the Calendar Submission Form to have it featured!",
         link:"https://docs.google.com/forms/d/e/1FAIpQLSeo3sYNOLxpucO-0-JJNmKqoNDtmLcUgaln94WJ410SCHpuqw/viewform?usp=sf_link"
+    },
+    { 
+        name: "Club/Event Proposal Form",
+        description: "Planning a new club or event? Submit your proposal through the Club/Event Proposal Form for approval.",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLScOqHaG242V16ogIsloESD_6q44Sx4oEOPzL62ZZDOl9oXcsQ/viewform?usp=sf_link"
     }
 ]
+
 const clubData = [
     {
         name: "1UP",

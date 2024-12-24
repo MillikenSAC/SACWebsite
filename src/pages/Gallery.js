@@ -3,31 +3,49 @@ import "../styles/Gallery.css";
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import photo1 from '../assets/gallery/semi1.webp'
-import photo2 from '../assets/gallery/semi2.webp'
-import photo3 from '../assets/gallery/semi3.webp'
-import photo4 from '../assets/gallery/semi4.webp'
-import photo5 from '../assets/gallery/semi5.webp'
-import photo6 from '../assets/gallery/semi6.webp'
-import photo7 from '../assets/gallery/spc1.webp'
-import photo8 from '../assets/gallery/spc2.webp'
-import photo9 from '../assets/gallery/spc3.webp'
-import photo10 from '../assets/gallery/spiritweek.webp'
-import photo11 from '../assets/gallery/steven.webp'
+import semi1 from '../assets/gallery/semi1.webp';
+import semi2 from '../assets/gallery/semi2.webp';
+import semi3 from '../assets/gallery/semi3.webp';
+import semi4 from '../assets/gallery/semi4.webp';
+import semi5 from '../assets/gallery/semi5.webp';
+import semi6 from '../assets/gallery/semi6.webp';
+import semi7 from '../assets/gallery/semi7.webp';
+import semi8 from '../assets/gallery/semi8.webp';
+import semi9 from '../assets/gallery/semi9.webp';
+import semi10 from '../assets/gallery/semi10.webp';
+import spc1 from '../assets/gallery/spc1.webp';
+import spc2 from '../assets/gallery/spc2.webp';
+import spc3 from '../assets/gallery/spc3.webp';
+import spiritweek from '../assets/gallery/spiritweek.webp';
+import steven from '../assets/gallery/steven.webp';
+import talentshow1 from '../assets/gallery/2024talentshow1.webp';
+import talentshow2 from '../assets/gallery/2024talentshow2.webp';
+import talentshow3 from '../assets/gallery/2024talentshow3.webp';
+import talentshow4 from '../assets/gallery/2024talentshow4.webp';
+import talentshow5 from '../assets/gallery/2024talentshow5.webp';
+import talentshow6 from '../assets/gallery/2024talentshow6.webp';
+import talentshow7 from '../assets/gallery/2024talentshow7.webp';
+import talentshow8 from '../assets/gallery/2024talentshow8.webp';
+import talentshow9 from '../assets/gallery/2024talentshow9.webp';
+import talentshow10 from '../assets/gallery/2024talentshow10.webp';
+import talentshow11 from '../assets/gallery/2024talentshow11.webp';
+import talentshow12 from '../assets/gallery/2024talentshow12.webp';
+import talentshow13 from '../assets/gallery/2024talentshow13.webp';
+import talentshow14 from '../assets/gallery/2024talentshow14.webp';
+import talentshow15 from '../assets/gallery/2024talentshow15.webp';
+import talentshow16 from '../assets/gallery/2024talentshow16.webp';
+import talentshow17 from '../assets/gallery/2024talentshow17.webp';
+import talentshow18 from '../assets/gallery/2024talentshow18.webp';
+import sactalentshow from '../assets/gallery/sactalentshow.webp';
 
 const imageSources = [
-  photo1,
-  photo2,
-  photo3,
-  photo4,
-  photo6,  
-  photo5, 
-  photo7, 
-  photo8, 
-  photo9, 
-  photo10, 
-  photo11 
+  semi1, semi2, semi3, semi4, semi5, semi6, semi7, semi8, semi9, semi10, spc1, spc2, spc3, spiritweek, steven, sactalentshow,
+  talentshow1, talentshow2, talentshow3, talentshow4, talentshow5, talentshow6, talentshow7, talentshow8, talentshow9, talentshow10,
+  talentshow11, talentshow12, talentshow13, talentshow14, talentshow15, talentshow16, talentshow17, talentshow18,
+  
 ];
+
+
 
 
 function Gallery() {

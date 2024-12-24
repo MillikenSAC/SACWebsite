@@ -28,12 +28,12 @@ function SACCalendar() {
     const [calendarPosition, setCalendarPosition] = useState(null);
 
     const handleEventClick = (event, e) => {
-        const eventElement = e.target.getBoundingClientRect(); // Get the clicked event's position and size
-        const calendarElement = e.target.closest(".rbc-calendar").getBoundingClientRect(); // Get the calendar's position
+        const eventElement = e.target.getBoundingClientRect();
+        const calendarElement = e.target.closest(".rbc-calendar").getBoundingClientRect();
 
         setPopupPosition({
-            top: eventElement.top - calendarElement.top + eventElement.height, // Below the event
-            left: eventElement.left - calendarElement.left, // Aligned horizontally
+            top: eventElement.top - calendarElement.top + eventElement.height,
+            left: eventElement.left - calendarElement.left,
         });
 
         setSelectedEvent(event);
@@ -64,6 +64,12 @@ function SACCalendar() {
         };
     }, []);
 
+    // Custom formats for the calendar
+    const formats = {
+        agendaHeaderFormat: ({ start, end }) =>
+            `${format(start, "MMMM")} – ${format(end, "MMMM")}`,
+    };
+
     return (
         <div className="calendar">
             <Calendar
@@ -74,6 +80,7 @@ function SACCalendar() {
                 views={["month", "agenda"]}
                 className="custom-calendar"
                 onSelectEvent={(event, e) => handleEventClick(event, e)}
+                formats={formats} // Apply the custom formats
             />
             <Popup 
                 event={selectedEvent} 

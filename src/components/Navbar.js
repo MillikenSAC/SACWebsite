@@ -103,14 +103,14 @@ function Navbar() {
                                     {dropdownOpen && (
                                         <div className='absolute bg-white shadow-lg rounded-lg mt-2'>
                                             <Link 
-                                                to='/clubs'
+                                                to='/Clubs'
                                                 className='block text-indigo-900 p-2 hover:bg-indigo-900 hover:text-white'
                                             >
                                                 List
                                             </Link>
                                             {/* anchor link for club resources */}
                                             <Link 
-                                            to="/clubs#club-resources" 
+                                            to="/Clubs#club-resources" 
                                             className='block text-indigo-900 p-2 hover:bg-indigo-900 hover:text-white'
                                         >
                                             Resources

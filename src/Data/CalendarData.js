@@ -90,6 +90,20 @@ const events = [
         start: new Date(2025, 1, 14, 15, 45),
         end: new Date(2025, 1, 14, 17, 15)
     },
+    { 
+        title: "Event 2",
+        allDay: false, 
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        start: new Date(2025, 1, 14, 15, 45),
+        end: new Date(2025, 1, 14, 17, 15)
+    },
+    { 
+        title: "Event 3",
+        allDay: false, 
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        start: new Date(2025, 1, 14, 15, 45),
+        end: new Date(2025, 1, 14, 17, 15)
+    },
     ...generateWeeklyEvents(
         "Robotics Meeting", 
         new Date(2024, 8, 13, 15, 30), // Starts on Sept 13, 2024, at 3:30 PM

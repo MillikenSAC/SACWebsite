@@ -50,6 +50,7 @@ function Home() {
         </p>
         
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+            
             {/* Upcoming Events */}
             <div className="relative lg:row-span-2 z-20">
               <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
@@ -85,7 +86,7 @@ function Home() {
                     to="/Event" 
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
-                    See Full Calendar
+                    View Full Calendar
                 </Link>
             </div>
               </div>
@@ -148,20 +149,24 @@ function Home() {
                 <img src={roboticsCandid2} alt="Robotics Logo" className="w-full h-auto" />
               </div>
 
-              <div className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3 mb-5">
-                Want to start your own club or host a club event?<br />
-                Fill out the club/event proposal form <br />
-                <div className="flex justify-center">
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdo76EgGc9E7Arg5z0gYkzdFLK1aXciCqdpLBJz8d2Rez-eWw/viewform?usp=sf_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg font-semibold text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
-                  >
-                    HERE
-                  </a>
-                </div>
+              <div className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3 mb-10">
+              <div className="flex justify-center pt-1">
+                <Link 
+                    to="/Clubs" 
+                    className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
+                >
+                    View Full Club List
+                </Link>
               </div>
+              <div className="flex justify-center pt-2">
+                <Link 
+                    to="/Clubs#club-resources" 
+                    className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
+                >
+                    View Club Resources
+                </Link>
+              </div>
+            </div>
 
             </div>
           </div>
