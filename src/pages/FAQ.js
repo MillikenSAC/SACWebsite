@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet';
 import '../styles/FAQ.css'
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
 
 function FAQ() {
+    
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -57,6 +59,15 @@ function FAQ() {
   ];
 
   return (
+    <>
+      <Helmet>
+        <title>Milliken SAC - FAQ</title>
+        <meta name="description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, meetings, and more." />
+        <meta property="og:title" content="Milliken SAC - FAQ" />
+        <meta property="og:description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, meetings, and more." />
+        <meta property="og:image" content='../assets/logo.webp' />
+        <meta property="og:url" content="https://www.millikensac.com/FAQ" />
+      </Helmet>
     <div className="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative">
       <div className="bggradientfullFAQ"></div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -198,6 +209,7 @@ function FAQ() {
       </div>
     </footer>
     </div>
+    </>
   );  
 }
 

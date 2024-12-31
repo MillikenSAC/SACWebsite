@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from 'react-helmet';
 import "../styles/Gallery.css";
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
@@ -74,6 +75,15 @@ function Gallery() {
   
 
   return (
+    <>
+      <Helmet>
+        <title>Milliken SAC - Gallery</title>
+        <meta name="description" content="Explore photos and highlights from past events at Milliken SAC. Check out our gallery to relive the memories!" />
+        <meta property="og:title" content="Milliken SAC - Gallery" />
+        <meta property="og:description" content="Explore photos and highlights from past events at Milliken SAC. Check out our gallery to relive the memories!" />
+        <meta property="og:image" content='../assets/logo.webp' />
+        <meta property="og:url" content="https://www.millikensac.com/Gallery" />
+      </Helmet>
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">
       <div className="bggradientfull"></div>
 
@@ -157,6 +167,7 @@ function Gallery() {
       </div>
     </footer>
     </div>
+    </>
   );
 }
 

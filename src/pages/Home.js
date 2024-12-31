@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import sacbg from '../assets/sacbg.webp'; 
@@ -24,6 +25,16 @@ const formatDate = (date) => {
 
 function Home() {
   return (
+    <>
+    <Helmet>
+        <title>Milliken SAC - Clubs</title>
+        <meta name="description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta property="og:title" content="Milliken SAC" />
+        <meta property="og:description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta property="og:image" content={saclogo} />
+        <meta property="og:url" content="https://www.millikensac.com/" />
+      </Helmet>
+
     <div class="flex w-screen flex-col max-w-full overflow-hidden relative">
      <img className="bg-gray-50 w-screen h-screen max-w-full z-[-1] absolute object-cover"
       src={sacbg}
@@ -244,8 +255,8 @@ function Home() {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     </div>
   </footer>
-
     </div>
+    </>
   )
 }
 

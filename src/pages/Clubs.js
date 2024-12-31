@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import '../styles/Clubs.css';
 import ClubCard from '../components/ClubCard.js';
 import ClubResourceCard from '../components/ClubResourceCard.js';
@@ -7,8 +8,6 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-
 
 function Clubs() {
   const location = useLocation();
@@ -36,6 +35,15 @@ function Clubs() {
   );
 
   return (
+    <>
+    <Helmet>
+        <title>Milliken SAC - Clubs</title>
+        <meta name="description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta property="og:title" content="Milliken SAC - Clubs" />
+        <meta property="og:description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta property="og:image" content={saclogo} />
+        <meta property="og:url" content="https://www.millikensac.com/Clubs" />
+      </Helmet>
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">
       <div className="bggradientfull"></div>
 
@@ -136,6 +144,7 @@ function Clubs() {
       </div>
     </footer>
     </div>
+    </>
     
   );
 }

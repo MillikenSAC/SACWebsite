@@ -1,12 +1,21 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import '../styles/Event.css'
 import Calendar from '../components/Calendar'
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
 
 function Event() {
   return (
+    <>
+      <Helmet>
+        <title>Milliken SAC - Calendar</title>
+        <meta name="description" content="Stay up to date with all the events and activities happening at Milliken SAC. Check out our calendar for important dates and events." />
+        <meta property="og:title" content="Milliken SAC - Calendar" />
+        <meta property="og:description" content="Stay up to date with all the events and activities happening at Milliken SAC. Check out our calendar for important dates and events." />
+        <meta property="og:image" content='../assets/logo.webp' />
+        <meta property="og:url" content="https://www.millikensac.com/Event" />
+      </Helmet>
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">
       <div className="bggradientfull"></div>
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>   
@@ -18,7 +27,7 @@ function Event() {
       </div>
     
       {/* Footer */}
-      <footer className="text-black py-6 mt-auto px-6">
+      <footer className="bg-gray-50 text-black py-6 mt-auto px-6">
       <div className="w-full  mx-auto p-4 md:py-8">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           
@@ -59,6 +68,7 @@ function Event() {
       </div>
     </footer>
     </div>
+    </>
   )
 }
 

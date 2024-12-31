@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/SACCard';
@@ -7,7 +8,6 @@ import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech
 import { motion } from 'framer-motion';
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
 
 function SAC() {
   const location = useLocation();
@@ -73,6 +73,15 @@ function SAC() {
   };
 
   return (
+    <>
+      <Helmet>
+        <title>Milliken SAC - Meet the Council</title>
+        <meta name="description" content="Get to know the passionate students leading Milliken SAC. Meet the council members and learn about their roles and contributions to the school." />
+        <meta property="og:title" content="Milliken SAC - Meet the Council" />
+        <meta property="og:description" content="Get to know the passionate students leading Milliken SAC. Meet the council members and learn about their roles and contributions to the school." />
+        <meta property="og:image" content="'../assets/logo.webp'" />
+        <meta property="og:url" content="https://www.millikensac.com/SAC" />
+      </Helmet>
     <div className="flex w-screen flex-col max-w-full overflow-x-hidden overflow-y-hidden relative min-h-screen px-5">
       <div className="bggradientfull z-30"></div>
 
@@ -238,6 +247,7 @@ function SAC() {
       </div>
     </footer>
     </div>
+    </>
   );
 }
 
