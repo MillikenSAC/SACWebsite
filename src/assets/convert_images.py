@@ -8,7 +8,7 @@ def convert_resize_and_delete_recursive(directory):
     :param directory: Path to the root directory.
     """
     # Supported image formats
-    supported_formats = (".png", ".jpg", ".jpeg", ".bmp", ".gif")
+    supported_formats = (".png", ".jpg", ".jpeg", ".bmp")
 
     print(f"Scanning directory: {directory}")
 

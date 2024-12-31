@@ -1,23 +1,41 @@
 @media (min-width: 1000px) {
-    .clubCardSmall {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .clubCardSmall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1400px) {
-    .clubCardLarge {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+  .clubCardLarge {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .bggradientfull {
-    transform: rotate(0deg) translateX(-20%);
-    background-image: linear-gradient(135deg, rgba(0, 26, 255, 0.2) 20%, rgba(255, 0, 199, 0.1) 40%, rgba(0, 26, 255, 0.2) 60%, rgba(255, 0, 199, 0.1) 80%);
-    opacity: 0.8;
-    position: absolute;
-    width: 150%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: repeat-y;
-    z-index: 0;
+  transform: rotate(0deg) translateX(-20%);
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 26, 255, 0.2) 20%,
+    rgba(255, 0, 199, 0.1) 40%,
+    rgba(0, 26, 255, 0.2) 60%,
+    rgba(255, 0, 199, 0.1) 80%
+  );
+  opacity: 0.8;
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  z-index: 0;
+}
+
+#club-resources {
+  scroll-margin-top: 50px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; /* Adjust gap between cards as needed */
+  justify-items: center; /* Center align cards */
+  padding: 1rem;
 }

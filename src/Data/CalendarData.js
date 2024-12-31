@@ -26,13 +26,17 @@ const generateWeeklyEvents = (title, startDate, endDate, occurrences) => {
     start: new Date(YYYY, MM-1, DD, HH, mm)
     end: new Date(YYYY, MM-1, DD, HH, SS) */}
 
+{/*
+    Weekly events should follow: 
+    
+     ...generateWeeklyEvents(
+        "Robotics Meeting", 
+        new Date(2024, 8, 13, 15, 30), // Starts on Sept 13, 2024, at 3:30 PM
+        new Date(2024, 8, 13, 16, 30), // End Date/time
+        10 // 10 weekly occurrences
+    ), */}
+
 const events = [
-    {
-        title: "Single Event",
-        allDay: false,
-        start: new Date(2024, 10, 16), // November 16, 2024
-        end: new Date(2024, 10, 16, 1, 0),   // Ends on the same day
-    },
     {
         title: "Hallowgreen",
         allDay: false,
@@ -103,19 +107,7 @@ const events = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
         start: new Date(2025, 1, 14, 15, 45),
         end: new Date(2025, 1, 14, 17, 15)
-    },
-    ...generateWeeklyEvents(
-        "Robotics Meeting", 
-        new Date(2024, 8, 13, 15, 30), // Starts on Sept 13, 2024, at 3:30 PM
-        new Date(2024, 8, 13, 16, 30), // End Date/time
-        10 // 10 weekly occurrences
-    ),
-    ...generateWeeklyEvents(
-        "SAC Meeting", 
-        new Date(2024, 8, 10, 15, 30), 
-        new Date(2024, 8, 8, 16, 30), 
-        10 // 10 weekly occurrences
-    ),
+    }
 ];
 
 export default events;

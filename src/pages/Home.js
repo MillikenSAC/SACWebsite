@@ -5,10 +5,10 @@ import sacbg from '../assets/sacbg.webp';
 import SAC2025 from '../assets/SAC-All.webp';
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
 import roboticsCandid from '../assets/RoboticsCandid.webp'
 import roboticsCandid2 from '../assets/RoboticsCandid2.webp'
 import calendarData from '../data/CalendarData'
+import logogif from '../assets/saclogosite.gif'
 
 const today = new Date();
 
@@ -36,8 +36,12 @@ function Home() {
 
     {/* top slide of home page  */}
       <div class="w-screen h-screen overflow-hidden relative flex flex-col place-items-center place-content-center">
-          <div class="z-20 text-indigo-900 2xl:text[14rem] xl:text-[12rem] lg:text-[10rem] md:text-[7rem] text-[3.5rem] flex font-semibold italic font-['Newsreader']">Milliken SAC</div>
-          <div class="z-20  w-4/6 md:flex pb-10 hidden text-neutral-800 text-center text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
+          <img
+          src={logogif} 
+          class="w-auto h-56 pb-10 mt-20"
+          />
+
+          <div class="z-20 w-4/6 md:flex pb-10 hidden text-neutral-800 justify-center text-center text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Welcome to Milliken’s Student Activity Council! We are a team dedicated to representing the student body at Milliken Mills High School.</div>
       </div>
 
         {/* second slide of home page  */}
@@ -53,7 +57,7 @@ function Home() {
             
             {/* Upcoming Events */}
             <div className="relative lg:row-span-2 z-20">
-              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem] border-indigo-900 border"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                 <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
                   <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center text-center">
@@ -84,6 +88,7 @@ function Home() {
                 <div className="flex justify-center py-10">
                 <Link 
                     to="/Event" 
+                    onClick={() => window.scrollTo(0,0)}
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
                     View Full Calendar
@@ -94,10 +99,10 @@ function Home() {
             </div>
 
           
-          <div className="relative max-h-[350px] max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20">
-            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-              <div className="relative min-h-[350px] sm:min-h-[350px] flex-1">
+          <div className="relative max-h-[400px] max-lg:row-start-1 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out z-20 ">
+            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] "></div>
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] border-indigo-900 border">
+              <div className="relative min-h-[380px] sm:min-h-[350px] flex-1">
                 <Link to="/SAC" className="block w-full h-full">
                   <img
                     src={SAC2025}
@@ -113,7 +118,7 @@ function Home() {
 
 
           <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-            <div className="absolute inset-px rounded-lg bg-white"></div>
+            <div className="absolute inset-px rounded-lg bg-white border-indigo-900 border"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10 text-center">
                 <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">Your Questions Answered</p>
@@ -121,8 +126,29 @@ function Home() {
                 Got questions? We've got answers
                 </p>
               </div>
-              <div className="relative min-h-[15rem] flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-              {/**<img src="" alt="Robotics Logo" /> */}
+              
+                <div className="flex py-2 justify-center">
+                  <ul className="space-y-4 px-6 pt-4 w-[290px]">
+                    <li
+                      className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
+                    >
+                      <h3 className="text-md font-medium text-gray-800 text-center">How do I start a club?</h3>
+                    </li>
+                    <li
+                      className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
+                    >
+                      <h3 className="text-md font-medium text-gray-800 text-center">How can I get involved?</h3>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex justify-center py-5">
+                <Link 
+                    to="/FAQ" 
+                    onClick={() => window.scrollTo(0,0)}
+                    className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
+                >
+                    View Full FAQ
+                </Link>
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
@@ -130,7 +156,7 @@ function Home() {
 
 
           <div className="relative lg:row-span-2">
-          <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+          <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem] border-indigo-900 border"></div>
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
             <div className="relative min-h-[300px] sm:min-h-[300px] flex-1">
               <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center text-center pt-10">
@@ -153,12 +179,13 @@ function Home() {
               <div className="flex justify-center pt-1">
                 <Link 
                     to="/Clubs" 
+                    onClick={() => window.scrollTo(0,0)}
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
                     View Full Club List
                 </Link>
               </div>
-              <div className="flex justify-center pt-2">
+              <div className="flex justify-center pt-3">
                 <Link 
                     to="/Clubs#club-resources" 
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
@@ -176,11 +203,9 @@ function Home() {
       </div>
     </div>
 
-    
-
     {/* Footer */}
     <footer className="bg-gray-50 text-black py-6 mt-auto px-6">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <div className="w-full  mx-auto p-4 md:py-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         
         {/* Logo section - centering adjustment */}
@@ -208,17 +233,6 @@ function Home() {
             >
               <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
                 <FaInstagram
-                  className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
-                  size={32}
-                />
-              </div>
-            </a>
-            <a
-              onClick={() => window.open("https://github.com/MillikenSAC", '_blank')}
-              className="group relative block"
-            >
-              <div className="w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-200 ease-in-out">
-                <FaGithub
                   className="text-indigo-900 group-hover:text-indigo-600 duration-200 ease-in-out"
                   size={32}
                 />

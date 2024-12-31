@@ -44,7 +44,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
       </div>
       
       {/* Bottom section for description */}
-      <div className="text-gray-700 py-5 h-24 overflow-ellipsis mt-3 text-left">
+      <div className="text-gray-700 pt-4 h-28 overflow-scroll text-left">
         {desc}
       </div>
     </div>
