@@ -76,21 +76,21 @@ const events = [
     { 
         title: "Winter Market ⛄ ❄️",
         allDay: false, 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        description: "Stop by during P5 to explore the goodies sold by Milliken's clubs. Don't miss out on the holiday fun!",
         start: new Date(2024, 11, 19, 14, 10),
         end: new Date(2024, 11, 19, 15, 30)
     },
     { 
         title: "Talent Show 🌟",
         allDay: false, 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        description: "Come watch and support amazing talent from our school in this exciting showcase of creativity and skills!",
         start: new Date(2024, 11, 20, 10, 10),
         end: new Date(2024, 11, 20, 11, 30)
     },
     { 
         title: "SACentines ❤️ ",
         allDay: false, 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        description: "What better way to celebrate Valentines Day than at SACentines! Enjoy fun activities and create lasting memories while celebrating love and friendship!",
         start: new Date(2025, 1, 14, 15, 45),
         end: new Date(2025, 1, 14, 17, 15)
     },
