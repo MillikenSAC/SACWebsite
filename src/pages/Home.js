@@ -27,7 +27,7 @@ function Home() {
   return (
     <>
     <Helmet>
-        <title>Milliken SAC - Home</title>
+        <title>Milliken SAC</title>
         <meta name="description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
         <meta property="og:title" content="Milliken SAC" />
         <meta property="og:description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
@@ -143,12 +143,12 @@ function Home() {
                     <li
                       className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
                     >
-                      <h3 className="text-md font-medium text-gray-800 text-center">How do I start a club?</h3>
+                      <p className="text-md font-medium text-gray-800 text-center">How do I start a club?</p>
                     </li>
                     <li
                       className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
                     >
-                      <h3 className="text-md font-medium text-gray-800 text-center">How can I get involved?</h3>
+                      <p className="text-md font-medium text-gray-800 text-center">How can I get involved?</p>
                     </li>
                   </ul>
                 </div>

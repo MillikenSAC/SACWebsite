@@ -61,7 +61,7 @@ function FAQ() {
   return (
     <>
       <Helmet>
-        <title>Milliken SAC - FAQ</title>
+        <title>FAQ | Milliken SAC</title>
         <meta name="description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, meetings, and more." />
         <meta property="og:title" content="Milliken SAC - FAQ" />
         <meta property="og:description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, meetings, and more." />

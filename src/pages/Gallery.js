@@ -77,7 +77,7 @@ function Gallery() {
   return (
     <>
       <Helmet>
-        <title>Milliken SAC - Gallery</title>
+        <title>Gallery | Milliken SAC</title>
         <meta name="description" content="Explore photos and highlights from past events at Milliken SAC. Check out our gallery to relive the memories!" />
         <meta property="og:title" content="Milliken SAC - Gallery" />
         <meta property="og:description" content="Explore photos and highlights from past events at Milliken SAC. Check out our gallery to relive the memories!" />

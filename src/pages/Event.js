@@ -9,7 +9,7 @@ function Event() {
   return (
     <>
       <Helmet>
-        <title>Milliken SAC - Calendar</title>
+        <title>Calendar | Milliken SAC</title>
         <meta name="description" content="Stay up to date with all the events and activities happening at Milliken SAC. Check out our calendar for important dates and events." />
         <meta property="og:title" content="Milliken SAC - Calendar" />
         <meta property="og:description" content="Stay up to date with all the events and activities happening at Milliken SAC. Check out our calendar for important dates and events." />

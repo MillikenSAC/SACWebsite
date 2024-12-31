@@ -37,7 +37,7 @@ function Clubs() {
   return (
     <>
     <Helmet>
-        <title>Milliken SAC - Clubs</title>
+        <title>Clubs | Milliken SAC</title>
         <meta name="description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
         <meta property="og:title" content="Milliken SAC - Clubs" />
         <meta property="og:description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />

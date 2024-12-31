@@ -75,7 +75,7 @@ function SAC() {
   return (
     <>
       <Helmet>
-        <title>Milliken SAC - Meet the Council</title>
+        <title>Council | Milliken SAC</title>
         <meta name="description" content="Get to know the passionate students leading Milliken SAC. Meet the council members and learn about their roles and contributions to the school." />
         <meta property="og:title" content="Milliken SAC - Meet the Council" />
         <meta property="og:description" content="Get to know the passionate students leading Milliken SAC. Meet the council members and learn about their roles and contributions to the school." />
