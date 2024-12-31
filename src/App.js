@@ -101,7 +101,7 @@ function App() {
 
 const AppWrapper = () => {
   return (
-    <Router basename="/SACWebsite">
+    <Router basename="/">
       <App />
     </Router>
   );
