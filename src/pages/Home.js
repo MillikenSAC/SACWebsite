@@ -14,13 +14,21 @@ import logogif from '../assets/saclogosite.gif'
 const today = new Date();
 
 const upcomingEvents = calendarData
-    .filter((event) => new Date(event.start) > today) // Only include future events
-    .sort((a, b) => new Date(a.start) - new Date(b.start)) // Sort events by start date
-    .slice(0, 3); // Get the top 3 events
+  .filter((event) => 
+    event.isTBD || (event.start && new Date(event.start) > today) // Include TBD or future events
+  )
+  .sort((a, b) => {
+    if (a.isTBD) return 1; // Place TBD events after dated ones
+    if (b.isTBD) return -1;
+    return new Date(a.start) - new Date(b.start); // Sort by start date
+  })
+  .slice(0, 3); // Get the top 3 events
 
-const formatDate = (date) => {
-    const options = {month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-    return date.toLocaleDateString(undefined, options);
+// Format date/show TBD
+const formatDate = (date, isTBD) => {
+  if (isTBD) return "TBD";
+  const options = { month: "short", day: "numeric", hour: "numeric", minute: "numeric" };
+  return date.toLocaleDateString(undefined, options);
 };
 
 function Home() {
@@ -28,10 +36,10 @@ function Home() {
     <>
     <Helmet>
         <title>Milliken SAC</title>
-        <meta name="description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta name="description" content="Explore the various clubs and events at Milliken SAC. Find out about club meetings, resources, and more." />
         <meta property="og:title" content="Milliken SAC" />
-        <meta property="og:description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
-        <meta property="og:image" content={saclogo} />
+        <meta property="og:description" content="Explore the various clubs and events at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp" />
         <meta property="og:url" content="https://www.millikensac.com/" />
       </Helmet>
 
@@ -61,7 +69,7 @@ function Home() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-xl font-semibold text-indigo-600">Tomorrow Today</h2>
         <p className="mx-auto mt-2 max-w-lg text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          HOME OF THE KNIGHTS 
+          HOaME OF THE KNIGHTS 
         </p>
         
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
@@ -80,19 +88,20 @@ function Home() {
                 </div>
                 <div className="relative w-full max-lg:mx-auto">
                   <ul className="space-y-4 px-6 pt-4">
-                  {upcomingEvents.map((event, index) => (
-                    <li
-                      key={index}
-                      className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
-                    >
-                      <h3 className="text-lg font-semibold text-gray-800">{event.title}</h3>
-                      <p className="text-sm text-gray-600">
-                        {formatDate(event.start)} - {formatDate(event.end)}
-                      </p>
-                      {event.description && (
-                        <p className="text-sm text-gray-600">{event.description}</p>
-                      )}
-                    </li>
+                    {upcomingEvents.map((event, index) => (
+                      <li
+                        key={index}
+                        className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-md transition duration-200"
+                      >
+                        <h3 className="text-lg font-semibold text-gray-800">{event.title}</h3>
+                        <p className="text-sm font-semibold text-gray-600">
+                          {formatDate(event.start, event.isTBD)}{" "}
+                          {event.end && `- ${formatDate(event.end)}`}
+                        </p>
+                        {event.description && (
+                          <p className="text-sm text-gray-600">{event.description}</p>
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </div>

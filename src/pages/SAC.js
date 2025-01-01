@@ -77,9 +77,9 @@ function SAC() {
       <Helmet>
         <title>Council | Milliken SAC</title>
         <meta name="description" content="Get to know the passionate students leading Milliken SAC. Meet the council members and learn about their roles and contributions to the school." />
-        <meta property="og:title" content="Milliken SAC - Meet the Council" />
+        <meta property="og:title" content="Council | Milliken SAC" />
         <meta property="og:description" content="Get to know the passionate students leading Milliken SAC. Meet the council members and learn about their roles and contributions to the school." />
-        <meta property="og:image" content="'../assets/logo.webp'" />
+        <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp" />
         <meta property="og:url" content="https://www.millikensac.com/SAC" />
       </Helmet>
     <div className="flex w-screen flex-col max-w-full overflow-x-hidden overflow-y-hidden relative min-h-screen px-5">

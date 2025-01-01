@@ -62,10 +62,10 @@ function FAQ() {
     <>
       <Helmet>
         <title>FAQ | Milliken SAC</title>
-        <meta name="description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, meetings, and more." />
-        <meta property="og:title" content="Milliken SAC - FAQ" />
-        <meta property="og:description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, meetings, and more." />
-        <meta property="og:image" content='../assets/logo.webp' />
+        <meta name="description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, clubs, and more." />
+        <meta property="og:title" content="FAQ | Milliken SAC" />
+        <meta property="og:description" content="Got questions? Find answers to frequently asked questions about Milliken SAC, including information on events, clubs, and more." />
+        <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp"/>
         <meta property="og:url" content="https://www.millikensac.com/FAQ" />
       </Helmet>
     <div className="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative">

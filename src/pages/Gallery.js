@@ -79,9 +79,9 @@ function Gallery() {
       <Helmet>
         <title>Gallery | Milliken SAC</title>
         <meta name="description" content="Explore photos and highlights from past events at Milliken SAC. Check out our gallery to relive the memories!" />
-        <meta property="og:title" content="Milliken SAC - Gallery" />
+        <meta property="og:title" content="Gallery | Milliken SAC" />
         <meta property="og:description" content="Explore photos and highlights from past events at Milliken SAC. Check out our gallery to relive the memories!" />
-        <meta property="og:image" content='../assets/logo.webp' />
+        <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp" />
         <meta property="og:url" content="https://www.millikensac.com/Gallery" />
       </Helmet>
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">

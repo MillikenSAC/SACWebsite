@@ -10,10 +10,10 @@ function Event() {
     <>
       <Helmet>
         <title>Calendar | Milliken SAC</title>
-        <meta name="description" content="Stay up to date with all the events and activities happening at Milliken SAC. Check out our calendar for important dates and events." />
-        <meta property="og:title" content="Milliken SAC - Calendar" />
-        <meta property="og:description" content="Stay up to date with all the events and activities happening at Milliken SAC. Check out our calendar for important dates and events." />
-        <meta property="og:image" content='../assets/logo.webp' />
+        <meta name="description" content="Stay up to date with all the events and activities happening at Milliken. Check out our calendar for important dates and events." />
+        <meta property="og:title" content="Calendar | Milliken SAC" />
+        <meta property="og:description" content="Stay up to date with all the events and activities happening at Milliken. Check out our calendar for important dates and events." />
+        <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp" />
         <meta property="og:url" content="https://www.millikensac.com/Event" />
       </Helmet>
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">

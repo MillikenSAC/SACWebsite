@@ -39,9 +39,9 @@ function Clubs() {
     <Helmet>
         <title>Clubs | Milliken SAC</title>
         <meta name="description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
-        <meta property="og:title" content="Milliken SAC - Clubs" />
+        <meta property="og:title" content="Clubs | Milliken SAC" />
         <meta property="og:description" content="Explore the various clubs and student organizations at Milliken SAC. Find out about club meetings, resources, and more." />
-        <meta property="og:image" content={saclogo} />
+        <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp" />
         <meta property="og:url" content="https://www.millikensac.com/Clubs" />
       </Helmet>
     <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-gray-50">

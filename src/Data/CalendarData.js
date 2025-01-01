@@ -1,4 +1,4 @@
-// Function to generate weekly events with specific times
+
 const generateWeeklyEvents = (title, startDate, endDate, occurrences) => {
     const events = [];
     const eventDuration = endDate - startDate; // Calculate the duration of the event
@@ -12,7 +12,7 @@ const generateWeeklyEvents = (title, startDate, endDate, occurrences) => {
         
         events.push({
             title: title,
-            allDay: false, // Change to false if you want to specify time
+            allDay: false, 
             start: start,
             end: end,
         });
@@ -95,18 +95,16 @@ const events = [
         end: new Date(2025, 1, 14, 17, 15)
     },
     { 
-        title: "Event 2",
+        title: "Battle of The Schools",
         allDay: false, 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        start: new Date(2025, 1, 14, 15, 45),
-        end: new Date(2025, 1, 14, 17, 15)
+        description: "Unleash your school spirit at Battle of the Schools! Dive into a week of friendly competition against other schools, celebrating the pride of Milliken! ",
+        isTBD: true,
     },
     { 
-        title: "Event 3",
+        title: "Carnival",
         allDay: false, 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        start: new Date(2025, 1, 14, 15, 45),
-        end: new Date(2025, 1, 14, 17, 15)
+        description: "Start the summer with a day full of fun at Carnival! Check out the tasty food, enjoy outdoor activities, and make memories with friends to celebrate the end of the school year!",
+        isTBD: true,
     }
 ];
 
