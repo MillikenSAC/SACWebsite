@@ -36,12 +36,13 @@ import talentshow15 from '../assets/gallery/2024talentshow15.webp';
 import talentshow16 from '../assets/gallery/2024talentshow16.webp';
 import talentshow17 from '../assets/gallery/2024talentshow17.webp';
 import talentshow18 from '../assets/gallery/2024talentshow18.webp';
+import talentshow19 from '../assets/gallery/2024talentshow19.webp';
 import sactalentshow from '../assets/gallery/sactalentshow.webp';
 
 const imageSources = [
   semi1, semi2, semi3, semi4, semi5, semi6, semi7, semi8, semi9, semi10, spc1, spc2, spc3, spiritweek, steven, sactalentshow,
   talentshow1, talentshow2, talentshow3, talentshow4, talentshow5, talentshow6, talentshow7, talentshow8, talentshow9, talentshow10,
-  talentshow11, talentshow12, talentshow13, talentshow14, talentshow15, talentshow16, talentshow17, talentshow18,
+  talentshow11, talentshow12, talentshow13, talentshow14, talentshow15, talentshow16, talentshow17, talentshow18, talentshow19
   
 ];
 

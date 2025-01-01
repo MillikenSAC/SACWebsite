@@ -95,13 +95,13 @@ const events = [
         end: new Date(2025, 1, 14, 17, 15)
     },
     { 
-        title: "Battle of The Schools",
+        title: "Battle of The Schools 🛡️🗡️",
         allDay: false, 
         description: "Unleash your school spirit at Battle of the Schools! Dive into a week of friendly competition against other schools, celebrating the pride of Milliken! ",
         isTBD: true,
     },
     { 
-        title: "Carnival",
+        title: "Carnival 🎡🎪",
         allDay: false, 
         description: "Start the summer with a day full of fun at Carnival! Check out the tasty food, enjoy outdoor activities, and make memories with friends to celebrate the end of the school year!",
         isTBD: true,

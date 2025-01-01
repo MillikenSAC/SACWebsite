@@ -2,14 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import sacbg from '../assets/sacbg.webp'; 
-import SAC2025 from '../assets/SAC-All.webp';
+import sacbg from '../assets/home/sacbg.webp'; 
+import SAC2025 from '../assets/home/SAC-All.webp';
 import saclogo from '../assets/logo.webp';
+import MAC from '../assets/home/MAC.webp'
+import roboticsCandid from '../assets/home/RoboticsCandid.webp'
+import logogif from '../assets/home/saclogosite.gif'
 import { FaInstagram } from 'react-icons/fa';
-import roboticsCandid from '../assets/RoboticsCandid.webp'
-import roboticsCandid2 from '../assets/RoboticsCandid2.webp'
 import calendarData from '../data/CalendarData'
-import logogif from '../assets/saclogosite.gif'
 
 const today = new Date();
 
@@ -69,7 +69,7 @@ function Home() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-xl font-semibold text-indigo-600">Tomorrow Today</h2>
         <p className="mx-auto mt-2 max-w-lg text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          HOaME OF THE KNIGHTS 
+          HOME OF THE KNIGHTS 
         </p>
         
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
@@ -188,11 +188,11 @@ function Home() {
               </p>
 
               <div className="overflow-hidden m-8 mb-4 rounded-2xl">
-                <img src={roboticsCandid} alt="Robotics Logo" className="w-full h-auto" />
+                <img src={MAC} alt="Robotics Logo" className="w-full h-auto" />
               </div>
 
               <div className="overflow-hidden m-8 my-2 rounded-2xl">
-                <img src={roboticsCandid2} alt="Robotics Logo" className="w-full h-auto" />
+                <img src={roboticsCandid} alt="Robotics Logo" className="w-full h-auto" />
               </div>
 
               <div className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3 mb-10">

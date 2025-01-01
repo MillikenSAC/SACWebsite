@@ -1,5 +1,3 @@
-import logo from '../assets/logo.webp';
-import robotics from '../assets/robotics.webp';
 import OneUp from '../assets/club-logos/1UP.webp';
 import Act4Impact from '../assets/club-logos/Act4Impact.webp';
 import AnimeClub from '../assets/club-logos/AnimeClub.webp';
