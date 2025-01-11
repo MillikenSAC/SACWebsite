@@ -8,7 +8,7 @@ export default function ClubCard({ name, desc, imgSrc, link, room, meetingDay, g
         // Prevent clicking the card to open the link
         e.stopPropagation();
       }}
-      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-900 border transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80"
+      className="relative overflow-hidden rounded-3xl shadow-xl border-indigo-700 border-2 transition-transform hover:scale-105 hover:shadow-2xl duration-200 ease-in-out bg-white p-6 w-96 h-80"
     >
       <div className="flex items-start relative">
         {/* Logo in its own div */}
