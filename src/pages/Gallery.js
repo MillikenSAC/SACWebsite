@@ -100,7 +100,7 @@ function Gallery() {
       </div>
 
       {/* Photo Gallery */}
-      <div className="photo-grid mt-8">
+      <div className="photo-grid mt-8 mx-10">
       {photos.map((photo, index) => (
         <div
           key={index}

@@ -90,7 +90,7 @@ const events = [
     { 
         title: "SACentines ❤️ ",
         allDay: false, 
-        description: "What better way to celebrate Valentines Day than at SACentines! Enjoy fun activities and create lasting memories while celebrating love and friendship!",
+        description: "What better way to celebrate Valentines Day than at SACentines! Enjoy fun activities and create lasting memories while celebrating love and friendship at MMHS!",
         start: new Date(2025, 1, 14, 15, 45),
         end: new Date(2025, 1, 14, 17, 15)
     },

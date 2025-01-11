@@ -36,9 +36,9 @@ function Home() {
     <>
     <Helmet>
         <title>Milliken SAC</title>
-        <meta name="description" content="Explore the various clubs and events at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta name="description" content="The official website for Milliken SAC, providing info about student activities, events, and clubs at MMHS!" />
         <meta property="og:title" content="Milliken SAC" />
-        <meta property="og:description" content="Explore the various clubs and events at Milliken SAC. Find out about club meetings, resources, and more." />
+        <meta property="og:description" content="The official website for Milliken SAC, providing info about student activities, events, and clubs at MMHS!" />
         <meta property="og:image" content="https://www.millikensac.com/static/media/logo.d3847a72bdbc78d4577d.webp" />
         <meta property="og:url" content="https://www.millikensac.com/" />
       </Helmet>
@@ -184,7 +184,7 @@ function Home() {
               </p>
 
               <p className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3">
-              Explore the clubs at Milliken!
+              Explore the clubs at MMHS!
               </p>
 
               <div className="overflow-hidden m-8 mb-4 rounded-2xl">
