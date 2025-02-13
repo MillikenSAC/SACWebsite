@@ -42,10 +42,10 @@ function FriendshipTest() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-200 to-pink-200 text-black">
+    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-br from-blue-200 to-pink-200 text-black pt-32">
       <h1 className="text-5xl font-bold text-pink-600 font-['Prata'] mb-6">Friendship Test</h1>
 
-      <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg max-w-md w-full text-center">
+      <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg max-w-md w-full mb-10 text-center">
         {/* STEP 1: Enter Names */}
         {step === 1 && (
           <>
@@ -77,14 +77,15 @@ function FriendshipTest() {
         {step === 2 && (
           <>
             <p className="mb-4 text-lg">{names.person1}, answer these questions about {names.person2}!</p>
-            {[1, 2, 3, 4, 5].map((q) => (
-              <input
-                key={q}
-                type="text"
-                placeholder={`Q${q}: Favorite thing?`}
-                className="w-full p-3 mb-3 border-2 border-pink-500 rounded-xl"
-                onChange={(e) => handleInputChange("person1", `q${q}`, e.target.value)}
-              />
+            {["What is your friend's favorite color?", "What is your friend's favorite food?", "What is your friend's favorite hobby?", "What is your friend's favorite movie?", "What is your friend's dream vacation destination?"].map((question, index) => (
+              <div key={index} className="mb-3">
+                <p className="text-left text-sm font-semibold">{question}</p>
+                <input
+                  type="text"
+                  className="w-full p-3 border-2 border-pink-500 rounded-xl"
+                  onChange={(e) => handleInputChange("person1", `q${index + 1}`, e.target.value)}
+                />
+              </div>
             ))}
             <button
               onClick={submitPerson1}
@@ -99,14 +100,15 @@ function FriendshipTest() {
         {step === 3 && (
           <>
             <p className="mb-4 text-lg">{names.person2}, now it's your turn to answer the same questions!</p>
-            {[1, 2, 3, 4, 5].map((q) => (
-              <input
-                key={q}
-                type="text"
-                placeholder={`Q${q}: Favorite thing?`}
-                className="w-full p-3 mb-3 border-2 border-pink-500 rounded-xl"
-                onChange={(e) => handleInputChange("person2", `q${q}`, e.target.value)}
-              />
+            {["What is your friend's favorite color?", "What is your friend's favorite food?", "What is your friend's favorite hobby?", "What is your friend's favorite movie?", "What is your friend's dream vacation destination?"].map((question, index) => (
+              <div key={index} className="mb-3">
+                <p className="text-left text-sm font-semibold">{question}</p>
+                <input
+                  type="text"
+                  className="w-full p-3 border-2 border-pink-500 rounded-xl"
+                  onChange={(e) => handleInputChange("person2", `q${index + 1}`, e.target.value)}
+                />
+              </div>
             ))}
             <button
               onClick={submitPerson2}
@@ -116,33 +118,7 @@ function FriendshipTest() {
             </button>
           </>
         )}
-
-        {/* STEP 4: Results */}
-        {step === 4 && (
-          <>
-            <p className="text-3xl font-bold text-pink-600 mt-2">{names.person1} & {names.person2}</p>
-            <p className="text-5xl font-bold text-pink-500 mt-2">{score}%</p>
-            <p className="text-lg text-gray-800 mt-2">
-              {score > 80 ? "You're the perfect pair! 💖" : score > 50 ? "You have a strong friendship! 💙" : "You're friendly, but could get closer! 🤝"}
-            </p>
-            <div className="flex justify-between mt-6">
-              <button
-                onClick={() => navigate("/sacentines")}
-                className="py-2 px-4 bg-gradient-to-r from-pink-300 to-pink-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => navigate("/sacentines/compatibility")}
-                className="py-2 px-4 bg-gradient-to-r from-blue-300 to-blue-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
-              >
-                Compatibility Test
-              </button>
-            </div>
-          </>
-        )}
       </div>
-
     </div>
   );
 }

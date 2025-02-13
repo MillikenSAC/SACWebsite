@@ -5,8 +5,8 @@ import { FaInstagram } from 'react-icons/fa';
 
 function Sacentines() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <div className="bggradientfull -z-40"></div>
+    <div className="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-white">
+      <div className="bggradientfull"></div>
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
       <div className="flex w-fit h-fit place-self-center mt-28 text-center text-sky-950 lg:text-[5rem]  text-[3rem] font-thin font-['Prata']">
           SACENTINES
@@ -37,7 +37,7 @@ function Sacentines() {
       </div>
 
       {/* Footer Section */}
-      <footer className="text-black py-6 px-6">
+      <footer className="text-black py-6 mt-auto px-6">
         <div className="w-full mx-auto p-4 md:py-8">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
             
