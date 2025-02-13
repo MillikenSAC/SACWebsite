@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8455ef3d.css",
-    "main.js": "/static/js/main.a0ca6829.js",
+    "main.css": "/static/css/main.418b34e1.css",
+    "main.js": "/static/js/main.0af1755e.js",
     "static/js/453.5d780a28.chunk.js": "/static/js/453.5d780a28.chunk.js",
     "static/media/saclogosite.gif": "/static/media/saclogosite.b1e8457f7522e4411d0d.gif",
     "static/media/RoboticsCandid.webp": "/static/media/RoboticsCandid.b0f36c44f5311739d609.webp",
@@ -111,12 +111,12 @@
     "static/media/History.webp": "/static/media/History.d170985419c994a6e5ab.webp",
     "index.html": "/index.html",
     "static/media/en-US.cjs": "/static/media/en-US.c3a6319ea4f219498e6f.cjs",
-    "main.8455ef3d.css.map": "/static/css/main.8455ef3d.css.map",
-    "main.a0ca6829.js.map": "/static/js/main.a0ca6829.js.map",
+    "main.418b34e1.css.map": "/static/css/main.418b34e1.css.map",
+    "main.0af1755e.js.map": "/static/js/main.0af1755e.js.map",
     "453.5d780a28.chunk.js.map": "/static/js/453.5d780a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8455ef3d.css",
-    "static/js/main.a0ca6829.js"
+    "static/css/main.418b34e1.css",
+    "static/js/main.0af1755e.js"
   ]
 }

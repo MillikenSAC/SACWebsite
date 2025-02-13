@@ -7,6 +7,7 @@ function FriendshipTest() {
   const [names, setNames] = useState({ person1: "", person2: "" });
   const [answers, setAnswers] = useState({ person1: {}, person2: {} });
   const [score, setScore] = useState(null);
+  const [correctCount, setCorrectCount] = useState(0);
 
   const handleNameChange = (person, value) => {
     setNames((prev) => ({ ...prev, [person]: value }));
@@ -32,20 +33,34 @@ function FriendshipTest() {
   const submitPerson2 = () => {
     let matchCount = 0;
     const totalQuestions = 5;
+
     for (let i = 1; i <= totalQuestions; i++) {
       if (answers.person1[`q${i}`]?.toLowerCase() === answers.person2[`q${i}`]?.toLowerCase()) {
         matchCount++;
       }
     }
+
+    setCorrectCount(matchCount);
     setScore(Math.floor((matchCount / totalQuestions) * 100));
     setStep(4);
   };
 
-  return (
-    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-br from-blue-200 to-pink-200 text-black pt-32">
-      <h1 className="text-5xl font-bold text-pink-600 font-['Prata'] mb-6">Friendship Test</h1>
+  const resetQuiz = () => {
+    setStep(1);
+    setNames({ person1: "", person2: "" });
+    setAnswers({ person1: {}, person2: {} });
+    setScore(null);
+    setCorrectCount(0);
+  };
 
-      <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg max-w-md w-full mb-10 text-center">
+  return (
+    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-br from-blue-200 to-pink-200 text-black pt-32 px-4">
+      <h1 className="text-5xl font-bold text-pink-600 font-['Prata'] mb-6 text-center">
+        Friendship Test
+      </h1>
+
+      <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg max-w-lg w-full mb-10 text-center mx-auto">
+        
         {/* STEP 1: Enter Names */}
         {step === 1 && (
           <>
@@ -70,6 +85,20 @@ function FriendshipTest() {
             >
               Start Quiz
             </button>
+            <div className="flex justify-between mt-6">
+          <button
+            onClick={() => navigate("/sacentines")}
+            className="py-2 px-4 bg-gradient-to-r from-pink-300 to-pink-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
+          >
+            Back
+          </button>
+          <button
+            onClick={() => navigate("/sacentines/compatibility")}
+            className="py-2 px-4 bg-gradient-to-r from-blue-300 to-blue-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
+          >
+            Compatibility Test
+          </button>
+        </div>
           </>
         )}
 
@@ -116,6 +145,35 @@ function FriendshipTest() {
             >
               Submit
             </button>
+          </>
+        )}
+
+        {/* STEP 4: Results */}
+        {step === 4 && (
+          <>
+            <h2 className="text-3xl font-bold text-pink-600 mb-4">Results</h2>
+            <p className="text-lg">
+              {names.person1} and {names.person2}, you got <span className="font-bold text-pink-500">{correctCount}</span> out of 5 questions correct!
+            </p>
+            <p className="text-lg mt-2">
+              Your friendship compatibility score is <span className="font-bold text-pink-500">{score}%</span> 🎉
+            </p>
+            
+            {/* Buttons */}
+            <div className="flex justify-between mt-6">
+            <button
+              onClick={() => navigate("/sacentines")}
+              className="py-2 px-4 bg-gradient-to-r from-pink-300 to-pink-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => navigate("/sacentines/compatibility")}
+              className="py-2 px-4 bg-gradient-to-r from-blue-300 to-blue-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
+            >
+              Compatibility Test
+            </button>
+          </div>
           </>
         )}
       </div>

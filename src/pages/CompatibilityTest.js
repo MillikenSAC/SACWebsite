@@ -26,9 +26,10 @@ function CompatibilityTest() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-200 to-blue-200 text-black">
-      <h1 className="text-5xl font-bold text-pink-600 font-['Prata'] mb-6">Compatibility Test</h1>
-
+    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-br from-blue-200 to-pink-200 text-black pt-32 px-4">
+      <h1 className="text-5xl font-bold text-pink-600 font-['Prata'] mb-6 text-center">
+        Compatibility Test
+      </h1>
       <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg max-w-md w-full text-center">
         <p className="mb-4 text-lg">Type in two names and see how strong your friendship is!</p>
 
@@ -67,7 +68,7 @@ function CompatibilityTest() {
             onClick={() => navigate("/sacentines")}
             className="py-2 px-4 bg-gradient-to-r from-pink-300 to-pink-400 text-white rounded-full text-lg hover:scale-105 transition-transform"
           >
-            Home
+            Back
           </button>
           <button
             onClick={() => navigate("/sacentines/friendship")}
