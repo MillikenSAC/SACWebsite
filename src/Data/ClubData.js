@@ -35,6 +35,9 @@ import VEX from '../assets/club-logos/VEX.webp';
 import Yorkcan from '../assets/club-logos/Yorkcan.webp';
 import YOSA from '../assets/club-logos/YOSA.webp';
 import YSS from '../assets/club-logos/YSS.webp';
+import TSA from '../assets/club-logos/TSA.webp';
+import MSA from '../assets/club-logos/MSA.webp';
+import Paws from '../assets/club-logos/Paws.webp';
 
 
 export const clubResources = [ 
@@ -390,6 +393,42 @@ const clubData = [
         room: "327",
         meetingDay: "Wednesday",
         googleClassroomCode: "heishcg"
+    },
+    {
+        name: "Tamil Student Association (TSA)",
+        desc: "A student led club that aims to promote recognition and diversity of the Tamil culture.",
+        imgSrc: TSA,
+        link: "https://www.instagram.com/milliken.tsa/",
+        room: "303",
+        meetingDay: "Friday",
+        googleClassroomCode: "s6ajoxg"
+    },
+    {
+        name: "Model United Nations (MUN0",
+        desc: "Model un simulates UN discussions, students use roleplays to debate global issues and develop diplomatic skills.",
+        imgSrc: ModelUN,
+        link: "https://www.instagram.com/millikenmodelun/",
+        room: "302",
+        meetingDay: "Friday",
+        googleClassroomCode: "si22ix2"
+    },
+    {
+        name: "Muslim Student Association (MSA)",
+        desc: "The Muslim Student Association is a club where Muslim and non Muslims have a safe space to discuss about their faith and beliefs. There are charity and Eid events organized. ",
+        imgSrc: MSA,
+        link: "https://www.instagram.com/msa.milliken/",
+        room: "319",
+        meetingDay: "Friday",
+        googleClassroomCode: "x6d6b4m"
+    },
+    {
+        name: "Paws First Alliance",
+        desc: "Paws First Alliance, strives to raise awareness on the different ethical issues surrounding animals and advocate for their rights.",
+        imgSrc: Paws,
+        link: "https://www.instagram.com/pawsfirstalliance/",
+        room: "125",
+        meetingDay: "Wednesday",
+        googleClassroomCode: "3uj3dr7"
     }
     
 ];
