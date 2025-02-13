@@ -6,6 +6,9 @@ import Navbar from './components/Navbar';
 import Clubs from './pages/Clubs';
 import FAQ from './pages/FAQ';
 import Gallery from './pages/Gallery';
+import Sacentines from './pages/Sacentines.js';
+import FriendshipTest from './pages/FriendshipTest';
+import CompatibilityTest from './pages/CompatibilityTest';
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { motion } from 'framer-motion';
 
@@ -39,6 +42,45 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <SAC />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/sacentines"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Sacentines />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/sacentines/friendship"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <FriendshipTest />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/sacentines/compatibility"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <CompatibilityTest />
             </motion.div>
           }
         />

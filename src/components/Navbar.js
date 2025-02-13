@@ -8,6 +8,7 @@ function Navbar() {
     const Links = [
         { name: "Home", link: "/" },
         { name: "Council", link: "/SAC" },
+        { name: "SACENTINES", link: "/sacentines" },
         { name: "Clubs", link: "/Clubs" },
         { name: "Calendar", link: "/Event" },
         { name: "Gallery", link: "/Gallery" },

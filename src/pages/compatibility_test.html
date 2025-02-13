@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffccf9, #cce7ff);
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 20px;
+      color: #ff69b4;
+      font-family: 'Pacifico', cursive;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(255, 182, 193, 0.5);
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ff69b4;
+      border-radius: 15px;
+      font-size: 1rem;
+    }
+    button {
+      background: linear-gradient(90deg, #ff99cc, #ffccff);
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      padding: 15px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0px 4px 10px rgba(255, 182, 193, 0.5);
+      transition: all 0.3s ease;
+      margin: 10px 5px;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #ffccff, #ff99cc);
+      transform: scale(1.05);
+    }
+    .result-glow {
+      font-size: 2rem;
+      color: #ff69b4;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ffb6c1, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+      animation: glow 1.5s infinite alternate;
+    }
+    footer {
+      margin-top: 30px;
+      background-color: #ff69b4;
+      color: white;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Compatibility Test !!</h1>
+  <div class="container">
+    <p>Type in two names and see how strong your friendship is!</p>
+    <input type="text" id="friend1" placeholder="Friend 1">
+    <input type="text" id="friend2" placeholder="Friend 2">
+    <button onclick="calculateFriendship()">Test Compatibility</button>
+    <p id="result" class="hidden"></p>
+    <div id="navigation" style="margin-top: 20px;">
+      <button onclick="goHome()">Home</button>
+      <button onclick="goToCompatibility()">Friendship Test</button>
+    </div>
+  </div>
+  <footer>
+    Milliken SAC - Compatibility Tester
+  </footer>
+  <script>
+    function calculateFriendship() {
+      const friend1 = document.getElementById('friend1').value.trim();
+      const friend2 = document.getElementById('friend2').value.trim();
+
+      if (!friend1 || !friend2) {
+        alert('Please enter both names!');
+        return;
+      }
+
+      const score = Math.floor(Math.random() * 101);
+      let message = '';
+
+      if (score > 80) {
+        message = "You're the perfect pair!";
+      } else if (score > 50) {
+        message = "You have a strong friendship!";
+      } else {
+        message = "You're friendly, but you could get closer!";
+      }
+
+      const resultElement = document.getElementById('result');
+      resultElement.innerHTML = `
+        ${friend1} and ${friend2}, your friendship score is 
+        <span class="result-glow">${score}%</span> - ${message}
+      `;
+      resultElement.classList.remove('hidden');
+    }
+
+    function goHome() {
+      window.location.href = 'sacentines.html';
+    }
+
+    function goToCompatibility() {
+      window.location.href = 'friendship_test.html'
+    }
+  </script>
+</body>
+</html>
