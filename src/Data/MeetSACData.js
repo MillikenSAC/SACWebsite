@@ -243,7 +243,7 @@ export const Reps = [
     title: 'Grade 9 Rep',
     email: "440004317@gapps.yrdsb.ca",
     instagram: "https://www.instagram.com/farhaan.ff/",
-    caption: "wassupp knights 🔥🔥🔥, im farhaan, one of the grade 9 reps for this year alongside emma!! this is my first year on sac and i’m here to make it as memorable as possible 😝! some info abt me: i love playing sports (esp badminton 🏸). i also LOVE yapping, so if u see me around, come dab me up, im sure ill be down to chat 🗣. im rlly excited to see how this year unfolds ‼️‼️ feel free to send me a dm anytime on insta (@fxrhaanfxrdous)"
+    caption: "wassupp knights 🔥🔥🔥, im farhaan, one of the grade 9 reps for this year alongside emma!! this is my first year on sac and i’m here to make it as memorable as possible 😝! some info abt me: i love playing sports (esp badminton 🏸). i also LOVE yapping, so if u see me around, come dab me up, im sure ill be down to chat 🗣. im rlly excited to see how this year unfolds ‼️‼️ feel free to send me a dm anytime on insta (@farhaan.ff)"
   },
   {
     id: 21,
