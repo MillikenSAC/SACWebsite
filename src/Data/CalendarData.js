@@ -114,6 +114,77 @@ const events = [
         allDay: false, 
         description: "Start the summer with a day full of fun at Carnival! Check out the tasty food, enjoy outdoor activities, and make memories with friends to celebrate the end of the school year!",
         isTBD: true,
+    },
+    { 
+        title: "PCF Contests 🧮📚",
+        allDay: false, 
+        description: "The Pascal, Cayley, and Fermat contests will be hosted in the cafeteria from 8:30 AM to 10:10 AM. Bring a scientific calculator, pencil and eraser!",
+        start: new Date(2025, 1, 26, 8, 30),
+        end: new Date(2025, 1, 26, 10, 10)
+    },
+    { 
+        title: "Euclid Contest 📏📐",
+        allDay: false, 
+        description: "The Euclid contest will be hosted in the cafeteria.",
+        start: new Date(2025, 3, 2, 8, 20),
+        end: new Date(2025, 3, 2, 10, 50)
+    },
+    { 
+        title: "FGH Contests 📊📝",
+        allDay: false, 
+        description: "The Fryer, Galois, and Hypatia contests will be hosted in the cafeteria.",
+        start: new Date(2025, 3, 3, 8, 20),
+        end: new Date(2025, 3, 3, 9, 35)
+    },
+    { 
+        title: "CAP Contest 📊🌏",
+        allDay: false, 
+        description: "The Canadian Association of Physicists (CAP) contest will be hosted.",
+        start: new Date(2025, 3, 9),
+        end: new Date(2025, 3, 9)
+    },
+    { 
+        title: "CCC 📊🧪",
+        allDay: false, 
+        description: "The Canadian Chemistry Contest (CCC) will be hosted.",
+        start: new Date(2025, 3, 23),
+        end: new Date(2025, 3, 23)
+    },
+    { 
+        title: "SIN Contest 🌌🌟",
+        allDay: true, 
+        description: "The Sir Isaac Newton (SIN) contest by the University of Waterloo will be hosted.",
+        start: new Date(2025, 4, 1),
+        end: new Date(2025, 4, 1)
+    },
+    { 
+        title: "Chem13 Contest 🥼📝",
+        allDay: true, 
+        description: "The Chem 13 Contest by the University of Waterloo will be hosted.",
+        start: new Date(2025, 4, 8),
+        end: new Date(2025, 4, 8)
+    },
+    { 
+        title: "OAPT Contest 🔭⚛️",
+        allDay: true, 
+        description: "The Ontario Association of Physics Teachers (OAPT) contest will be hosted.",
+        start: new Date(2025, 4, 14),
+        end: new Date(2025, 4, 14)
+    },
+    { 
+        title: "Avogadro Contest 🔬💊",
+        allDay: true, 
+        description: "The Avogadro Contest by the University of Waterloo will be hosted.",
+        start: new Date(2025, 4, 15),
+        end: new Date(2025, 4, 15)
+    },
+    
+    { 
+        title: "March Break 🌱🌷",
+        allDay: false, 
+        description: "March Break!",
+        start: new Date(2025, 2, 10),
+        end: new Date(2025, 2, 15)
     }
 ];
 
