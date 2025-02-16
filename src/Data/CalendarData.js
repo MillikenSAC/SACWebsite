@@ -116,6 +116,55 @@ const events = [
         isTBD: true,
     },
     { 
+        title: "Period 1 Exams",
+        allDay: false, 
+        description: "!",
+        start: new Date(2025, 0, 22, 9),
+        end: new Date(2025, 0, 22)
+    },
+    { 
+        title: "Period 2 Exams",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 0, 23, 9),
+        end: new Date(2025, 0, 23)
+    },
+    { 
+        title: "Period 5 Exams",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 0, 24, 9),
+        end: new Date(2025, 0, 24)
+    },
+    { 
+        title: "Period 3 Exams",
+        allDay: false, 
+        description: "D",
+        start: new Date(2025, 0, 27, 9),
+        end: new Date(2025, 0, 27)
+    },
+    { 
+        title: "Period 4 Exams",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 0, 28, 9),
+        end: new Date(2025, 0, 28)
+    },
+    { 
+        title: "Exam Review",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 0, 30, 9),
+        end: new Date(2025, 0, 30)
+    },
+    { 
+        title: "VEX Provs 🤖",
+        allDay: false, 
+        description: "MMHS VEX Team 11702A will be competing at the provincial competition. Good luck! ",
+        start: new Date(2025, 2, 1),
+        end: new Date(2025, 2, 3)
+    },
+    { 
         title: "PCF Contests 🧮📚",
         allDay: false, 
         description: "The Pascal, Cayley, and Fermat contests will be hosted in the cafeteria from 8:30 AM to 10:10 AM. Bring a scientific calculator, pencil and eraser!",
@@ -152,33 +201,46 @@ const events = [
     },
     { 
         title: "SIN Contest 🌌🌟",
-        allDay: true, 
+        allDay: false, 
         description: "The Sir Isaac Newton (SIN) contest by the University of Waterloo will be hosted.",
         start: new Date(2025, 4, 1),
         end: new Date(2025, 4, 1)
     },
     { 
         title: "Chem13 Contest 🥼📝",
-        allDay: true, 
+        allDay: false, 
         description: "The Chem 13 Contest by the University of Waterloo will be hosted.",
         start: new Date(2025, 4, 8),
         end: new Date(2025, 4, 8)
     },
     { 
         title: "OAPT Contest 🔭⚛️",
-        allDay: true, 
+        allDay: false, 
         description: "The Ontario Association of Physics Teachers (OAPT) contest will be hosted.",
         start: new Date(2025, 4, 14),
         end: new Date(2025, 4, 14)
     },
     { 
         title: "Avogadro Contest 🔬💊",
-        allDay: true, 
+        allDay: false, 
         description: "The Avogadro Contest by the University of Waterloo will be hosted.",
         start: new Date(2025, 4, 15),
         end: new Date(2025, 4, 15)
     },
-    
+    { 
+        title: "ICDC ✈️🏖️",
+        allDay: false, 
+        description: "Best of luck to all International Career Development Conference (ICDC) competitors",
+        start: new Date(2025, 3, 26),
+        end: new Date(2025, 3, 29)
+    },
+    { 
+        title: "PA Day 😴",
+        allDay: false, 
+        description: "Best of luck to all International Career Development Conference (ICDC) competitors",
+        start: new Date(2025, 4, 5),
+        end: new Date(2025, 4, 5)
+    },
     { 
         title: "March Break 🌱🌷",
         allDay: false, 
