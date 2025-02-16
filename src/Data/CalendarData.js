@@ -161,8 +161,8 @@ const events = [
         title: "VEX Provs 🤖",
         allDay: false, 
         description: "MMHS VEX Team 11702A will be competing at the provincial competition. Good luck! ",
-        start: new Date(2025, 2, 1),
-        end: new Date(2025, 2, 3)
+        start: new Date(2025, 2, 1, 8),
+        end: new Date(2025, 2, 2, 12)
     },
     { 
         title: "PCF Contests 🧮📚",

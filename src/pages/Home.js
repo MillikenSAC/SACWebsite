@@ -22,7 +22,7 @@ const upcomingEvents = calendarData
     if (b.isTBD) return -1;
     return new Date(a.start) - new Date(b.start); // Sort by start date
   })
-  .slice(0, 3); // Get the top 3 events
+  .slice(0, 4); // Get the top n events
 
 // Format date/show TBD
 const formatDate = (date, isTBD) => {

@@ -38,11 +38,34 @@ import talentshow17 from '../assets/gallery/2024talentshow17.webp';
 import talentshow18 from '../assets/gallery/2024talentshow18.webp';
 import talentshow19 from '../assets/gallery/2024talentshow19.webp';
 import sactalentshow from '../assets/gallery/sactalentshow.webp';
+import tsa2 from '../assets/gallery/TSA2.webp';
+import tsa1 from '../assets/gallery/TSA1.webp';
+import sacentines from '../assets/gallery/SACentines.webp';
+import sacentines1 from '../assets/gallery/sacentines1.webp';
+import sacentines2 from '../assets/gallery/sacentines2.webp';
+import sacentines3 from '../assets/gallery/sacentines3.webp';
+import sacentines4 from '../assets/gallery/sacentines4.webp';
+import sacentines5 from '../assets/gallery/sacentines5.webp';
+import sacentines6 from '../assets/gallery/sacentines6.webp';
+import sacentines7 from '../assets/gallery/sacentines7.webp';
+import sacentines8 from '../assets/gallery/sacentines8.webp';
+import sacentines9 from '../assets/gallery/sacentines9.webp';
+import sacentines10 from '../assets/gallery/sacentines10.webp';
+
 
 const imageSources = [
-  semi1, semi2, semi3, semi4, semi5, semi6, semi7, semi8, semi9, semi10, spc1, spc2, spc3, spiritweek, steven, sactalentshow,
-  talentshow1, talentshow2, talentshow3, talentshow4, talentshow5, talentshow6, talentshow7, talentshow8, talentshow9, talentshow10,
-  talentshow11, talentshow12, talentshow13, talentshow14, talentshow15, talentshow16, talentshow17, talentshow18, talentshow19
+  semi1, semi2, semi3, semi4, semi5, semi6, semi7, semi8, semi9, semi10, 
+
+  spc1, spc2, spc3, 
+  
+  spiritweek, steven, 
+
+  sactalentshow, talentshow1, talentshow2, talentshow3, talentshow4, talentshow5, talentshow6, talentshow7, talentshow8, talentshow9, talentshow10,
+  talentshow11, talentshow12, talentshow13, talentshow14, talentshow15, talentshow16, talentshow17, talentshow18, talentshow19, 
+  
+  tsa1, tsa2, 
+
+  sacentines,sacentines1, sacentines2, sacentines3, sacentines4, sacentines5, sacentines6, sacentines7, sacentines8, sacentines9, sacentines10
   
 ];
 
