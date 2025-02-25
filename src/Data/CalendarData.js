@@ -164,6 +164,14 @@ const events = [
         start: new Date(2025, 2, 1, 8),
         end: new Date(2025, 2, 2, 12)
     },
+    ,
+    { 
+        title: "BOTS",
+        allDay: false, 
+        description: "Battle of The Schools!",
+        start: new Date(2025, 1, 24),
+        end: new Date(2025, 1, 29)
+    },
     { 
         title: "PCF Contests 🧮📚",
         allDay: false, 
