@@ -23,6 +23,8 @@ import SophieD from '../assets/sac-headshots2025/sophie.webp';
 import EleanorL from  '../assets/sac-headshots2025/eleanor.webp';
 import HaiyaoW from  '../assets/sac-headshots2025/haiyao.webp';
 import FarhaanF from  '../assets/sac-headshots2025/farhaan.webp';
+import Virk from '../assets/sac-headshots2025/virk.webp'
+import Birch from '../assets/sac-headshots2025/MrBirch.webp'
 
 /*shy: shyysafi
 jenny: just.fluffs
@@ -298,14 +300,14 @@ export const Tech = [
 export const TeacherAdvisors = [
   {
       id: 23,
-      img: 'https://images.unsplash.com/photo-1509477887414-681937645173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      img: Virk,
       name: 'Ms. Virk',
       title: 'Teacher Advisor',
       caption: ""
     },
     {
       id: 24,
-      img: 'https://images.unsplash.com/photo-1454783904586-9fa42a1e8442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      img: Birch,
       name: 'Mr. Birch',
       title: 'Teacher Advisor',
       caption: ""

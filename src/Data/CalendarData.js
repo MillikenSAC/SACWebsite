@@ -255,6 +255,41 @@ const events = [
         description: "March Break!",
         start: new Date(2025, 2, 10),
         end: new Date(2025, 2, 15)
+    },
+    { 
+        title: "Rhyme Without a Reason 🎵",
+        allDay: true, 
+        description: "Find a buddy and dress up in anything that rhymes!",
+        start: new Date(2025, 2, 31),
+        end: new Date(2025, 2, 31)
+    },
+    { 
+        title: "Dress as an Egg Day 🥚🪺",
+        allDay: true, 
+        description: "Dress like an egg!",
+        start: new Date(2025, 3, 1),
+        end: new Date(2025, 3, 1)
+    },
+    { 
+        title: "Wicked Wednesday 🧚 🧹",
+        allDay: true, 
+        description: "Pull up to school in green or pink!",
+        start: new Date(2025, 3, 2),
+        end: new Date(2025, 3, 2)
+    },
+    { 
+        title: "Anything But a Packack Day 🎒",
+        allDay: true, 
+        description: "Carry your books, pens, and snacks in anything but a backpack!",
+        start: new Date(2025, 3, 3),
+        end: new Date(2025, 3, 3)
+    },
+    { 
+        title: "Pep Rally",
+        allDay: true, 
+        description: "Get pumped up and show your school spirit! ",
+        start: new Date(2025, 3, 4),
+        end: new Date(2025, 3, 4)
     }
 ];
 
