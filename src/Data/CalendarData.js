@@ -290,6 +290,34 @@ const events = [
         description: "Get pumped up and show your school spirit! ",
         start: new Date(2025, 3, 4),
         end: new Date(2025, 3, 4)
+    },
+    { 
+        title: "Coffee House",
+        allDay: true, 
+        description: "Autism Awareness Week",
+        start: new Date(2025, 3, 14),
+        end: new Date(2025, 3, 14)
+    },
+    { 
+        title: "Instagram Post Day",
+        allDay: true, 
+        description: "Autism Awareness Week",
+        start: new Date(2025, 3, 15),
+        end: new Date(2025, 3, 15)
+    },
+    { 
+        title: "Trivia",
+        allDay: true, 
+        description: "Autism Awareness Week",
+        start: new Date(2025, 3, 16),
+        end: new Date(2025, 3, 16)
+    },
+    { 
+        title: "ASL Workshop + Movie Night",
+        allDay: true, 
+        description: "Autism Awareness Week",
+        start: new Date(2025, 3, 17),
+        end: new Date(2025, 3, 17)
     }
 ];
 

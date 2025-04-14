@@ -51,6 +51,11 @@ import sacentines7 from '../assets/gallery/sacentines7.webp';
 import sacentines8 from '../assets/gallery/sacentines8.webp';
 import sacentines9 from '../assets/gallery/sacentines9.webp';
 import sacentines10 from '../assets/gallery/sacentines10.webp';
+import peprally1 from '../assets/gallery/peprally1.webp'
+import peprally2 from '../assets/gallery/peprally2.webp'
+import peprally3 from '../assets/gallery/peprally3.webp'
+import peprally4 from '../assets/gallery/peprally4.webp'
+import peprally5 from '../assets/gallery/peprally5.webp'
 
 
 const imageSources = [
@@ -65,7 +70,9 @@ const imageSources = [
   
   tsa1, tsa2, 
 
-  sacentines,sacentines1, sacentines2, sacentines3, sacentines4, sacentines5, sacentines6, sacentines7, sacentines8, sacentines9, sacentines10
+  sacentines,sacentines1, sacentines2, sacentines3, sacentines4, sacentines5, sacentines6, sacentines7, sacentines8, sacentines9, sacentines10,
+
+  peprally1, peprally2, peprally3, peprally4, peprally5
   
 ];
 
