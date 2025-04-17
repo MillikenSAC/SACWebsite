@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.bdec1ef7.css",
-    "main.js": "/static/js/main.42a90f29.js",
+    "main.js": "/static/js/main.a47380f0.js",
     "static/js/453.5d780a28.chunk.js": "/static/js/453.5d780a28.chunk.js",
     "static/media/saclogosite.gif": "/static/media/saclogosite.b1e8457f7522e4411d0d.gif",
     "static/media/RoboticsCandid.webp": "/static/media/RoboticsCandid.b0f36c44f5311739d609.webp",
+    "static/media/SAC-All.webp": "/static/media/SAC-All.7c6ba70bfc6bc9919ba3.webp",
+    "static/media/peprally3.webp": "/static/media/peprally3.083f6b9c036be94c58a3.webp",
+    "static/media/peprally4.webp": "/static/media/peprally4.447048e90a81d5043054.webp",
     "static/media/2024talentshow5.webp": "/static/media/2024talentshow5.a59097fea11c87b77ca1.webp",
     "static/media/2024talentshow6.webp": "/static/media/2024talentshow6.880c93683e1331783fa9.webp",
     "static/media/sacbg.webp": "/static/media/sacbg.3ba3007fc166c7ec176b.webp",
@@ -17,6 +20,8 @@
     "static/media/2024talentshow8.webp": "/static/media/2024talentshow8.4cc0f53958206c6f26d1.webp",
     "static/media/spiritweek.webp": "/static/media/spiritweek.38376111065b61b69360.webp",
     "static/media/sacentines7.webp": "/static/media/sacentines7.27b14eafbca2cd7ec100.webp",
+    "static/media/peprally2.webp": "/static/media/peprally2.4645de61c304a8432c29.webp",
+    "static/media/peprally5.webp": "/static/media/peprally5.ca5c76e853dfcb706841.webp",
     "static/media/semi5.webp": "/static/media/semi5.29d213fa6a125708db96.webp",
     "static/media/2024talentshow3.webp": "/static/media/2024talentshow3.d1538cd6d1dbc4694443.webp",
     "static/media/2024talentshow19.webp": "/static/media/2024talentshow19.37c8b8d87fd84c476622.webp",
@@ -26,6 +31,7 @@
     "static/media/sacentines9.webp": "/static/media/sacentines9.af0d7b86aa280728e3d9.webp",
     "static/media/2024talentshow4.webp": "/static/media/2024talentshow4.cafd88f302195b051d46.webp",
     "static/media/sacentines8.webp": "/static/media/sacentines8.ec9dc0f7e9eca1575844.webp",
+    "static/media/peprally1.webp": "/static/media/peprally1.755585d4be6b0e22d843.webp",
     "static/media/semi7.webp": "/static/media/semi7.d799951c94044d43b49b.webp",
     "static/media/2024talentshow2.webp": "/static/media/2024talentshow2.7d731728798cded69817.webp",
     "static/media/sacentines3.webp": "/static/media/sacentines3.21dfe7a1d021ad23755a.webp",
@@ -38,7 +44,6 @@
     "static/media/noel.webp": "/static/media/noel.02d796c5646b7d4b73ca.webp",
     "static/media/SACentines.webp": "/static/media/SACentines.413bdbebc7b6cb373124.webp",
     "static/media/andrew.webp": "/static/media/andrew.104a70c2d10a66e7448b.webp",
-    "static/media/SAC-All.webp": "/static/media/SAC-All.13b0f1fe682005fe4087.webp",
     "static/media/emily.webp": "/static/media/emily.e0f78668bf56bdfe695e.webp",
     "static/media/sacentines5.webp": "/static/media/sacentines5.7f753f613389cbd6241d.webp",
     "static/media/sacentines6.webp": "/static/media/sacentines6.6404f62da193d273719a.webp",
@@ -80,6 +85,7 @@
     "static/media/VEX.webp": "/static/media/VEX.9a3b4096de82b432088e.webp",
     "static/media/robotics.webp": "/static/media/robotics.0564ff3dae0e22086c83.webp",
     "static/media/Geography.webp": "/static/media/Geography.c8e53fdb31e9362ab335.webp",
+    "static/media/MrBirch.webp": "/static/media/MrBirch.020e0a37840eb71909be.webp",
     "static/media/CSA.webp": "/static/media/CSA.c1afce99ebc359aed936.webp",
     "static/media/reach for the top.webp": "/static/media/reach for the top.7646b5d5ee5dd5e1e79d.webp",
     "static/media/AnimeClub.webp": "/static/media/AnimeClub.6d940edac1b4330c8247.webp",
@@ -117,6 +123,7 @@
     "static/media/semi6.webp": "/static/media/semi6.3ce4b65ab0881a7d6436.webp",
     "static/media/Ignite.webp": "/static/media/Ignite.58ba6be52516ef52cda6.webp",
     "static/media/MBO.webp": "/static/media/MBO.73dcd529eba4f747e9a5.webp",
+    "static/media/virk.webp": "/static/media/virk.703c05e365374d2c340e.webp",
     "static/media/MSA.webp": "/static/media/MSA.fc70324b3dbea6b5484d.webp",
     "static/media/1UP.webp": "/static/media/1UP.5698b345957bc1741475.webp",
     "static/media/computerStudies.webp": "/static/media/computerStudies.1e971a7a7487ef9e6a67.webp",
@@ -125,11 +132,11 @@
     "index.html": "/index.html",
     "static/media/en-US.cjs": "/static/media/en-US.c3a6319ea4f219498e6f.cjs",
     "main.bdec1ef7.css.map": "/static/css/main.bdec1ef7.css.map",
-    "main.42a90f29.js.map": "/static/js/main.42a90f29.js.map",
+    "main.a47380f0.js.map": "/static/js/main.a47380f0.js.map",
     "453.5d780a28.chunk.js.map": "/static/js/453.5d780a28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bdec1ef7.css",
-    "static/js/main.42a90f29.js"
+    "static/js/main.a47380f0.js"
   ]
 }
