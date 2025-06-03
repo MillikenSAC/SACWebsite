@@ -387,7 +387,7 @@ const clubData = [
     },
     {
         name: "Young Scientists Society (YSS)",
-        desc: "Spark Curiosity in the Next Generation.",
+        desc: "Fostering a love of Science among youth for the Future",
         imgSrc: YSS,
         link: "https://www.instagram.com/mmhsyss/",
         room: "327",

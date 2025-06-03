@@ -104,16 +104,11 @@ const events = [
         end: new Date(2025, 1, 14, 14, 10)
     },
     { 
-        title: "🤫🤫",
-        allDay: false, 
-        description: "???",
-        isTBD: true,
-    },
-    { 
         title: "Carnival 🎡🎪",
         allDay: false, 
         description: "Start the summer with a day full of fun at Carnival! Check out the tasty food, enjoy outdoor activities, and make memories with friends to celebrate the end of the school year!",
-        isTBD: true,
+        start: new Date(2025, 5, 13, 8, 50),
+        end: new Date(2025, 5, 13, 15, 30),
     },
     { 
         title: "Period 1 Exams",

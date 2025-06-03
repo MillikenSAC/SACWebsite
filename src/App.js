@@ -123,7 +123,9 @@ function App() {
             </motion.div>
           }
         />
+
       </Routes>
+      
     </>
   );
 }

@@ -53,7 +53,7 @@ function Navbar() {
 
     return (
         <div className={`z-50 w-full ${open ? 'fixed' : 'absolute'} top-0 transition-all duration-300 ease-in-out`}>
-            <div className='md:flex items-center justify-between text-indigo-900 bg-transparent py-6 md:px-10 px-7'>
+            <div className='md:flex items-center justify-between text-indigo-200 bg-transparent py-6 md:px-10 px-7'>
                 
                 {/* Logo */}
                 <Link 
