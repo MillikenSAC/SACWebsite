@@ -8,6 +8,7 @@ import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech
 import { motion } from 'framer-motion';
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function SAC() {
   const location = useLocation();
@@ -97,6 +98,16 @@ function SAC() {
         <div className="text-sky-950 text-[3rem] md:text-[4rem] lg:text-[5rem] font-thin font-['Prata']">
           <span className="font-normal">Meet the Council</span>
         </div>
+      </div>
+
+
+      <div className='flex justify-center z-30'>
+        <Link 
+            onClick={() => window.open('/SACConstitution2025.pdf', '_blank')}
+            className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
+        >
+            Our Constitution
+          </Link>
       </div>
 
       {/* Tab Buttons */}

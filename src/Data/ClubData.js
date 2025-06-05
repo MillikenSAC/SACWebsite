@@ -128,9 +128,9 @@ const clubData = [
         desc: "We love to teach programming at all levels.",
         imgSrc: ComputerStudies,
         link: "https://www.instagram.com/milliken_compsci/",
-        room: "Computer Science Room",
+        room: "306",
         meetingDay: "Friday",
-        googleClassroomCode: "afp4rl3"
+        googleClassroomCode: "uklrd64u"
     },
     {
         name: "Debate Club",
