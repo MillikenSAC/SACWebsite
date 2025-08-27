@@ -33,7 +33,7 @@ function App() {
           }
         />
         <Route
-          path="/SAC"
+          path="/sac"
           element={
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ function App() {
           }
         />
         <Route
-          path="/Event"
+          path="/event"
           element={
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ function App() {
           }
         />
         <Route
-          path="/Clubs"
+          path="/clubs"
           element={
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ function App() {
           }
         />
         <Route
-          path="/Gallery"
+          path="/gallery"
           element={
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ function App() {
           }
         />
         <Route
-          path="/FAQ"
+          path="/faq"
           element={
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -7,11 +7,11 @@ import '../styles/Navbar.css';
 function Navbar() {
     const Links = [
         { name: "Home", link: "/" },
-        { name: "Council", link: "/SAC" },
-        { name: "Clubs", link: "/Clubs" },
-        { name: "Calendar", link: "/Event" },
-        { name: "Gallery", link: "/Gallery" },
-        { name: "FAQ", link: "/FAQ" },
+        { name: "Council", link: "/sac" },
+        { name: "Clubs", link: "/clubs" },
+        { name: "Calendar", link: "/event" },
+        { name: "Gallery", link: "/gallery" },
+        { name: "FAQ", link: "/faq" },
     ];
 
     const [open, setOpen] = useState(false);
@@ -110,7 +110,7 @@ function Navbar() {
                                             </Link>
                                             {/* anchor link for club resources */}
                                             <Link 
-                                            to="/Clubs#club-resources" 
+                                            to="/clubs#club-resources" 
                                             className='block text-indigo-900 p-2 hover:bg-indigo-900 hover:text-white'
                                         >
                                             Resources

@@ -135,7 +135,7 @@ function Home() {
                 </div>
                 <div className="flex justify-center py-10">
                 <Link 
-                    to="/Event" 
+                    to="/event" 
                     onClick={() => window.scrollTo(0,0)}
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
@@ -151,7 +151,7 @@ function Home() {
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] "></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] border-indigo-900 border">
               <div className="relative min-h-[380px] sm:min-h-[350px] flex-1">
-                <Link to="/SAC" className="block w-full h-full">
+                <Link to="/sac" className="block w-full h-full">
                   <img
                     src={SAC2025}
                     alt="sacpeople"
@@ -191,7 +191,7 @@ function Home() {
                 </div>
                 <div className="flex justify-center py-5">
                 <Link 
-                    to="/FAQ" 
+                    to="/faq" 
                     onClick={() => window.scrollTo(0,0)}
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
@@ -226,7 +226,7 @@ function Home() {
               <div className="tracking-tight text-gray-600 max-lg:text-center text-center pt-3 mb-10">
               <div className="flex justify-center pt-1">
                 <Link 
-                    to="/Clubs" 
+                    to="/clubs" 
                     onClick={() => window.scrollTo(0,0)}
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
@@ -235,7 +235,7 @@ function Home() {
               </div>
               <div className="flex justify-center pt-3">
                 <Link 
-                    to="/Clubs#club-resources" 
+                    to="/clubs#club-resources" 
                     className="text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200"
                 >
                     View Club Resources
