@@ -14,21 +14,49 @@ import calendarData from '../data/CalendarData'
 const today = new Date();
 
 const upcomingEvents = calendarData
-  .filter((event) => 
-    event.isTBD || (event.start && new Date(event.start) > today) // Include TBD or future events
-  )
+  .filter(e => e.isTBD || (e.start && e.start > today))
   .sort((a, b) => {
-    if (a.isTBD) return 1; // Place TBD events after dated ones
-    if (b.isTBD) return -1;
-    return new Date(a.start) - new Date(b.start); // Sort by start date
+    if (a.isTBD && !b.isTBD) return 1;
+    if (b.isTBD && !a.isTBD) return -1;
+    return (a.start?.getTime?.() ?? 0) - (b.start?.getTime?.() ?? 0);
   })
-  .slice(0, 4); // Get the top n events
+  .slice(0, 4);
 
-// Format date/show TBD
-const formatDate = (date, isTBD) => {
+// Format date/show TBD, incl. all-day + ranges
+const formatEventDate = (start, end, { isTBD = false, allDay = false } = {}) => {
   if (isTBD) return "TBD";
-  const options = { month: "short", day: "numeric", hour: "numeric", minute: "numeric" };
-  return date.toLocaleDateString(undefined, options);
+  if (!start) return "";
+
+  const sameDay =
+    end && start.toDateString() === end.toDateString();
+
+  const fmtDay = (d) =>
+    d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
+  const fmtDateTime = (d) =>
+    d.toLocaleDateString(undefined, {
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+    });
+
+  const fmtTime = (d) =>
+    d.toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric" });
+
+  // All-day cases
+  if (allDay) {
+    if (end && !sameDay) return `${fmtDay(start)} – ${fmtDay(end)} (All Day)`;
+    return `${fmtDay(start)} (All Day)`;
+  }
+
+  // Timed cases
+  if (end) {
+    if (sameDay) return `${fmtDateTime(start)} – ${fmtTime(end)}`;
+    return `${fmtDateTime(start)} – ${fmtDateTime(end)}`;
+  }
+
+  return fmtDateTime(start);
 };
 
 function Home() {
@@ -95,9 +123,9 @@ function Home() {
                       >
                         <h3 className="text-lg font-semibold text-gray-800">{event.title}</h3>
                         <p className="text-sm font-semibold text-gray-600">
-                          {formatDate(event.start, event.isTBD)}{" "}
-                          {event.end && `- ${formatDate(event.end)}`}
-                        </p>
+  {formatEventDate(event.start, event.end, event)}
+</p>
+
                         {event.description && (
                           <p className="text-sm text-gray-600">{event.description}</p>
                         )}

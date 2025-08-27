@@ -313,6 +313,20 @@ const events = [
         description: "Autism Awareness Week",
         start: new Date(2025, 3, 17),
         end: new Date(2025, 3, 17)
+    },
+    { 
+        title: "Grade 9 Day 📚",
+        allDay: true, 
+        description: "Welcome to MMHS!",
+        start: new Date(2025, 8, 2),
+        end: new Date(2025, 8, 2)
+    },
+    { 
+        title: "First Day of Classes 📝",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 8, 3, 8, 50),
+        end: new Date(2025, 8, 3, 15, 30)
     }
 ];
 
