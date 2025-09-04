@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery';
 import Sacentines from './pages/Sacentines.js';
 import FriendshipTest from './pages/FriendshipTest';
 import CompatibilityTest from './pages/CompatibilityTest';
+import RepInfo from './pages/ElectionInfo.js';
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { motion } from 'framer-motion';
 
@@ -29,6 +30,19 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <Home />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/election"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }} // Fade and slide up
+              animate={{ opacity: 1, y: 0 }}   // Fade in and slide to position
+              exit={{ opacity: 0, y: -20 }}     // Fade and slide down
+              transition={{ duration: 0.5 }}
+            >
+              <RepInfo />
             </motion.div>
           }
         />
