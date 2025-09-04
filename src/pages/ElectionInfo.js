@@ -307,7 +307,7 @@ function Election() {
         </div>
 
         {/* Election info / Accordion */}
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center mx-4">
           <div className="accordion-group w-full max-w-2xl z-10 mt-6 mb-20">
             {faqs.map((faq, index) => (
               <div
