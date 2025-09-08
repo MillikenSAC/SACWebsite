@@ -5,7 +5,7 @@ import BehindTheScenes from '../assets/club-logos/BehindTheScenes.webp';
 import BestBuddies from '../assets/club-logos/BestBuddies.webp';
 import CASCommittee from '../assets/club-logos/CASCommittee.webp';
 import Chess from '../assets/club-logos/Chess.webp';
-import ComputerStudies from '../assets/club-logos/computerStudies.webp';
+import ComputerStudies from '../assets/club-logos/csclub.webp';
 import CSA from '../assets/club-logos/CSA.webp';
 import Dance from '../assets/club-logos/Dance.webp';
 import Debate from '../assets/club-logos/Debate.webp';
@@ -129,8 +129,8 @@ const clubData = [
         imgSrc: ComputerStudies,
         link: "https://www.instagram.com/milliken_compsci/",
         room: "306",
-        meetingDay: "Friday",
-        googleClassroomCode: "uklrd64u"
+        meetingDay: "Tuesday, Wednesday",
+        googleClassroomCode: "3mc5ybeg"
     },
     {
         name: "Debate Club",
@@ -263,8 +263,8 @@ const clubData = [
         desc: "A place to promote, learn, and develop geographic skills; A place to understand the world.",
         imgSrc: Geography,
         link: "https://www.instagram.com/milliken.geography.club/",
-        room: "221",
-        meetingDay: "Wednesday",
+        room: "222",
+        meetingDay: "Thursday",
         googleClassroomCode: "d2by6cu"
     },
     {
@@ -404,7 +404,7 @@ const clubData = [
         googleClassroomCode: "s6ajoxg"
     },
     {
-        name: "Model United Nations (MUN0",
+        name: "Model United Nations (MUN)",
         desc: "Model un simulates UN discussions, students use roleplays to debate global issues and develop diplomatic skills.",
         imgSrc: ModelUN,
         link: "https://www.instagram.com/millikenmodelun/",

@@ -327,7 +327,35 @@ const events = [
         description: "",
         start: new Date(2025, 8, 3, 8, 50),
         end: new Date(2025, 8, 3, 15, 30)
-    }
+    },
+    { 
+        title: "Gr9 Rep Campaign Week 📢",
+        allDay: false, 
+        description: "See millikensac.com/election for campaign rules!",
+        start: new Date(2025, 8, 8, 0, 0),
+        end: new Date(2025, 8, 12, 23, 59)
+    },
+    { 
+        title: "Gr9 Rep Speeches 🔈🗣️",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 8, 15, 8, 50),
+        end: new Date(2025, 8, 15, 10, 10)
+    },
+    { 
+        title: "Fall Fest 🍂🍁",
+        allDay: true, 
+        description: "",
+        start: new Date(2025, 9, 9),
+        end: new Date(2025, 9, 9)
+    },
+    { 
+        title: "Spirit Week 🎃",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 9, 27, 8, 50),
+        end: new Date(2025, 9, 31, 15, 30)
+    },
 ];
 
 export default events;
