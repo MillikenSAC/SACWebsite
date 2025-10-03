@@ -364,7 +364,7 @@ const clubData = [
         imgSrc: VEX,
         link: "https://www.instagram.com/milliken.vex/",
         room: "161",
-        meetingDay: "Wednesday",
+        meetingDay: "Monday",
         googleClassroomCode: "e5f6t32"
     },
     {
