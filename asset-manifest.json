@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.09d9576b.css",
-    "main.js": "/static/js/main.e41ad193.js",
+    "main.js": "/static/js/main.d6218da9.js",
     "static/js/453.5d780a28.chunk.js": "/static/js/453.5d780a28.chunk.js",
     "static/media/saclogosite.gif": "/static/media/saclogosite.b1e8457f7522e4411d0d.gif",
     "static/media/RoboticsCandid.webp": "/static/media/RoboticsCandid.b0f36c44f5311739d609.webp",
@@ -37,6 +37,7 @@
     "static/media/sacentines3.webp": "/static/media/sacentines3.21dfe7a1d021ad23755a.webp",
     "static/media/2024talentshow1.webp": "/static/media/2024talentshow1.3251c8a113765b321b93.webp",
     "static/media/semi1.webp": "/static/media/semi1.52ec14c2ad151701b63d.webp",
+    "static/media/Weightroom.jpeg": "/static/media/Weightroom.c84b9ebf771ed72d25d8.jpeg",
     "static/media/2024talentshow17.webp": "/static/media/2024talentshow17.e22d6ebece2dbbce4c7e.webp",
     "static/media/semi8.webp": "/static/media/semi8.e2ac1c4725bf5fd1bd49.webp",
     "static/media/2024talentshow7.webp": "/static/media/2024talentshow7.be470e43e52984f7fc25.webp",
@@ -92,14 +93,13 @@
     "static/media/logo.webp": "/static/media/logo.d3847a72bdbc78d4577d.webp",
     "static/media/TSA.webp": "/static/media/TSA.f2b399b779af478f53d3.webp",
     "static/media/EASA.webp": "/static/media/EASA.4cb3ac37c57ccdd196b2.webp",
+    "static/media/French.png": "/static/media/French.a3244e82301226e0f176.png",
     "static/media/2024talentshow16.webp": "/static/media/2024talentshow16.8b678e21fe356de02132.webp",
     "static/media/Fashion.webp": "/static/media/Fashion.c256b6ad377db8bc76c5.webp",
-    "static/media/Yorkcan.webp": "/static/media/Yorkcan.6c086d7091c1c078ea2b.webp",
     "static/media/2024talentshow9.webp": "/static/media/2024talentshow9.5e4baac710644b355580.webp",
     "static/media/equity.webp": "/static/media/equity.f36aff1390fc02b10571.webp",
     "static/media/InvisibleString.webp": "/static/media/InvisibleString.522c94a3090f0fa4495a.webp",
     "static/media/2024talentshow18.webp": "/static/media/2024talentshow18.b7ef1b7d37d5e69a9bf5.webp",
-    "static/media/MMTS.webp": "/static/media/MMTS.6b1b67fc0b118c47e1a9.webp",
     "static/media/Red cross.webp": "/static/media/Red cross.f998441d96b49ac6e9e3.webp",
     "static/media/Drama.webp": "/static/media/Drama.a4ecc401a79f88fec626.webp",
     "static/media/TSA2.webp": "/static/media/TSA2.3874d406b91b4fd04e3d.webp",
@@ -108,10 +108,7 @@
     "static/media/Milliken Moments.webp": "/static/media/Milliken Moments.d94dde9369594bf4b13a.webp",
     "static/media/Chess.webp": "/static/media/Chess.dc6cef280d3a02a5650c.webp",
     "static/media/Debate.webp": "/static/media/Debate.46662cf84eebcb0743d7.webp",
-    "static/media/CASCommittee.webp": "/static/media/CASCommittee.18cb0d242e8e873e43e6.webp",
     "static/media/MathSoc.webp": "/static/media/MathSoc.87981773a442370578d1.webp",
-    "static/media/Paws.webp": "/static/media/Paws.863ab6ec11007afc9fad.webp",
-    "static/media/Girls Fit.webp": "/static/media/Girls Fit.f105e00b7069b9f3f082.webp",
     "static/media/YSS.webp": "/static/media/YSS.ed511c6fab8115afdfa5.webp",
     "static/media/TSA1.webp": "/static/media/TSA1.6be762c4c12c282e11d9.webp",
     "static/media/BehindTheScenes.webp": "/static/media/BehindTheScenes.35648d19e79d9c7f2b68.webp",
@@ -132,11 +129,11 @@
     "index.html": "/index.html",
     "static/media/en-US.cjs": "/static/media/en-US.c3a6319ea4f219498e6f.cjs",
     "main.09d9576b.css.map": "/static/css/main.09d9576b.css.map",
-    "main.e41ad193.js.map": "/static/js/main.e41ad193.js.map",
+    "main.d6218da9.js.map": "/static/js/main.d6218da9.js.map",
     "453.5d780a28.chunk.js.map": "/static/js/453.5d780a28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09d9576b.css",
-    "static/js/main.e41ad193.js"
+    "static/js/main.d6218da9.js"
   ]
 }
