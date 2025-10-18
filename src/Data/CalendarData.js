@@ -356,6 +356,20 @@ const events = [
         start: new Date(2025, 9, 27, 8, 50),
         end: new Date(2025, 9, 31, 15, 30)
     },
+    { 
+        title: "Milliken HOSA x Equity Club Food Drive",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 8, 29),
+        end: new Date(2025, 9, 10)
+    },
+    { 
+        title: "Terry Fox Run",
+        allDay: false, 
+        description: "",
+        start: new Date(2025, 8, 30, 10, 10),
+        end: new Date(2025, 8, 30, 11, 30)
+    },
 ];
 
 export default events;

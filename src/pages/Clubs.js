@@ -84,7 +84,7 @@ function Clubs() {
         )}
       </div>
 
-      {/* 
+
       <div 
       id="club-resources"
       className="flex w-fit h-fit place-self-center mt-10 text-center text-sky-950 lg:text-[5rem]  text-[3rem] font-thin font-['Prata']">
@@ -101,7 +101,6 @@ function Clubs() {
           />
         ))}  
       </div>
-      */}
 
      
       {/* Footer */}

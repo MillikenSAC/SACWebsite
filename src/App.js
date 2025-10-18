@@ -34,19 +34,6 @@ function App() {
           }
         />
         <Route
-          path="/election"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 20 }} // Fade and slide up
-              animate={{ opacity: 1, y: 0 }}   // Fade in and slide to position
-              exit={{ opacity: 0, y: -20 }}     // Fade and slide down
-              transition={{ duration: 0.5 }}
-            >
-              <RepInfo />
-            </motion.div>
-          }
-        />
-        <Route
           path="/sac"
           element={
             <motion.div

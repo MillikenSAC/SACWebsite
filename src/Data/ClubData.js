@@ -3,7 +3,6 @@ import Act4Impact from '../assets/club-logos/Act4Impact.webp';
 import AnimeClub from '../assets/club-logos/AnimeClub.webp';
 import BehindTheScenes from '../assets/club-logos/BehindTheScenes.webp';
 import BestBuddies from '../assets/club-logos/BestBuddies.webp';
-import CASCommittee from '../assets/club-logos/CASCommittee.webp';
 import Chess from '../assets/club-logos/Chess.webp';
 import ComputerStudies from '../assets/club-logos/csclub.webp';
 import CSA from '../assets/club-logos/CSA.webp';
@@ -15,7 +14,6 @@ import Equity from '../assets/club-logos/equity.webp';
 import Fashion from '../assets/club-logos/Fashion.webp';
 import FencingClub from '../assets/club-logos/fencingClub.webp';
 import Geography from '../assets/club-logos/Geography.webp';
-import GirlsFit from '../assets/club-logos/Girls Fit.webp';
 import GreenInc from '../assets/club-logos/greeninc.webp';
 import HealthySchools from '../assets/club-logos/Healthy Schools.webp';
 import History from '../assets/club-logos/History.webp';
@@ -24,7 +22,6 @@ import Ignite from '../assets/club-logos/Ignite.webp';
 import InvisibleString from '../assets/club-logos/InvisibleString.webp';
 import MathSoc from '../assets/club-logos/MathSoc.webp';
 import MillikenMoments from '../assets/club-logos/Milliken Moments.webp';
-import MMTS from '../assets/club-logos/MMTS.webp';
 import ModelUN from '../assets/club-logos/ModelUN.webp';
 import MBO from '../assets/club-logos/MBO.webp';
 import ReachForTheTop from '../assets/club-logos/reach for the top.webp';
@@ -32,21 +29,20 @@ import RedCross from '../assets/club-logos/Red cross.webp';
 import Robotics from '../assets/club-logos/robotics.webp';
 import STEMPower from '../assets/club-logos/STEMPower.webp';
 import VEX from '../assets/club-logos/VEX.webp';
-import Yorkcan from '../assets/club-logos/Yorkcan.webp';
 import YOSA from '../assets/club-logos/YOSA.webp';
 import YSS from '../assets/club-logos/YSS.webp';
 import TSA from '../assets/club-logos/TSA.webp';
 import MSA from '../assets/club-logos/MSA.webp';
-import Paws from '../assets/club-logos/Paws.webp';
-
+import French from '../assets/club-logos/French.png'
+import Weightroom from '../assets/club-logos/Weightroom.jpeg'
 
 export const clubResources = [ 
     { 
         name: "Club Contact Form",
         description: "Fill out the Club Contact Form to help us keep track of all clubs at Milliken!",
-        link:"https://docs.google.com/forms/d/e/1FAIpQLSeiJeEZ4pSrNqA58eE2bmOlelpqIowquP8LEHIErYRLaAOTsQ/viewform?usp=sf_link"
+        link:"https://forms.gle/UbBZGUUqMQmVQan56"
     },
-    { 
+    /*{ 
         name: "Club Grants",
         description: "Need funding for your club's activities? Apply through the Club Grants form to receive financial support!",
         link:"https://docs.google.com/forms/d/e/1FAIpQLSepbSQALTazi4agbmk-fP2EaO6cwz8kxb0U4B5K5vDEJp1nxQ/viewform?usp=sf_link"
@@ -55,16 +51,21 @@ export const clubResources = [
         name: "Grant Success Criteria",
         description: "Wondering what makes a strong grant application? Review the Grant Success Criteria to ensure your application meets all the necessary requirements.",
         link:"https://docs.google.com/document/d/1JZ2KVYu4j0xglI_4MJyvIL0HfS58rinpue751IxDi4c/edit?usp=sharing"
+    }, */
+    { 
+        name: "Club Proposal Form",
+        description: "Planning a new club? Submit your proposal through the Club Proposal Form for approval.",
+        link:"https://forms.gle/7Bfi59AZmRMaMGtx5"
+    },
+    { 
+        name: "Event Proposal Form",
+        description: "Planning a new event? Submit your proposal through the Event Proposal Form for approval.",
+        link:"https://forms.gle/q1uMf6LmEWNegtHf6"
     },
     { 
         name: "Calendar Submission Form",
-        description: "Want to add your event to the SAC calendar on this website? Fill out the Calendar Submission Form to have it featured!",
-        link:"https://docs.google.com/forms/d/e/1FAIpQLSeo3sYNOLxpucO-0-JJNmKqoNDtmLcUgaln94WJ410SCHpuqw/viewform?usp=sf_link"
-    },
-    { 
-        name: "Club/Event Proposal Form",
-        description: "Planning a new club or event? Submit your proposal through the Club/Event Proposal Form for approval.",
-        link:"https://docs.google.com/forms/d/e/1FAIpQLScOqHaG242V16ogIsloESD_6q44Sx4oEOPzL62ZZDOl9oXcsQ/viewform?usp=sf_link"
+        description: "Want your event to be added to the club calendar so other students and execs know what is going on when?",
+        link:"https://forms.gle/2bwf4hCPAE5tPXzU6"
     }
 ]
 
@@ -83,8 +84,8 @@ const clubData = [
         desc: "Act 4 Impact is a volunteering club looking to fundraise and make a local impact on our 4 pillars: Poverty, Hunger, Education, and the Environment.",
         imgSrc: Act4Impact,
         link: "https://www.instagram.com/act4impactorg/",
-        room: "241",
-        meetingDay: "Friday",
+        room: "315",
+        meetingDay: "Wednesday",
         googleClassroomCode: "hafbw2n"
     },
     {
@@ -104,15 +105,6 @@ const clubData = [
         room: "234B",
         meetingDay: "Wednesday",
         googleClassroomCode: "3nn2k3m"
-    },
-    {
-        name: "CAS Committee",
-        desc: "We help IB students complete CAS experiences and find volunteer services easily accessible to them.",
-        imgSrc: CASCommittee,
-        link: "https://www.instagram.com/mmhs_cas/",
-        room: "241",
-        meetingDay: "Monday",
-        googleClassroomCode: "ucwgtvf"
     },
     {
         name: "Chinese Students Association",
@@ -136,8 +128,8 @@ const clubData = [
         name: "Debate Club",
         desc: "We debate!",
         imgSrc: Debate,
-        link: "https://www.instagram.com/mmhs_debatable_debaters/",
-        room: "333",
+        link: "https://www.instagram.com/milliken.debate/",
+        room: "321",
         meetingDay: "Friday",
         googleClassroomCode: "N/A"
     },
@@ -154,8 +146,8 @@ const clubData = [
         name: "EASA (East Asian Student Association)",
         desc: "EASA is a club that unites the East Asian community at MMHS by uplifting diverse voices and showcasing cultural traditions through engaging events.",
         imgSrc: EASA,
-        link: "N/A",
-        room: "224/226",
+        link: "https://www.instagram.com/milliken_easa/",
+        room: "226",
         meetingDay: "Wednesday",
         googleClassroomCode: "3y4xu4e"
     },
@@ -172,26 +164,17 @@ const clubData = [
         name: "Fencing Club",
         desc: "Fencing Club is a place for everyone to enjoy the fascinating sport of fencing.",
         imgSrc: FencingClub,
-        link: "https://www.instagram.com/fencing_mmhs/",
+        link: "https://www.instagram.com/mmhsfencingclub/",
         room: "Small Gym",
         meetingDay: "Wednesday",
         googleClassroomCode: "qfiojr5"
-    },
-    {
-        name: "Girls Fit",
-        desc: "To offer an opportunity for girls to freely embrace their athleticism!",
-        imgSrc: GirlsFit,
-        link: "https://www.instagram.com/girlsfit.mmhs/",
-        room: "At the gym",
-        meetingDay: "Thursday",
-        googleClassroomCode: "kzyljug"
     },
     {
         name: "Green Inc",
         desc: "We strive for an environment that fosters a clean and sustainable environment.",
         imgSrc: GreenInc,
         link: "https://www.instagram.com/mmhs_green_inc/",
-        room: "324",
+        room: "330",
         meetingDay: "Friday",
         googleClassroomCode: "edwesj2"
     },
@@ -200,9 +183,9 @@ const clubData = [
         desc: "The goal of the Healthy School Student Club is to provide student engagement and fun opportunities, fostering mental and physical health development.",
         imgSrc: HealthySchools,
         link: "https://www.instagram.com/mmhshealthyschools/",
-        room: "Portables Outside",
-        meetingDay: "Wednesday",
-        googleClassroomCode: "g5ziukg"
+        room: "Portables/128",
+        meetingDay: "Thursday",
+        googleClassroomCode: "cidmbxh"
     },
     {
         name: "History Club",
@@ -210,7 +193,7 @@ const clubData = [
         imgSrc: History,
         link: "https://www.instagram.com/mmhshistoryclub/",
         room: "215",
-        meetingDay: "Wednesday",
+        meetingDay: "Thursday",
         googleClassroomCode: "kxba6oh"
     },
     {
@@ -219,7 +202,7 @@ const clubData = [
         imgSrc: HOSA,
         link: "https://www.instagram.com/millikenhosa/",
         room: "323 and 324",
-        meetingDay: "Wednesday",
+        meetingDay: "Monday",
         googleClassroomCode: "d2vi5vs"
     },
     {
@@ -228,8 +211,8 @@ const clubData = [
         imgSrc: Ignite,
         link: "https://www.instagram.com/mmhs_ignitecf/",
         room: "245",
-        meetingDay: "Thursday",
-        googleClassroomCode: "hnbmiai"
+        meetingDay: "Monday",
+        googleClassroomCode: "jtq6baef"
     },
     {
         name: "Invisible String",
@@ -237,7 +220,7 @@ const clubData = [
         imgSrc: InvisibleString,
         link: "https://www.instagram.com/mmhs_invisiblestring/",
         room: "106",
-        meetingDay: "Thursday",
+        meetingDay: "Monday",
         googleClassroomCode: "7j75ly3"
     },
     {
@@ -245,16 +228,16 @@ const clubData = [
         desc: "A club at Milliken dedicated to all things math.",
         imgSrc: MathSoc,
         link: "https://www.instagram.com/mmhs.mathsoc/",
-        room: "317",
+        room: "314",
         meetingDay: "Monday",
-        googleClassroomCode: "dgnfg7q"
+        googleClassroomCode: "vihkpuu6"
     },
     {
         name: "MBO (Milliken Business Organization)",
         desc: "Milliken Business Organization is the place to learn and participate in business-related opportunities and competitions!",
         imgSrc: MBO,
         link: "https://www.instagram.com/mmhs.mbo/",
-        room: "N/A",
+        room: "Business Rooms",
         meetingDay: "Thursday",
         googleClassroomCode: "btfvct7"
     },
@@ -282,8 +265,8 @@ const clubData = [
         imgSrc: BehindTheScenes,
         link: "https://www.instagram.com/mmhs_behindthescenes/",
         room: "161",
-        meetingDay: "Thursday",
-        googleClassroomCode: "4xd4v44"
+        meetingDay: "Monday",
+        googleClassroomCode: "sbfvkd7"
     },
 
     {
@@ -291,7 +274,7 @@ const clubData = [
         desc: "A club where anyone can come to play and learn chess!",
         imgSrc: Chess,
         link: "https://www.instagram.com/mmhschess/",
-        room: "304",
+        room: "106",
         meetingDay: "Wednesday",
         googleClassroomCode: "t3wntjz"
     },
@@ -309,26 +292,17 @@ const clubData = [
         desc: "Our club aims to provide a place for students to express themselves and explore their love for fashion with different workshops and activities biweekly!",
         imgSrc: Fashion,
         link: "https://www.instagram.com/millikenfashion/",
-        room: "226",
-        meetingDay: "Tuesday",
-        googleClassroomCode: "e2ohb64"
-    },
-    {
-        name: "MMTS",
-        desc: "We are a club that celebrates T Swizzle and other artists!",
-        imgSrc: MMTS,
-        link: "https://www.instagram.com/mmts_club/",
-        room: "315",
-        meetingDay: "Friday",
-        googleClassroomCode: "jf5xuf3"
+        room: "125/226",
+        meetingDay: "Thursday",
+        googleClassroomCode: "g26dzgc"
     },
     {
         name: "Reach for The Top",
         desc: "We’re a trivia game show club that aims to provide a fun experience to our members.",
         imgSrc: ReachForTheTop,
         link: "https://www.instagram.com/milliken_reach/",
-        room: "314",
-        meetingDay: "Thursday",
+        room: "314/315/318",
+        meetingDay: "Jr - Wed / Sr - Thursday",
         googleClassroomCode: "bxa7dd7"
     },
     {
@@ -336,8 +310,8 @@ const clubData = [
         desc: "Milliken Red Cross is a vibrant student organization committed to service, which follows the principles of the Canadian Red Cross.",
         imgSrc: RedCross,
         link: "https://www.instagram.com/redcrossmilliken/",
-        room: "328",
-        meetingDay: "Thursday",
+        room: "327",
+        meetingDay: "Friday",
         googleClassroomCode: "3c2ffgo"
     },
     {
@@ -368,15 +342,6 @@ const clubData = [
         googleClassroomCode: "e5f6t32"
     },
     {
-        name: "YorkCan",
-        desc: "We foster student leadership and creativity in creating STEM competitions for middle schoolers on behalf of MMHS.",
-        imgSrc: Yorkcan,
-        link: "https://www.instagram.com/yorkcanofficial/",
-        room: "Online",
-        meetingDay: "Monday",
-        googleClassroomCode: "636ynnc"
-    },
-    {
         name: "YOSA (Youth of South Asia)",
         desc: "YOSA (Youth of South Asia) is a school club dedicated to organizing inclusive events that celebrate South Asian culture and promote diversity for everyone to enjoy.",
         imgSrc: YOSA,
@@ -389,9 +354,9 @@ const clubData = [
         name: "Young Scientists Society (YSS)",
         desc: "Fostering a love of Science among youth for the Future",
         imgSrc: YSS,
-        link: "https://www.instagram.com/mmhsyss/",
-        room: "327",
-        meetingDay: "Wednesday",
+        link: "https://www.instagram.com/mmhs_knightrogen/",
+        room: "320",
+        meetingDay: "Friday",
         googleClassroomCode: "heishcg"
     },
     {
@@ -417,19 +382,28 @@ const clubData = [
         desc: "The Muslim Student Association is a club where Muslim and non Muslims have a safe space to discuss about their faith and beliefs. There are charity and Eid events organized. ",
         imgSrc: MSA,
         link: "https://www.instagram.com/msa.milliken/",
-        room: "319",
-        meetingDay: "Friday",
+        room: "242A",
+        meetingDay: "Wednesday",
         googleClassroomCode: "x6d6b4m"
     },
     {
-        name: "Paws First Alliance",
-        desc: "Paws First Alliance, strives to raise awareness on the different ethical issues surrounding animals and advocate for their rights.",
-        imgSrc: Paws,
-        link: "https://www.instagram.com/pawsfirstalliance/",
-        room: "125",
+        name: "French Club",
+        desc: "A space to develop our French skills with activities and games, so we can say more than just 'oui oui baguette' with confidence!",
+        imgSrc: French,
+        link: "https://www.instagram.com/mmhs.frenchclub/",
+        room: "316/226",
         meetingDay: "Wednesday",
-        googleClassroomCode: "3uj3dr7"
-    }
+        googleClassroomCode: "trlklsj"
+    },
+    {
+        name: "Weight Room",
+        desc: "A space for students to get involved it weigh training and cardio that fosters long term health lifsetyle, mental health and overall well being  while being a place of belonging.",
+        imgSrc: Weightroom,
+        link: "https://www.instagram.com/mmhs.weightroom/",
+        room: "Weight Room",
+        meetingDay: "Friday",
+        googleClassroomCode: "cno2qo6"
+    },
     
 ];
 

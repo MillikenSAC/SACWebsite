@@ -7,7 +7,6 @@ import '../styles/Navbar.css';
 function Navbar() {
     const Links = [
         { name: "Home", link: "/" },
-        { name: "Elections", link: "/election" },
         { name: "Council", link: "/sac" },
         { name: "Clubs", link: "/clubs" },
         { name: "Calendar", link: "/event" },
