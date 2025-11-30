@@ -370,6 +370,57 @@ const events = [
         start: new Date(2025, 8, 30, 10, 10),
         end: new Date(2025, 8, 30, 11, 30)
     },
+    { 
+        title: "YOSA Somosa Sale",
+        allDay: false, 
+        description: "😋",
+        start: new Date(2025, 10, 20, 15, 30),
+        end: new Date(2025, 10, 20, 15, 30)
+    },
+    { 
+        title: "Geography Awareness Week 🌍",
+        allDay: false, 
+        description: "Geography Awareness Week 🌍",
+        start: new Date(2025, 10, 17, 8, 50),
+        end: new Date(2025, 10, 20, 15, 30)
+    },
+    { 
+        title: "Eco Thrift🧣🧦 - Best Buddies & Geography Club",
+        allDay: false, 
+        description: "Eco Thrift🧣🧦",
+        start: new Date(2025, 10, 18, 10, 10),
+        end: new Date(2025, 10, 18, 14, 10)
+    },
+    { 
+        title: "The First Sip of Winter🧋(Bubble Tea Sale)",
+        allDay: false, 
+        description: "🧋⛄",
+        start: new Date(2025, 11, 1, 15, 30),
+        end: new Date(2025, 11, 1, 16, 30)
+    },
+    { 
+        title: "Movie Night 🍿 - Fashion Club",
+        allDay: false, 
+        description: "🎥 👒",
+        start: new Date(2025, 11, 11, 16),
+        end: new Date(2025, 11, 11, 19)
+    },
+    { 
+        title: "Winter Market ❄️ 🛍️",
+        allDay: true, 
+        description: "Stop by during P5 to explore the goodies sold by Milliken's clubs. Don't miss out on the holiday fun!",
+        start: new Date(2025, 11, 18),
+        end: new Date(2025, 11, 18)
+    },
+    { 
+        title: "Talent Show 🌟🎤",
+        allDay: true, 
+        description: "Come watch and support amazing talent from our school in this exciting showcase of creativity and skills!🌟🎤",
+        start: new Date(2025, 11, 19),
+        end: new Date(2025, 11, 19)
+    },
+    
+    
 ];
 
 export default events;
