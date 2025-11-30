@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import '../styles/SAC.css';
 import SACCard from '../components/SACCard';
 import TabSpecificCard from '../components/SACCardCaptions';
-import { Executives, Secretary, SocialAffairs, Treasurers, Publicity, Reps, Tech, TeacherAdvisors} from '../data/MeetSACData';
+import { councilYears, councilYearOrder, councilRoleOrder } from '../data/MeetSACData';
 import { motion } from 'framer-motion';
 import saclogo from '../assets/logo.webp';
 import { FaInstagram } from 'react-icons/fa';
@@ -17,26 +17,65 @@ function SAC() {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const yearOrder = (councilYearOrder && councilYearOrder.length > 0)
+    ? councilYearOrder
+    : Object.keys(councilYears);
+  const councilYearList = yearOrder.map((yearKey) => ({
+    year: yearKey,
+    data: councilYears[yearKey],
+  })).filter(({ data }) => !!data);
+
+  const [selectedYearIndex, setSelectedYearIndex] = useState(() =>
+    Math.max(councilYearList.length - 1, 0)
+  );
+  const safeYearIndex = Math.min(
+    Math.max(selectedYearIndex, 0),
+    Math.max(councilYearList.length - 1, 0)
+  );
+  const selectedYearEntry = councilYearList[safeYearIndex] || councilYearList[0] || { year: yearOrder[0], data: {} };
+  const selectedYear = selectedYearEntry?.year || yearOrder[0];
+
+  const emptyYearTemplate = councilRoleOrder.reduce((acc, role) => {
+    acc[role] = [];
+    return acc;
+  }, {});
+
+  const yearData = selectedYearEntry?.data || emptyYearTemplate;
+  const getMembers = (group) => yearData[group] || [];
   const [selectedTab, setSelectedTab] = useState('All');
 
+  const tabConfig = [
+    { key: 'All', label: 'All' },
+    ...councilRoleOrder.map((role) => ({
+      key: role,
+      label:
+        role === 'SocialAffairs'
+          ? 'Social Affairs'
+          : role === 'TeacherAdvisors'
+          ? 'Teacher Advisors'
+          : role,
+    })),
+  ];
+
   const tabMapping = {
-    All: [...Executives, ...Secretary, ...SocialAffairs, ...Treasurers, ...Publicity, ...Reps, ...Tech, ...TeacherAdvisors],
-    Executives: Executives,
-    Secretary: Secretary,
-    'Social Affairs': SocialAffairs,
-    Treasurers: Treasurers,
-    Publicity: Publicity,
-    Reps: Reps,
-    Tech: Tech,
-    'Teacher Advisors': TeacherAdvisors
+    All: councilRoleOrder.flatMap((role) => getMembers(role)),
+    ...councilRoleOrder.reduce((acc, role) => {
+      acc[role] = getMembers(role);
+      return acc;
+    }, {}),
   };
 
   const currentData = tabMapping[selectedTab] || [];
   const [selectedMember, setSelectedMember] = useState(null);
+  const selectedTabLabel =
+    tabConfig.find((tab) => tab.key === selectedTab)?.label || selectedTab;
 
-  const filteredPresidents = currentData.filter(
-    (member) => member.title === 'President' || member.title === 'Vice-President'
-  );
+  const isPresidentOrVP = (title = '') => {
+    const normalized = title.toLowerCase();
+    return normalized === 'president' || normalized === 'vice-president' || normalized === 'vice president';
+  };
+
+  const filteredPresidents = currentData.filter((member) => isPresidentOrVP(member.title));
 
   const filteredOtherMembers = currentData.filter(
     (member) => member.title !== 'President' && member.title !== 'Vice-President' && member.title !=='Teacher Advisor'
@@ -46,6 +85,22 @@ function SAC() {
     (member) => member.title === 'Teacher Advisor' || member.title === 'Teacher Advisor'
   );
 
+  useEffect(() => {
+    // Default to the most recent year whenever the list of years changes.
+    setSelectedYearIndex(Math.max(councilYearList.length - 1, 0));
+  }, [councilYearList.length]);
+
+  const handleYearChange = (direction) => {
+    setSelectedTab('All');
+    setSelectedMember(null);
+    setSelectedYearIndex((prev) => {
+      if (direction === 'next') {
+        return Math.min(prev + 1, councilYearList.length - 1);
+      }
+      return Math.max(prev - 1, 0);
+    });
+  };
+
   const handleCardClick = (member) => {
     if (selectedTab !== 'All') {
       setSelectedMember(member);
@@ -53,25 +108,26 @@ function SAC() {
       window.scrollTo(0,0)
     }
 
-    const memberToTabMapping = {
-      Executives: Executives,
-      Secretary: Secretary,
-      'Social Affairs': SocialAffairs,
-      Treasurers: Treasurers,
-      Publicity: Publicity,
-      Tech: Tech,
-      Reps: Reps,
-      'Teacher Advisors': TeacherAdvisors
-    };
+    const memberToTabMapping = councilRoleOrder.reduce((acc, role) => {
+      acc[role] = getMembers(role);
+      return acc;
+    }, {});
 
-    const foundTab = Object.keys(memberToTabMapping).find((tab) =>
-      memberToTabMapping[tab].includes(member)
+    const foundTab = Object.keys(memberToTabMapping).find((tabKey) =>
+      memberToTabMapping[tabKey].includes(member)
     );
 
     if (foundTab) {
       setSelectedTab(foundTab);
     }
   };
+
+  useEffect(() => {
+    setSelectedTab('All');
+    setSelectedMember(null);
+  }, [selectedYear]);
+
+  const noMembersInTab = currentData.length === 0;
 
   return (
     <>
@@ -100,6 +156,32 @@ function SAC() {
         </div>
       </div>
 
+      <div className="flex items-center justify-center gap-4 mt-4 text-indigo-900">
+        <button
+          onClick={() => handleYearChange('prev')}
+          disabled={selectedYearIndex === 0}
+          className={`z-10 p-2 px-3 rounded-lg font-semibold transition duration-200 border border-indigo-900 ${
+            selectedYearIndex === 0
+              ? 'text-indigo-200 border-indigo-200 cursor-not-allowed'
+              : 'hover:bg-indigo-900 hover:text-blue-100'
+          }`}
+        >
+          Previous
+        </button>
+        <div className="text-lg font-semibold">{selectedYear}</div>
+        <button
+          onClick={() => handleYearChange('next')}
+          disabled={selectedYearIndex === councilYearList.length - 1}
+          className={`z-10 p-2 px-3 rounded-lg font-semibold transition duration-200 border border-indigo-900 ${
+            selectedYearIndex === councilYearList.length - 1
+              ? 'text-indigo-200 border-indigo-200 cursor-not-allowed'
+              : 'hover:bg-indigo-900 hover:text-blue-100'
+          }`}
+        >
+          Next
+        </button>
+      </div>
+
 
       <div className='flex justify-center z-30'>
         <Link 
@@ -112,29 +194,35 @@ function SAC() {
 
       {/* Tab Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-10 mb-6 z-10">
-      {Object.keys(tabMapping).map((tab) => (
+      {tabConfig.map(({ key, label }) => (
         <button
-          key={tab}
-          onClick={() => setSelectedTab(tab)}
+          key={key}
+          onClick={() => setSelectedTab(key)}
           className={`p-2 px-4 rounded-lg font-semibold transition duration-200 ${
-            selectedTab === tab
+            selectedTab === key
               ? 'bg-indigo-900 text-blue-100'
               : 'text-indigo-900 hover:text-blue-100 hover:bg-indigo-900'
           }`}
         >
-          {tab}
+          {label}
         </button>
       ))}
     </div>
-      
+
       {/* Animated Content */}
       <motion.div
-        key={selectedTab}
+        key={`${selectedYear}-${selectedTab}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
       >
+
+      {noMembersInTab && (
+        <div className="text-center text-indigo-900 mt-8">
+          No members listed for {selectedYear} in the {selectedTabLabel === 'All' ? 'council yet.' : `${selectedTabLabel} tab yet.`}
+        </div>
+      )}
 
       {/* SAC Cards */}
       <div className="flex flex-wrap justify-center gap-6 mb-8 mt-7">
