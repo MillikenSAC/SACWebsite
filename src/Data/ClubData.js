@@ -33,8 +33,16 @@ import YOSA from '../assets/club-logos/YOSA.webp';
 import YSS from '../assets/club-logos/YSS.webp';
 import TSA from '../assets/club-logos/TSA.webp';
 import MSA from '../assets/club-logos/MSA.webp';
-import French from '../assets/club-logos/French.png'
-import Weightroom from '../assets/club-logos/Weightroom.jpeg'
+import French from '../assets/club-logos/French.webp'
+import Weightroom from '../assets/club-logos/Weightroom.webp'
+import DND from '../assets/club-logos/DND.webp'
+import Kitchen from '../assets/club-logos/DND.webp'
+import MAC from '../assets/club-logos/DND.webp'
+import Music from '../assets/club-logos/Music.webp'
+import Newcomers from '../assets/club-logos/Newcomers.webp'
+import Yearbook from '../assets/club-logos/Yearbook.webp'
+import PFA from '../assets/club-logos/PFA.webp'
+import Typewriter from '../assets/club-logos/Typewriter.webp'
 
 export const clubResources = [ 
     { 
@@ -404,7 +412,78 @@ const clubData = [
         meetingDay: "Friday",
         googleClassroomCode: "cno2qo6"
     },
-    
+    {
+        name: "Milliken Athletic Council (MAC)",
+        desc: "We oversee all athletics at milliken, also encourging participation and growing involvement in sports from the student body.",
+        imgSrc: MAC,
+        link: "https://www.instagram.com/mmhsmac/",
+        room: "Large Gym",
+        meetingDay: "Friday",
+        googleClassroomCode: "yfno6fm"
+    },
+    {
+        name: "Yearbook",
+        desc: "Milliken yearbook is dedicated to capturing all aspects of this year at Milliken through photography, design and writing- all encapsulated into one Yearbook.",
+        imgSrc: Yearbook,
+        link: "https://www.instagram.com/yearbook/",
+        room: "106, 107",
+        meetingDay: "Monday",
+        googleClassroomCode: "xdarm3yo, shd7xgy, nbwp7fs"
+    },
+    {
+        name: "Dungeons and Dragons",
+        desc: "We play Dungeons and Dragons, a table top roleplaying game and have lots of fun!",
+        imgSrc: DND,
+        link: "https://www.instagram.com/mmhsdungeonsdragons/",
+        room: "107",
+        meetingDay: "Tuesday",
+        googleClassroomCode: "vkw3qeo"
+    },
+    {
+        name: "Knights Kitchen",
+        desc: "Knights Kitchen is a club dedicated to inspiring  creativity through collaborative culinary workshops, inspiring our club members to innovate, share, and grow their passion for cooking and baking. ",
+        imgSrc: Kitchen,
+        link: "https://www.instagram.com/mmhs_kitchen/",
+        room: "107",
+        meetingDay: "Thursday",
+        googleClassroomCode: "yzt2s2y"
+    },
+    {
+        name: "Newcomers' Club",
+        desc: "“The Newcomers’ Club is a welcoming community at MMHS dedicated to helping new students — whether Grade 9, ESL, or recent arrivals — build friendships, adapt to school life, and find the guidance they need to thrive.”",
+        imgSrc: Newcomers,
+        link: "https://www.instagram.com/mmhs_newcomers/",
+        room: "242A",
+        meetingDay: "Friday",
+        googleClassroomCode: "wsrdfk7s"
+    },
+    {
+        name: "Music Council",
+        desc: "Milliken yearbook is dedicated to capturing all aspects of this year at Milliken through photography, design and writing- all encapsulated into one Yearbook.",
+        imgSrc: Music,
+        link: "https://www.instagram.com/millikenmusic/",
+        room: "112",
+        meetingDay: "Monday",
+        googleClassroomCode: "N/A"
+    },
+    {
+        name: "Paws First Alliance",
+        desc: "Paws First Alliance is a club dedicated to raising awareness about ethical issues surrounding animals.",
+        imgSrc: PFA,
+        link: "https://www.instagram.com/pawsfirstalliance/",
+        room: "224",
+        meetingDay: "Friday",
+        googleClassroomCode: "2hfg7jpe"
+    },
+    {
+        name: "Music Council",
+        desc: "Teaching students to express themselves through different forms of writing.",
+        imgSrc: Typewriter,
+        link: "https://www.instagram.com/millikens.typewriter/",
+        room: "Varies",
+        meetingDay: "Friday",
+        googleClassroomCode: "Woonxdz"
+    }
 ];
 
 export default clubData;
